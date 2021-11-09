@@ -1,0 +1,18 @@
+{
+  "1": {
+    "MerkleDropFactory": [
+      "0x62CAF595Eb1AC54aAd9BbC10315536728c2Ba352"
+    ],
+    "MerkleLib": [
+      "0x458EFD41740ffb27d86A9157050c0707b41E9520"
+    ]
+  },
+  "3": {
+    "MerkleDropFactory": [
+      "0x7586C0F3DB25A93B6635a132beBcD8Cbd90652e8"
+    ],
+    "MerkleLib": [
+      "0x04dDa3C6737f1c1A2ef93f746B8B663b8bC29C39"
+    ]
+  }
+}
