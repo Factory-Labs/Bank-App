@@ -5,7 +5,7 @@ pragma solidity 0.8.9;
 import "../interfaces/IERC20.sol";
 import "./MerkleLib.sol";
 
-contract ShowcaseMerkleVesting {
+contract DummyMerkleVesting {
     using MerkleLib for bytes32;
 
     mapping (uint => bytes32) public merkleRoots;

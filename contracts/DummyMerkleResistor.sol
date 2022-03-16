@@ -5,7 +5,7 @@ pragma solidity 0.8.9;
 import "../interfaces/IERC20.sol";
 import "./MerkleLib.sol";
 
-contract ShowcaseMerkleResistor {
+contract DummyMerkleResistor {
     using MerkleLib for bytes32;
 
     uint public numTrees = 0;
