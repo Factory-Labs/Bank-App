@@ -10,9 +10,6 @@ contract MerkleResistor {
 
     uint public numTrees = 0;
 
-    uint public initialBalance;
-    address public management;
-
     struct Tranche {
         uint totalCoins;
         uint currentCoins;
@@ -29,6 +26,7 @@ contract MerkleResistor {
         uint maxEndTime; // offsets
         uint pctUpFront;
         address tokenAddress;
+        uint tokenBalance;
     }
 
     mapping (address => mapping (uint => bool)) public initialized;
@@ -40,25 +38,8 @@ contract MerkleResistor {
 
     event WithdrawalOccurred(address indexed destination, uint numTokens, uint tokensLeft, uint indexed merkleIndex);
     event MerkleTreeAdded(uint indexed index, address indexed tokenAddress, bytes32 newRoot, bytes32 ipfsHash);
-    event ManagementUpdated(address oldManagement, address newManagement);
 
-    modifier managementOnly() {
-        require (msg.sender == management, 'Only management may call this');
-        _;
-    }
-
-    constructor(address mgmt) {
-        management = mgmt;
-    }
-
-    // change the management key
-    function setManagement(address newMgmt) public managementOnly {
-        address oldMgmt = management;
-        management = newMgmt;
-        emit ManagementUpdated(oldMgmt, newMgmt);
-    }
-
-    function addMerkleTree(bytes32 newRoot, bytes32 ipfsHash, uint minEndTime, uint maxEndTime, uint pctUpFront, address depositToken) public managementOnly {
+    function addMerkleTree(bytes32 newRoot, bytes32 ipfsHash, uint minEndTime, uint maxEndTime, uint pctUpFront, address depositToken, uint tokenBalance) public {
         require(pctUpFront < 100, 'pctUpFront >= 100');
         require(minEndTime < maxEndTime, 'minEndTime must be less than maxEndTime');
         merkleTrees[++numTrees] = MerkleTree(
@@ -67,9 +48,17 @@ contract MerkleResistor {
             minEndTime,
             maxEndTime,
             pctUpFront,
-            depositToken
+            depositToken,
+            0
         );
+        depositTokens(numTrees, tokenBalance);
         emit MerkleTreeAdded(numTrees, depositToken, newRoot, ipfsHash);
+    }
+
+    function depositTokens(uint numTree, uint value) public {
+        MerkleTree storage merkleTree = merkleTrees[numTree];
+        require(IERC20(merkleTree.tokenAddress).transferFrom(msg.sender, address(this), value), "ERC20 transfer failed");
+        merkleTree.tokenBalance += value;
     }
 
     function initialize(uint merkleIndex, address destination, uint vestingTime, uint minTotalPayments, uint maxTotalPayments, bytes32[] memory proof) external {
@@ -108,6 +97,7 @@ contract MerkleResistor {
             // compute allowed withdrawal
             currentWithdrawal = (block.timestamp - tranche.lastWithdrawalTime) * tranche.coinsPerSecond;
         }
+        require(tree.tokenBalance >= currentWithdrawal, "Token balance of the tree too low");
 
         // update struct
         tranche.currentCoins -= currentWithdrawal;
@@ -115,6 +105,7 @@ contract MerkleResistor {
 
         // transfer the tokens, brah
         IERC20(tree.tokenAddress).transfer(destination, currentWithdrawal);
+        tree.tokenBalance -= currentWithdrawal;
         emit WithdrawalOccurred(destination, currentWithdrawal, tranche.currentCoins, merkleIndex);
     }
 

@@ -10,14 +10,11 @@ contract MerkleDropFactory {
 
     uint public numTrees = 0;
 
-    address public management;
-    address public treeAdder;
-
     struct MerkleTree {
         bytes32 merkleRoot;
         bytes32 ipfsHash;
         address tokenAddress;
-        uint initialBalance;
+        uint tokenBalance;
         uint spentTokens;
     }
 
@@ -27,35 +24,22 @@ contract MerkleDropFactory {
     event Withdraw(uint indexed merkleIndex, address indexed recipient, uint value);
     event MerkleTreeAdded(uint indexed index, address indexed tokenAddress, bytes32 newRoot, bytes32 ipfsHash);
 
-    modifier managementOnly() {
-        require (msg.sender == management, 'Only management may call this');
-        _;
-    }
-
-    constructor(address mgmt) {
-        management = mgmt;
-        treeAdder = mgmt;
-    }
-
-    // change the management key
-    function setManagement(address newMgmt) public managementOnly {
-        management = newMgmt;
-    }
-
-    function setTreeAdder(address newAdder) public managementOnly {
-        treeAdder = newAdder;
-    }
-
-    function addMerkleTree(bytes32 newRoot, bytes32 ipfsHash, address depositToken, uint initBalance) public {
-        require(msg.sender == treeAdder, 'Only treeAdder can add trees');
+    function addMerkleTree(bytes32 newRoot, bytes32 ipfsHash, address depositToken, uint tokenBalance) public {
         merkleTrees[++numTrees] = MerkleTree(
             newRoot,
             ipfsHash,
             depositToken,
-            initBalance,
+            0,
             0
         );
+        depositTokens(numTrees, tokenBalance);
         emit MerkleTreeAdded(numTrees, depositToken, newRoot, ipfsHash);
+    }
+
+    function depositTokens(uint numTree, uint value) public {
+        MerkleTree storage merkleTree = merkleTrees[numTree];
+        require(IERC20(merkleTree.tokenAddress).transferFrom(msg.sender, address(this), value), "ERC20 transfer failed");
+        merkleTree.tokenBalance += value;
     }
 
     function withdraw(uint merkleIndex, address walletAddress, uint value, bytes32[] memory proof) public {
@@ -63,9 +47,11 @@ contract MerkleDropFactory {
         require(!withdrawn[walletAddress][merkleIndex], "You have already withdrawn your entitled token.");
         bytes32 leaf = keccak256(abi.encode(walletAddress, value));
         MerkleTree storage tree = merkleTrees[merkleIndex];
+        require(tree.tokenBalance >= value, "Token balance of the tree too low");
         require(tree.merkleRoot.verifyProof(leaf, proof), "The proof could not be verified.");
         withdrawn[walletAddress][merkleIndex] = true;
         require(IERC20(tree.tokenAddress).transfer(walletAddress, value), "ERC20 transfer failed");
+        tree.tokenBalance -= value;
         tree.spentTokens += value;
         emit Withdraw(merkleIndex, walletAddress, value);
     }
