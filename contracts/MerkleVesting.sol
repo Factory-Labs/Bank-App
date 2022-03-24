@@ -42,10 +42,10 @@ contract MerkleVesting {
         - endTime
         - lockPeriodEndTime
     */
-    function addMerkleRoot(bytes32 rootHash, bytes32 ipfsHash, address tokenAddress, uint tokenBalance) {
-        merkleTrees[++numRoots] = MerkleTree(rootHash, ipfsHash, tokenAddress, tokenBalance);
-        depositTokens(numRoots, tokenBalance);
-        emit MerkleRootAdded(numRoots, tokenAddress, newRoot);
+    function addMerkleRoot(bytes32 rootHash, bytes32 ipfsHash, address tokenAddress, uint tokenBalance) public {
+        merkleTrees[++numTrees] = MerkleTree(rootHash, ipfsHash, tokenAddress, tokenBalance);
+        depositTokens(numTrees, tokenBalance);
+        emit MerkleRootAdded(numTrees, tokenAddress, rootHash);
     }
 
     function depositTokens(uint numTree, uint value) public {
@@ -57,8 +57,8 @@ contract MerkleVesting {
     function initialize(uint merkleIndex, address destination, uint totalCoins, uint startTime, uint endTime, uint lockPeriodEndTime, bytes32[] memory proof) external {
         require(!initialized[destination][merkleIndex], "Already initialized");
         bytes32 leaf = keccak256(abi.encodePacked(destination, totalCoins, startTime, endTime, lockPeriodEndTime));
-
-        require(merkleRoots[merkleIndex].verifyProof(leaf, proof), "The proof could not be verified.");
+        MerkleTree memory tree = merkleTrees[merkleIndex];
+        require(tree.rootHash.verifyProof(leaf, proof), "The proof could not be verified.");
         initialized[destination][merkleIndex] = true;
         uint coinsPerSecond = totalCoins / (endTime - startTime);
         tranches[destination][merkleIndex] = Tranche(
@@ -98,7 +98,7 @@ contract MerkleVesting {
         tree.tokenBalance -= currentWithdrawal;
 
         // transfer the tokens, brah
-        token.transfer(destination, currentWithdrawal);
+        IERC20(tree.tokenAddress).transfer(destination, currentWithdrawal);
         emit WithdrawalOccurred(destination, currentWithdrawal, tranche.currentCoins, merkleIndex);
     }
 
