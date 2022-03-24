@@ -86,7 +86,6 @@ contract MerkleResistor {
     function withdraw(uint merkleIndex, address destination) public {
         require(initialized[destination][merkleIndex], "You must initialize your account first.");
         Tranche storage tranche = tranches[destination][merkleIndex];
-        MerkleTree memory tree = merkleTrees[merkleIndex];
         require(tranche.currentCoins >  0, 'No coins left to withdraw');
         uint currentWithdrawal = 0;
 
@@ -97,7 +96,7 @@ contract MerkleResistor {
             // compute allowed withdrawal
             currentWithdrawal = (block.timestamp - tranche.lastWithdrawalTime) * tranche.coinsPerSecond;
         }
-        require(tree.tokenBalance >= currentWithdrawal, "Token balance of the tree too low");
+        MerkleTree storage tree = merkleTrees[merkleIndex];
 
         // update struct
         tranche.currentCoins -= currentWithdrawal;

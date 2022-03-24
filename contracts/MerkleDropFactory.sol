@@ -47,7 +47,6 @@ contract MerkleDropFactory {
         require(!withdrawn[walletAddress][merkleIndex], "You have already withdrawn your entitled token.");
         bytes32 leaf = keccak256(abi.encode(walletAddress, value));
         MerkleTree storage tree = merkleTrees[merkleIndex];
-        require(tree.tokenBalance >= value, "Token balance of the tree too low");
         require(tree.merkleRoot.verifyProof(leaf, proof), "The proof could not be verified.");
         withdrawn[walletAddress][merkleIndex] = true;
         require(IERC20(tree.tokenAddress).transfer(walletAddress, value), "ERC20 transfer failed");
