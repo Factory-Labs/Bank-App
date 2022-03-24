@@ -8,13 +8,8 @@ import "./MerkleLib.sol";
 contract MerkleVesting {
     using MerkleLib for bytes32;
 
-    mapping (uint => bytes32) public merkleRoots;
-    uint public numRoots;
-    IERC20 public token;
-
-    uint public initialBalance;
-    address public management;
-
+    uint public numTrees = 0;
+    
     struct Tranche {
         uint totalCoins;
         uint currentCoins;
@@ -22,51 +17,68 @@ contract MerkleVesting {
         uint endTime;
         uint coinsPerSecond;
         uint lastWithdrawalTime;
+        uint lockPeriodEndTime;
     }
 
-    mapping (address => bool) public initialized;
-    mapping (address => Tranche) public tranches;
-
-    event WithdrawalOccurred(address destination, uint numTokens, uint tokensLeft);
-    event MerkleRootAdded(uint indexed index, bytes32 newRoot);
-
-    modifier managementOnly() {
-        require (msg.sender == management, 'Only management may call this');
-        _;
+    struct MerkleTree {
+        bytes32 rootHash;
+        bytes32 ipfsHash;
+        address tokenAddress;
+        uint tokenBalance;
     }
 
-    constructor(IERC20 _token, bytes32 _root) {
-        token = _token;
-        merkleRoots[1] = _root;
-        numRoots = 1;
+    mapping (address => mapping (uint => bool)) public initialized;
+    mapping (uint => MerkleTree) public merkleTrees;
+    mapping (address => mapping (uint => Tranche)) public tranches;
+
+    event WithdrawalOccurred(address indexed destination, uint numTokens, uint tokensLeft, uint indexed merkleIndex);
+    event MerkleRootAdded(uint indexed index, address indexed tokenAddress, bytes32 newRoot);
+
+    /*
+        Root hash should be built out of following data:
+        - destination
+        - totalCoins
+        - startTime
+        - endTime
+        - lockPeriodEndTime
+    */
+    function addMerkleRoot(bytes32 rootHash, bytes32 ipfsHash, address tokenAddress, uint tokenBalance) {
+        merkleTrees[++numRoots] = MerkleTree(rootHash, ipfsHash, tokenAddress, tokenBalance);
+        depositTokens(numRoots, tokenBalance);
+        emit MerkleRootAdded(numRoots, tokenAddress, newRoot);
     }
 
-    function addMerkleRoot(bytes32 newRoot) public managementOnly {
-        merkleRoots[++numRoots] = newRoot;
-        emit MerkleRootAdded(numRoots, newRoot);
+    function depositTokens(uint numTree, uint value) public {
+        MerkleTree storage merkleTree = merkleTrees[numTree];
+        require(IERC20(merkleTree.tokenAddress).transferFrom(msg.sender, address(this), value), "ERC20 transfer failed");
+        merkleTree.tokenBalance += value;
     }
 
-    function initialize(uint merkleIndex, address destination, uint totalCoins, uint startTime, uint endTime, bytes32[] memory proof) external {
-        require(!initialized[destination], "Already initialized");
-        bytes32 leaf = keccak256(abi.encodePacked(destination, totalCoins, startTime, endTime));
+    function initialize(uint merkleIndex, address destination, uint totalCoins, uint startTime, uint endTime, uint lockPeriodEndTime, bytes32[] memory proof) external {
+        require(!initialized[destination][merkleIndex], "Already initialized");
+        bytes32 leaf = keccak256(abi.encodePacked(destination, totalCoins, startTime, endTime, lockPeriodEndTime));
 
         require(merkleRoots[merkleIndex].verifyProof(leaf, proof), "The proof could not be verified.");
-        initialized[destination] = true;
+        initialized[destination][merkleIndex] = true;
         uint coinsPerSecond = totalCoins / (endTime - startTime);
-        tranches[destination] = Tranche(
+        tranches[destination][merkleIndex] = Tranche(
             totalCoins,
             totalCoins,
             startTime,
             endTime,
             coinsPerSecond,
-            startTime
+            startTime,
+            lockPeriodEndTime
         );
-        withdraw(destination);
+        if (lockPeriodEndTime < block.timestamp) {
+            withdraw(merkleIndex, destination);
+        }
     }
 
-    function withdraw(address destination) internal {
-        require(initialized[destination], "You must initialize your account first.");
-        Tranche storage tranche = tranches[destination];
+    function withdraw(uint merkleIndex, address destination) internal {
+        require(initialized[destination][merkleIndex], "You must initialize your account first.");
+        Tranche storage tranche = tranches[destination][merkleIndex];
+        require(block.timestamp > tranche.lockPeriodEndTime, 'Must wait until after lock period');
         require(tranche.currentCoins >  0, 'No coins left to withdraw');
         uint currentWithdrawal = 0;
 
@@ -82,9 +94,12 @@ contract MerkleVesting {
         tranche.currentCoins -= currentWithdrawal;
         tranche.lastWithdrawalTime = block.timestamp;
 
+        MerkleTree storage tree = merkleTrees[merkleIndex];
+        tree.tokenBalance -= currentWithdrawal;
+
         // transfer the tokens, brah
         token.transfer(destination, currentWithdrawal);
-        emit WithdrawalOccurred(destination, currentWithdrawal, tranche.currentCoins);
+        emit WithdrawalOccurred(destination, currentWithdrawal, tranche.currentCoins, merkleIndex);
     }
 
 }
