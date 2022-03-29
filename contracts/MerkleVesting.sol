@@ -43,7 +43,7 @@ contract MerkleVesting {
         - lockPeriodEndTime
     */
     function addMerkleRoot(bytes32 rootHash, bytes32 ipfsHash, address tokenAddress, uint tokenBalance) public {
-        merkleTrees[++numTrees] = MerkleTree(rootHash, ipfsHash, tokenAddress, tokenBalance);
+        merkleTrees[++numTrees] = MerkleTree(rootHash, ipfsHash, tokenAddress, 0);
         depositTokens(numTrees, tokenBalance);
         emit MerkleRootAdded(numTrees, tokenAddress, rootHash);
     }
