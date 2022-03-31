@@ -56,7 +56,7 @@ contract MerkleVesting {
 
     function initialize(uint merkleIndex, address destination, uint totalCoins, uint startTime, uint endTime, uint lockPeriodEndTime, bytes32[] memory proof) external {
         require(!initialized[destination][merkleIndex], "Already initialized");
-        bytes32 leaf = keccak256(abi.encodePacked(destination, totalCoins, startTime, endTime, lockPeriodEndTime));
+        bytes32 leaf = keccak256(abi.encode(destination, totalCoins, startTime, endTime, lockPeriodEndTime));
         MerkleTree memory tree = merkleTrees[merkleIndex];
         require(tree.rootHash.verifyProof(leaf, proof), "The proof could not be verified.");
         initialized[destination][merkleIndex] = true;
@@ -75,7 +75,7 @@ contract MerkleVesting {
         }
     }
 
-    function withdraw(uint merkleIndex, address destination) internal {
+    function withdraw(uint merkleIndex, address destination) public {
         require(initialized[destination][merkleIndex], "You must initialize your account first.");
         Tranche storage tranche = tranches[destination][merkleIndex];
         require(block.timestamp > tranche.lockPeriodEndTime, 'Must wait until after lock period');
