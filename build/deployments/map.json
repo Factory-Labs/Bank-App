@@ -14,5 +14,13 @@
     "MerkleLib": [
       "0x04dDa3C6737f1c1A2ef93f746B8B663b8bC29C39"
     ]
+  },
+  "56": {
+    "MerkleDropFactory": [
+      "0xB29951E63912ebB7D9B740EcC74A65D6122DFd84"
+    ],
+    "MerkleLib": [
+      "0xAB73C958F8A4Ed59Cc111B51f61440ff95Ca4376"
+    ]
   }
 }

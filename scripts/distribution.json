@@ -1,0 +1,2216 @@
+[
+    {
+        "name": "METIS",
+        "num_tokens": 25.5,
+        "token_address": "0x9e32b13ce7f2e80a01932b42553652e053d6ed8e",
+        "price": 257,
+        "defi_live_allocation_tokens": 0.4210678928464532,
+        "gremlin_allocation_tokens": 0.10947765214007779,
+        "recipients": [
+            {
+                "recipient": "0x00729212598ec0b0ea71cB4904059B77694d4405",
+                "allocation": 0.4210678928464532,
+                "allocation_wei": 4.210678928464532e+17
+            },
+            {
+                "recipient": "0xDD1c7A1FA78d3B9B62eFC282Bfa821967A626A14",
+                "allocation": 0.4210678928464532,
+                "allocation_wei": 4.210678928464532e+17
+            },
+            {
+                "recipient": "0x4d17e14895B74B72DbfFA6EA87e9d51F947e6E6E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x6e85b13AB88bcAe8901A00F7bD6679591997Ad6D",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3A0617efFdB2235024D856a12C14d8eF1765C165",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x14b51dbaEb36BaB0465FB45Cfca569EB41802735",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7b6798fdf67eBC5b5DF2d714B5Ee6e40DD7f8447",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x361f9F5b307A351A73DA2792aaBCe45E987F0fdC",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xD7520FF5673C2E268fF4E9986C69475CB639bE3F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x238F69501269dbe47B556b4F9e009b8170a545D7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x4e60e7B3641E52DFf70C8D5b7b395e869Efd0F6F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xd8f09a9b6bAC0B86278Aac437C647255c2815AFB",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x742105c5De6cc9b991B8901AD8eC6bB6936FF064",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7413EcA17eBbBbCf0634E23D27aB7614d1144AAB",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x69d558c002c74c0Cf69D3e2F6f3605DCeD0c32b5",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1a3C473F656d1Acd1CB921a66D4Bc731d772913E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xBeE58Bfe41AD1159BD0227D69Ab588AD28DF21cf",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xbb516784a9fc98c59e32c753c462244a44787559",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC3E0fD877195CB1B9CD8d20244206A500d9E953F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x98F76cB58c12487C75D2d11f7fC14f5F3f6aedED",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x21b669F5074245CA9Fa87cDD5Bd4e68E73ae6859",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x87c3775d302b5C11f2aCBBbf8266c67EBe93A6A3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5c7635f71e571933d2d60e29dF0403F2dd541697",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xFE28FDE29d5020F3d47fc425c876b8774c39Aa23",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xa8025C9670cb5994Aa3d2DbC7D79ab0547abbc09",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x8DE91FDa337c78C3BA408afA88a706F539f954a0",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xF59EA3ddAafd0e618EE7BfE0c0d64f3d3c10A37D",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xEeA51b791E76F5808CD2E1F82b77b58E6Ab421A7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xCa38E418975eee5D82B622E19096088CA6d95B68",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xB110825a2C88059BdBFE761730084D81cC2ddb01",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7eADF8495FAe679c117F23f9Dd3f9795Cad73ffF",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC5e11c0427c3D70752A91B382699Daf2F436f236",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x4F9C0b07a811650A844f11F608b6acaF69Ab9a0f",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xB13188412268eb43E58b291B2674621d8011CB6B",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xBce0295f7ED6Fc8E605CF4c8a1014563a4A53Ac1",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xc0F6364689a62388DA5e2d1Da1cA8a4B5E55C3a1",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC85C19d2513b966840F40EF31CcfE76229761DBB",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xEf73162A1AC7582D3c13719abA36b4AeAAa5BcBa",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x42c058B5ff0bdD360d187888ff7094a2B057E59b",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x13c96d47cb9d7c73e6b1b93D70e3D15e117756BE",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xEC3c8F8582AD5CA88e072F6c8cB2FE1BaAeDA4D0",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xeaf71B549Bf7d897C7110e91A0d97D9a6B04733F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x0d7Ac1cfaC50e060976e0bdbC8db5aF7448b6F89",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xf8A88D204111b43d88D2B55d1e9534E0b6fa3173",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7e474209779eFEC886FDB7cbE4d207412F400960",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xef8c53cd3f1857fd07a5fbb5f43e36cdb7e1f24a",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xFEe673856009A175061667A1290Cea31cc727942",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC4c8DFC5ed88755716e1b290d89d3e1419EEA79e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x738514D20Ce5b627224567B1181CEDcF6CBde697",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x9a73Bd52E6a3B1DC1496DEf8B007716341Cf4b5c",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5feb55564190a8163c7eea5850fd59b750d2d1b9",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x27CbCf9D3bf9e1c2Ec9cA463eAa985eee02E1402",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7e2C0805E82477330e8C78488870d78BB661549e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x06dbBD0eBf320047a5890Da4971edc27601353C3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xDBd2E7bfd3d23FAB6472Cc9F48Aaa89A8295fef1",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x9030D4A40609aC1Dd7528b42c5f1694f0041B22C",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xE8A8C59eB2ae45EBD991fCfCf6afdC2Af573d09e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xA6c9925A736bA5e38D41747d5e57CFa8c2CF581A",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3234dF5BfC256e8EC061C59cd1Fd0ba546AA87Bc",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xa300760f4D929ed5e718CEd8711Eea43dbD6442e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7A6ef020F96a10e01253c28D648DC3B4691d16cf",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x13c96d47cb9d7c73e6b1b93D70e3D15e117756BE",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5103A080195C6E982462bc2a36c24dCfdBC3A40b",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x2c472e5546cEe18CF18e104e09987c3D5b176EE7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xbab8bEAaab74c84dBECB12a699c0e7500d455f0a",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xEF44fd8A034c1d31dAbc18e8df9077c2f0b3Aac3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xaeBA512F46B8eF79409c6f84e1f31541Af878Dae",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xDBA52e73dA0D0c8D8D6beD465Ca0515E62FFcEA7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xB1CC37A8A5fdf2d1F9AceCDb8495f06E5544875B",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1e7Bff98a4BefA4cBa62D688BB70695D3BDfBeA7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x8350dA4A8F444286c63c02E099675041A4e398b8",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x62eB8347Cc57a4Bd27344C0f9C86cE444Ff9BF5e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xf3DB3E70E671562f49171AC6eBF7118326608B68",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xBD0fB0B2029943B9A2d4de36a85048441bb8c235",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xf6Bdf944640B9AfcDc3d925a7Db528Dd6A82969a",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5D0C6A0100B656a9bb84Fe158fDEb6d3D4352cE4",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xFEe673856009A175061667A1290Cea31cc727942",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xa98Ca0496d5e8F5E03F34634aF79690A1A94066F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7A6ef020F96a10e01253c28D648DC3B4691d16cf",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x86E46C4D52113ec7Cd46b5Fc07021C7c7f1e1edD",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x2Ab40104F0F85ebD2753209E2936cb5c0A651112",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x099F8d035140864b86124Fd839786BcB234a9ae7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x8Edaa552e12d1aB8E735eb321256A6623553bBa7",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x71854e7F23f88FD1B12d0434638Af462ed989b86",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x364864046d215cD0F32CDF9Acff0f9C58b5355B0",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1a3C473F656d1Acd1CB921a66D4Bc731d772913E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xdF159c2eC245E919D59Bc08D096E916dCd39B61b",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1ea4fA04FfF0edc45464cE999A3a9B67882156F9",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5feb55564190a8163c7eea5850fd59b750d2d1b9",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x0127B441a5EA2e6F2670Bd2eee1D3EDc55e78B36",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x47d29dAC40Dff54e512Cb916d77C932E1968ea6a",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x86c9b1d913587C45F0A4D8C9e3BAb74b246E8244",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1a5de842A7c2600FA9f3b34138c36982174f1532",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x16e9eeE8450E6f630550642B49d4a78E97d8FA06",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x26e38296736BfAc2a365C2CF61f1DED6f4caFFC5",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x6a3187954d41A35173b22E411Af5405b9c33a305",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5386A15C63af7Acf89933dA4aE254C527cc1B085",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xb16B05525921fA7351E1fbE22F56Be68df76EDFD",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xb645C5AC92b0b9C3897AAf8cCE02e05672CC5AA8",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x0F1500f6cd17d1d836Aff4a50eF6fc1d805586ba",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xfA362f84C889892Ab4d4AAe178607A7CDca1D050",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3db75bAEA8432A458E8fda5EBD3110C19725DC67",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC8aAa54Eec348692C66917852371a2bC9FD9B1E4",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x60E4b2DdCe57438d69e226550Bc78eF737CE8FA4",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x8733bb2dfEAB677e9b82eb09997853A7d378cA90",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xe7842649623EDBFe9465ef5C8Ae85EfAB7Cf512c",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x967447bD6Dd113F06181d4a2F43A000Ef67dfEf0",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x9673dEd60B5e15c03cCEA1f757F4e9281Aa63E23",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x116Afd6f52fB81f08cF4B2f4Bd373f79A007F706",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x894a644661BD0E30e745BBd6e4065ab8A4FFa20A",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7b3cC5C0a74CbD1dCc3ddA525d022b28AAc724Bd",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x137264C28FcB9BabcF1575A199A72fa01127e405",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x078FFE2B18564781632fE909987af9F3Ec63A4c4",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x96766661E1F7beBF8955B18510E093f9024FaD7E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x69E9cbc2d6EcA621B68f19EA05A595aE3EF3B114",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xFC865EbA511EaCDfb94634bAbF12BB793379f845",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC645DDA286843A8D9FE4103C02F8BbB41aE60f01",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x472eb75E09039a62ACe80F366d2c6c276d3c6d85",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x178c02eb09bdB851AC0112d387485cA747c28837",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xad8C1fAc20e30065FD7E574052507dec23b9072e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xE041D5fF3aCC52c86D33d98f3CFC52912A5E4601",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xeA20617187De7693cb9241C363CE5859198DCE90",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x828aFf1785A1Bc07c6d9b795C5D92263d6F59042",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xec98247C129BdC9B3B2Fa9F4d1aC37BE4DD81F43",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xe0D56c8167a0A446669b9B775e2576e8dd212995",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x148517bB432E751777535229c7084596591fb65B",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1dB13dBD3751Eccb99DFdBD150E13680FB4B82f3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x321514BDC2a84EA04047ecFe5E17d5467d3a0A6c",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x52E5035dFec147ed7729f234a41900Ca6270312F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x720A4007fD5F34ce15cbe2C1021a846E848FF122",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x54Dd2d04472F6931231845dD38EfFDd0977600e3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x52E5035dFec147ed7729f234a41900Ca6270312F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x6c323FC384e998c5c6Cb4d553B9D6C79d8236600",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x45685485189882d42aE071BC3dE42A33E0B3f60d",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x63C6389c1bE54A0aD43210aF799B9F848611c2B2",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3A0617efFdB2235024D856a12C14d8eF1765C165",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x4763e3139C4FAe6a0f9cBd1F74b32301e92a64E6",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xDE3f3C2129F836A15324dF20471d28AAbFB58Cc3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x76179F49Fc8E151e6d549680B56C094510b11a1D",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x82fD53ECCD5AE3a06e586e016d9f7070556BA0dB",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xef6B3B0aD767ba1D7914aBE40F28F00A86602486",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x82c0C3462B57C2209C107506cEFA15c7E580201D",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xA5D46C3C95c626C356Bf05328254E688d776Cb41",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x02E536Fe44aCA3e6F1198a2655501E0A884F5f58",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xf0d0d1c63AeEcC8A7D35bC44BD6FFac3FE4599eb",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xD2f439295faa1A835346F17e41A9e3C2d3e0fa48",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xe34986D21347DCEFaa9941F934bBcb7F8178e01f",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x95B3d8308F96F5B62D3313A2263773c157713C98",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1500B181683Dd93b776c29C703feb87192cC4AfE",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xb17673788A95FBac6B554433897A160860BC5e8E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7a9099432d53B847c4D4fD93060FCD26cF10210C",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x66785FC8A2E1508F6b054163fF13C456D1aa1bAd",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3cA42eFeC2f9b7446ef177888971A1337bb9EFBf",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x82DFfCbAC7B88ef35FE366B4cF69fCED36B6F797",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x507d1aedbf0E73c69cD0FD6A38E3634c19c7B627",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x52E5035dFec147ed7729f234a41900Ca6270312F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x979cfC18134dadC0601969E620b4445C5Ac8d0b1",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5fc6564EC06Bb2865E8318561B0942b2d1FC00FD",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xA9A72A724086175790C28e0486eCbc70b5CFD423",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xd4002e2ACd3C982e9274Bbd52F008c7C7eF03c6B",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xdfed82A490Df23d5efe6cfE38372259813781A61",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xfd68861f7BC74b1e710C4a523A8CC3B6A2f165d9",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7aeE40de6320376EE293F61a6e6DF68cC0E4B41E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x8DE91FDa337c78C3BA408afA88a706F539f954a0",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x16C418D8741207397287A3E7B835B25d33C6A533",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x273884a974aA863286015160ea6418b258Aa3E33",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x78539dEea4483C7f2048EA2ea780C709bAF0809A",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x377acD8d2CA2649987f3cF7d6F378b08E5A8fefB",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xB1CC37A8A5fdf2d1F9AceCDb8495f06E5544875B",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x403FEe7e35b3af8f29ddBa92e9Ed11e946AFB999",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xD8b4dCFdB77a991c0fBaDD45a0f2C644177E947C",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x01246e4fCd19478dA4F36f1B61e405d21388BA6E",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x309471398aDFa2B136970583AD0db66294F035e3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xF59EA3ddAafd0e618EE7BfE0c0d64f3d3c10A37D",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3177144Aa32eA567e7173e8E9ab5F463699F2aaf",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x18C22b1b3d223a19316d76153D86a610478c8708",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xc65B20c6B2Aa78fBf58b0EFfCF0E3A49b4215166",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xfD3A7B5fb5c5334766489e4a46fCb46E24834613",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7EC089FA35BF500C69769Fe438817a87c6c7a525",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xB110825a2C88059BdBFE761730084D81cC2ddb01",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x360527143706618166643FeA4502774515Dead0b",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x4aA06cDE891Bf049F2C59927400E48098645B7dF",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xA7db5418eD5d6f0E9b55F5421CAf6724074Bb734",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xeaf71B549Bf7d897C7110e91A0d97D9a6B04733F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xc64b5F5D75185A691135bF7b8c6A2C6Dd5346cE5",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x75A09da2EC3e09EEC842Ff8dA9BC12EdfC7Da219",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x8c96f47d41530Ee35F2dAe559cA038A226F895Da",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xef9Fabfe29EF298d46fB1F9656be6ba561d09778",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x283F8803738F5AF00Aa5dd2C3128aD4c5fE691f3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xa2B53C436CB5aC7ED1F3582977f894f1e7F7491b",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x5c7635f71e571933d2d60e29dF0403F2dd541697",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x36f523DE762F36A1726F9DC8D3A2a7c978338455",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1DCBa5d534A9Ba72688395ba1A3aeFd3dB078f1A",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x9f494f0881cb1d1D087CA5a7665e0016473230b3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x592F7d227c1A80Bdb2a181093409f49E40EF6E87",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x76E62c35111EcBdC0b6f82024A9DA18D0A14bA00",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x0bd02A8097a851b044f92B41b292E327dB8A04D6",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x2D64b601E846150dF464fAb3c61d8b9Daf51159F",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xC8aAa54Eec348692C66917852371a2bC9FD9B1E4",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x7A6ef020F96a10e01253c28D648DC3B4691d16cf",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xF217402efA536aC01B75bAc59BE0a393c808a932",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x55FFa0dd6762e01eBB2CD0f44ED7686091654c66",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x86c9b1d913587C45F0A4D8C9e3BAb74b246E8244",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xD167c2a01290C33Aa5f2086C507384758A757978",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x0Be4932C998914daDc86Cd4429a55cf74c35072D",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x60d46e65768B771d4525AFbA3CF5A83ee58d83CD",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xc8B339a6756bE0626a39603a223c38286b8ce38c",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x42d7471bE82f9729a2E6A452B3E013193731Cf87",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xba59251f4FA5bF06ff79a4739E692CD9aE9Ff075",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xE61dd4F94A56F92103DF81f0C145710F8b951f86",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x904c3C2CEDA7c68a049e7A1856d2886377f4d633",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x93d5DdF80d2264076a0D4ED394050AbD8b81C394",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x23F0e3c084b1e5fC1c1c5e4158A7f0cf56429490",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xDF14D9Ff402E1BE89a7Cd4E995Bc097fd5fcA246",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x4EE574C4FF098D5D7D18b2128296B3548E1e40Cb",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x306E9899bAE8041f33eDF74a66337d0C0A2B1A79",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x69A4488Af2d3074fd636ce744D62496f3828E4aF",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xFD8415515530F3758098230eefC70E2f3C2053Fb",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x3c26B311fED73E64f8cA0e2d9085A7e0Ec11bAD9",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xa82a07fFE2c4E2B1FBa63e4932ba7315C6483a84",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xEC3c8F8582AD5CA88e072F6c8cB2FE1BaAeDA4D0",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xf4f3563f24DEaFd6aba2e0e01ac3Be469654aC0e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xc9eCC23e178e476B0B3DFCE4b50246549537899C",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x0127B441a5EA2e6F2670Bd2eee1D3EDc55e78B36",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0xD9650C2df34A688936891B8cfe353b157158F67e",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x70aEF56b70091B99605A6E20BC618676faEC0004",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            },
+            {
+                "recipient": "0x1d292f43533a8f4B33C7997DCB469E50197888C3",
+                "allocation": 0.10947765214007779,
+                "allocation_wei": 1.094776521400778e+17
+            }
+        ],
+        "total_usd_value": 6553.5,
+        "remaining_amount": 0.02539248278954856
+    },
+    {
+        "name": "HID",
+        "num_tokens": 13333,
+        "token_address": "0xb14ebf566511b9e6002bb286016ab2497b9b9c9d",
+        "price": 0.0829,
+        "defi_live_allocation_tokens": 1305.3612600909344,
+        "gremlin_allocation_tokens": 339.39392762364287,
+        "recipients": [
+            {
+                "recipient": "0x377acD8d2CA2649987f3cF7d6F378b08E5A8fefB",
+                "allocation": 1305.3612600909344,
+                "allocation_wei": 1.3053612600909344e+21
+            },
+            {
+                "recipient": "0xb10E0925562Fc1d2c7b7e81b7812b08BCD8398dE",
+                "allocation": 1305.3612600909344,
+                "allocation_wei": 1.3053612600909344e+21
+            },
+            {
+                "recipient": "0x4643Bc38D3b833888D1BB16815a63f55461CC4f1",
+                "allocation": 1305.3612600909344,
+                "allocation_wei": 1.3053612600909344e+21
+            },
+            {
+                "recipient": "0xc10B5D9dAB7622CD78cf1dA0e504e38e89ccf006",
+                "allocation": 1305.3612600909344,
+                "allocation_wei": 1.3053612600909344e+21
+            },
+            {
+                "recipient": "0x787Ba99A4B0E97322A7E632fE655621195440186",
+                "allocation": 1305.3612600909344,
+                "allocation_wei": 1.3053612600909344e+21
+            },
+            {
+                "recipient": "0x70Dd242d809e0d3e8B33f18790706673e9A27AD0",
+                "allocation": 1305.3612600909344,
+                "allocation_wei": 1.3053612600909344e+21
+            },
+            {
+                "recipient": "0x293163Ec7841995Ded4EE5D7D0B8bE7F1d1c7a90",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0xAA1869DA4F5302eE98A3053a4aE3f7ea156CDf87",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0xE45FC3C7f1a22F11978910E8BDA10169163A73EE",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x21924cEda1843132ce3D5A041B147388D730f109",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0xA2fA939fD8Fcb1becD13cdC9f9Bb63744FdDb3F7",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x1CfC4B71B5cD4d6d80CeeA8877fC114352f06E25",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x607348BD23701ECbf8cCd663d360f67ef19C1A77",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0xbedaF9D158f4732001458819ba0fa0e045E04d6E",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x61236514a301EcAbB04Bf11C686BE043ff1cE71a",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0xb979F0B16f843A16e1375ccE082a9eE0f7F4D09d",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x8910eDa1e848b090837fD0Abe4bB27F0075dE9d2",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0xB13188412268eb43E58b291B2674621d8011CB6B",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x7A56f1f73Af0D37aEdD6866790B93a124b11fc3C",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x1e4A924db5B597bF388b8f58fe93FFb96aFc66E5",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x2021E6b2954A7896D28fC93a2FD3855990183aeE",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            },
+            {
+                "recipient": "0x039914e10beff3421cdd0824075f254c2d1f70dd",
+                "allocation": 339.39392762364287,
+                "allocation_wei": 3.3939392762364284e+20
+            }
+        ],
+        "total_usd_value": 1105.3057000000001,
+        "remaining_amount": 70.52959747610475
+    },
+    {
+        "name": "CUDOS",
+        "num_tokens": 41076,
+        "token_address": "0x817bbdbc3e8a1204f3691d14bb44992841e3db35",
+        "price": 0.0341,
+        "defi_live_allocation_tokens": 3173.4442364087527,
+        "gremlin_allocation_tokens": 825.0955014662756,
+        "recipients": [
+            {
+                "recipient": "0x67D8C8b467081De46241EC17b7e3b9f64c4147cB",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0x35b7F8074d6DA1f3F54E5e8e1b7b4d19CDcF09EF",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0x43b1B21837aC55EBa890eFb0E60A11c55b6FA8D9",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0x0BaFa740df689bD9C82B8fA170B895d14F0FA7F9",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0x10E59EE639436782951327eA09D19C0A779765cd",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0x6787B7474Ec57B3F185687bbBC78d384F0394345",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0x2c129701f62597d0dB1Ce4134429dc4440A465D3",
+                "allocation": 3173.4442364087527,
+                "allocation_wei": 3.1734442364087524e+21
+            },
+            {
+                "recipient": "0xd6F80463f4C98021Db98247c3CeC0B6E018c5803",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x25409f61DfE0F0070c9Fec993be2957e7d67242d",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x0f7989e0B9d6210E67CaAFC40148aA56A1270915",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xccd41EDd9D3151529778E2e324c06A6B80257A53",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xa7148Fee3FC24c6230d6b6933BCEa6AdD11b50C6",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xC546AcF8CED1FF890Dc6E6d092E7f3DAD6b3dE94",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x6844AC9aB18553813eF4BAfddeEed4a789a0cB39",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x83A707511F6867AC1Ef0a24ef4de9C322b223382",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xda87D5072D15e82B8c2BcB95D718E2aad27d2037",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x4643Bc38D3b833888D1BB16815a63f55461CC4f1",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x5Ff4B92eAf5Ea5AeDa5D5fb14FcC8E74268Da3dD",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x4E3E5CE77B8643CcECfd12ad2DDEdd9B12C0504C",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xD7520FF5673C2E268fF4E9986C69475CB639bE3F",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x176c0d8149B868602215aDFaf5c36A0D46686C64",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x15E22e24fF980878AA9467B957E2BD4ef49a6612",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x9B50cE105251DC0683e8d6EdF57bE88AB36FF9B8",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xBAF27a6b1ec664Ea2CB85E83fE54Ee00817F982E",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x4C57ACcfc7cdB564Fe2E3a1CA1700f245736cE58",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0xef6B3B0aD767ba1D7914aBE40F28F00A86602486",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x3306567aCc8E02666bf772F25C5Ef6E1322b1aA8",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x1338869368F59Ff1069834f7D57Fe716BF061cB6",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            },
+            {
+                "recipient": "0x98f3a7850d5C3eC814733569469e491040519d52",
+                "allocation": 825.0955014662756,
+                "allocation_wei": 8.250955014662755e+20
+            }
+        ],
+        "total_usd_value": 1400.6915999999999,
+        "remaining_amount": 709.7893128806703
+    },
+    {
+        "name": "L3P",
+        "num_tokens": 300000,
+        "token_address": "0xdef1da03061ddd2a5ef6c59220c135dec623116d",
+        "price": 0.0036,
+        "defi_live_allocation_tokens": 30059.569017094018,
+        "gremlin_allocation_tokens": 7815.487944444443,
+        "recipients": [
+            {
+                "recipient": "0x6Cc7192933c98D58c8D696Fb2F746fE767c964AB",
+                "allocation": 30059.569017094018,
+                "allocation_wei": 3.0059569017094016e+22
+            },
+            {
+                "recipient": "0xc6D62E9E57a9CA625d73fA29B41Aa13C421cB4Fd",
+                "allocation": 30059.569017094018,
+                "allocation_wei": 3.0059569017094016e+22
+            },
+            {
+                "recipient": "0x128c0bE81fC39146474ce1217E2DACBa2D5dEfe0",
+                "allocation": 30059.569017094018,
+                "allocation_wei": 3.0059569017094016e+22
+            },
+            {
+                "recipient": "0x4C15F24656E265BFfF0dFfe884F264311431689d",
+                "allocation": 30059.569017094018,
+                "allocation_wei": 3.0059569017094016e+22
+            },
+            {
+                "recipient": "0xF4C49302Eb6003c2B07BD7C564f3Ad1a4F575e56",
+                "allocation": 30059.569017094018,
+                "allocation_wei": 3.0059569017094016e+22
+            },
+            {
+                "recipient": "0x476d05865Af4390722348B726DDAdB3fa9513888",
+                "allocation": 30059.569017094018,
+                "allocation_wei": 3.0059569017094016e+22
+            },
+            {
+                "recipient": "0x74d9Cc5c868A1b27Eeb4440a5D9Dc621D7D93A06",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0xbbA584C608b9af24C94F950455E21894ebA8c850",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x650977bF2C986c3FD6E1Cb214b3344EcF1f997dc",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x6A294de9D641434961e9c4046ca2E1F92ec15B3c",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x2Ae4d0D6EdEe05E597dCbfDD73bb5F0C6373C744",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x2c472e5546cEe18CF18e104e09987c3D5b176EE7",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x59A4715FA8bAF9f4169bfa475cA7e490B43bf054",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0xeC1de604Eb758FE1C50949268eCa9Ea0C50e2681",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x0abb6cc32252cCAA15B488f9e35aa3884C084df4",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x3C43ca4f65950110c5950FC51314278de80cC946",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x4BFD30148894354aB73C49d3e45003e458b921F3",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x05E32cF67862DbE6502D8709010957B64F3B850F",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0xB6060E30e34Ef0E6c1928f340ec7Fd477b2698C5",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x8350dA4A8F444286c63c02E099675041A4e398b8",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            },
+            {
+                "recipient": "0x2761bd71801e4F5F35b80649eE6f4376d03A21Da",
+                "allocation": 7815.487944444443,
+                "allocation_wei": 7.815487944444443e+21
+            }
+        ],
+        "total_usd_value": 1080.0,
+        "remaining_amount": 2410.2667307692864
+    },
+    {
+        "name": "FVT",
+        "num_tokens": 200000,
+        "token_address": "0x45080a6531d671DDFf20DB42f93792a489685e32",
+        "price": 0.01,
+        "defi_live_allocation_tokens": 10821.444846153847,
+        "gremlin_allocation_tokens": 2813.575659999999,
+        "recipients": [
+            {
+                "recipient": "0xaE5b61B1f4e9483F9a5ba33B2e6C8c4DF7BFA70c",
+                "allocation": 10821.444846153847,
+                "allocation_wei": 1.0821444846153848e+22
+            },
+            {
+                "recipient": "0xDa767310A4610eeaed0c4b78e83d13129b304af4",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x3306567aCc8E02666bf772F25C5Ef6E1322b1aA8",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x9eE20f2C534dAcC85225BD56251c9D0b4aA20350",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x52d4A8D4039fA2b019f067F53B62fEe7a3ab8441",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x28284437c8dB1e461Ca6E0286191cCc80024B34F",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xB29bB9eBA2D0845b744b051FD6b9B857c341474C",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x9ef3C30Ee8Ab26B4FF00205Ea66FF0B0b6571668",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xD8E639B6a0D0b33c5A6cefD3b0d2aE209a0A50F8",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xbAf64c7F55c7D951E93b1C7a1f6839C6F6C2120B",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x3dccB498F72Fd4cbFfe4D8178b2c43dC80d6ab01",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xda84cAba1d8316282320B2f0Ec331Cf5B04B5167",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xe7AF271A2DC657e2363b8F3D8A9313FDDe9B7136",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xCA7951BC5D390a6be13FDD8F40c75df8aC503fd9",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xcD9F7AED911B37f5216543a8E0f55b78a010b5bD",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xF217402efA536aC01B75bAc59BE0a393c808a932",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x6A9E0301045312E266599FB99361e45A38976c90",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x929f4507d1eA0A705c71e67b03519F29b73F1e5f",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x6c323FC384e998c5c6Cb4d553B9D6C79d8236600",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x4aA06cDE891Bf049F2C59927400E48098645B7dF",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x135835fEE35d4D1b982b611628C90A9447Ab5994",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x52D298B8D16374f5cdfa58B0eDbC45E83fd68756",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xD1A657F2DCbFbe32d5519b442e1B391fEACfa552",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x8e44a1D246821314CB688f715719Eb2f8D1b5A26",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xE6342F9c4e515e0F0403D55AdFd1aEcF9B45c6C8",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x78A888349e798Da0B75267b2287DF6f626cBF895",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x276199cC8ef1cbf7C7Dc76dDC76cFa6029C1102E",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x6f3De15742042F4A31D2f22b5CEcF0D0D30093FB",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xE6D6B0942854491a2be1bDac16f6178A841b31c4",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xB21A54EffdAc3af44f558EaD72da3c4bb608B82F",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x05E284C69Ce245A993C822cb4DCfEc66eda05f72",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x7EC089FA35BF500C69769Fe438817a87c6c7a525",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x758d9be611cC93e5f5e872200E052C678bDb710E",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x5176e440dE36570cc5a377a9621e4988A51cdbcb",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xe927160c7f7Fb56683f6DE34C02dE725712C20eF",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x75A09da2EC3e09EEC842Ff8dA9BC12EdfC7Da219",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x6c323FC384e998c5c6Cb4d553B9D6C79d8236600",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xA544E57184428747F8085b83bBFaa6F7bB1e175a",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x586a59A97712b20eb6486dBe63A1C05b84e644FA",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xd6fA3e825cd93C7B8ec0d1b5E96a6fa5B27Bf41B",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x045e2D2D48305E195A76Eb9901ddd2E2Be0557e2",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x9Add7017a95b4B2aa3A635e234FA21BcfF28A937",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x91D7848c7a70F1a9369651C1A9eAbD00f193bf16",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x6E6ac8b10ebB9f76a8392D9e57437d69B025a258",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x607990aF0aE33693e7b49cA1a89cd2e18bA07E73",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x56ee5E1627Dec0d52dfE5aCF5af54Af41c466D56",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x05c6df4853559BF43Fb49B949764848fdB91A0E0",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x78539dEea4483C7f2048EA2ea780C709bAF0809A",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x776c1c58375611bAf60272E53E8BeB5Cf596D7c2",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xf7C16fDEab943370C700973f3456cC9cf36991fA",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xa98Ca0496d5e8F5E03F34634aF79690A1A94066F",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x35b4862D7D33737451B9c51bE2ABfDD5D459DE66",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xDBd2E7bfd3d23FAB6472Cc9F48Aaa89A8295fef1",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x6Cc7192933c98D58c8D696Fb2F746fE767c964AB",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x8Fa32174b2e36b94FF0e70fA6d16bB7c1ab9C79C",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xc01f1B44c6DcD5Ff9380245ceb6404410e68c7f1",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x80AA76faB13FDf472602F0597A31c131aF865390",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x085c9A2D9b543EDe74348B69C00B16B61c83E019",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x13B5A9De0b2D851C823cC3BEC5058FD1ac1f9A43",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xf3507f06AC121397E75306614C5a1aC0656Ea3BD",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xD1A657F2DCbFbe32d5519b442e1B391fEACfa552",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xa157Ae21F2B705A70557Ab5ded4b606e3B20D184",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xf779b453798a3Ad12a1a38ac8BB7E1a8911B1c3b",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xeFEeeAA42348C179CF8923cF7c71af6933F5cF9C",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xcA8a76dce83fF4320D0fCa9120Eeb0808655c9A2",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x92946d0F428488F9Ac1D6260A4Ca2656022f1253",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0x7A56f1f73Af0D37aEdD6866790B93a124b11fc3C",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            },
+            {
+                "recipient": "0xD426eff1D2580CDD29B9Cf020ff10805b071F014",
+                "allocation": 2813.575659999999,
+                "allocation_wei": 2.8135756599999993e+21
+            }
+        ],
+        "total_usd_value": 2000.0,
+        "remaining_amount": 668.985933846051
+    },
+    {
+        "name": "TOTM",
+        "num_tokens": 11111,
+        "token_address": "0x6ff1bfa14a57594a5874b37ff6ac5efbd9f9599a",
+        "price": 0.157,
+        "defi_live_allocation_tokens": 689.2640029397354,
+        "gremlin_allocation_tokens": 179.20864076433116,
+        "recipients": [
+            {
+                "recipient": "0x5771E6318e35aD2d823147D6540D7f4aa9f1038D",
+                "allocation": 689.2640029397354,
+                "allocation_wei": 6.892640029397354e+20
+            },
+            {
+                "recipient": "0xeE83c7cc52D7b976f87A18561282E2A26C8E327f",
+                "allocation": 689.2640029397354,
+                "allocation_wei": 6.892640029397354e+20
+            },
+            {
+                "recipient": "0x3358F2d44b258CFC3f2619eAAC28d5065506df83",
+                "allocation": 689.2640029397354,
+                "allocation_wei": 6.892640029397354e+20
+            },
+            {
+                "recipient": "0x98C216810435B081DF8E1B3739650C8AFA62768d",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xEC3631a3f1a50a6b0e2d18E7Ba10064c9E369ee3",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x343fB2a5B14c02Fc3f97aB379D68AE6E706A55aF",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x9adaaa0d669818efd0D55F4b0e295c15650295ab",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xD1C8ED16C450715F3432f653227A72C4E58c846a",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xAf3D4C211c49465ac182c330A2F9E0e4b047e7c4",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x2F47323e3551AF90531BAd127ef19191eD494438",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x6844AC9aB18553813eF4BAfddeEed4a789a0cB39",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x9dfb2e726B3832ceDdBa866B4b35a443124407e7",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xF3F5fd8217204f33fa90C484108e56Fb156C9bb7",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x7b6798fdf67eBC5b5DF2d714B5Ee6e40DD7f8447",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x93123530D0faB172F2453828c2bd4bA50fe5003B",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x92FB1f0ff2479c8f797589c5CeCa59B71b29E45D",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xae3cbEB20b0908d39c4491e01034Cc5Bd921585b",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x02b8D87836AB0c41F534dE1B995f5ee7C524eE25",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x15082DaeFC5e43DcfD1328E60A4735931Abf73F8",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x42E9a1480718fa74aAE40Be01b000b6D531fc55F",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x70eC326Cf0C8c920C90acd34bD7f2aac3E5f5d42",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xE0D2Feb394CD2c23D4084a578Ae0a2e93f9b0659",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x380bD69aD6b7E06dB0E5dA4a5250eaa943bbeF07",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xf96ec372f1782b11D76C06E8cCEC624E90B31EC1",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xE713a4B91c37be44318527bfF4Dd5Cc1700f4f6b",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x03769Fb3e6B54DFaCff15c122947d7057675a01F",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x10a8b741Fd10454FA7CFab0FD325d6B588796106",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xf7C16fDEab943370C700973f3456cC9cf36991fA",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x5784426513cDB04856E57Bf57C9151908F48050b",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x324011fE80527C2F371F5aaDE15b94511e4B2214",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xaE1a35FA05c0989a243f8fBe144d2c2ca21161ba",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xd350430379e11cF453f2ef9D576051BBb5b68dBC",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xe9657c90cF9d636D463e949F8e873933B7B99b04",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x7331917402680B6A5bEf5090620504bb9623075C",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x24e151eA70fEe0136D28b0b7e59Ac4d7C87F9E08",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x44df44411534A4dC55D50cbD4e6D8d7c1B5531F7",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x03f0D9a97d9E98E8B257d1Fa489359a0259E09B5",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x4201E69E6B560cc5c33e7E15Af0b670E4c4f5d1A",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x87d2543617c9839d048AbCF5B26d7f073B6A8826",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xE1B829bD4DfCc4f9DB2e532481E39Dd5D49b82BC",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x665bD2214C9E7c7007596969b3B2590ee57cdF60",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x6c30A33066EE7279ECDD39A72e40531994eB6C22",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x0d53AB1eDe05039F6B91B753Ddca767Cf9a2fAd9",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x42E9a1480718fa74aAE40Be01b000b6D531fc55F",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x4D62d152b10A62575DB09F03B208dB3fA9bd4b32",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x4710D7b01FbAEB19c4e2513C3296E0094d67A2E5",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xf3b314D2874780c3fb36C5381E369De1d027426F",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x051EEA227D2D8f51153918F8e611Ad97d2db69D4",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0xD1C8ED16C450715F3432f653227A72C4E58c846a",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x504e6635efD02E5ff917c20d173e7a89DF79e8b0",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x5784426513cDB04856E57Bf57C9151908F48050b",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x6c86581c2BA01d1601B8E4111f90374fe96405D0",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            },
+            {
+                "recipient": "0x3aA760D90C70682B96d915a18DeBE61AE23D6EcB",
+                "allocation": 179.20864076433116,
+                "allocation_wei": 1.7920864076433116e+20
+            }
+        ],
+        "total_usd_value": 1744.427,
+        "remaining_amount": 82.7759529642421
+    },
+    {
+        "name": "BUMP",
+        "num_tokens": 1333,
+        "token_address": "0x785c34312dfa6b74f6f1829f79ade39042222168",
+        "price": 0.138,
+        "defi_live_allocation_tokens": 784.1626700111483,
+        "gremlin_allocation_tokens": 203.8822942028985,
+        "recipients": [
+            {
+                "recipient": "0x377acD8d2CA2649987f3cF7d6F378b08E5A8fefB",
+                "allocation": 784.1626700111483,
+                "allocation_wei": 7.841626700111483e+20
+            },
+            {
+                "recipient": "0xDEAb3e16e3b461d0748380e90BaA6Eb09b1C915B",
+                "allocation": 203.8822942028985,
+                "allocation_wei": 2.0388229420289848e+20
+            },
+            {
+                "recipient": "0x8E038150749b5c1F8D7445a2ecA3AEAa81Ac9Bd7",
+                "allocation": 203.8822942028985,
+                "allocation_wei": 2.0388229420289848e+20
+            },
+            {
+                "recipient": "0xe20aE4aaD067c281bD5D440A57BC0d9adD37aF79",
+                "allocation": 203.8822942028985,
+                "allocation_wei": 2.0388229420289848e+20
+            },
+            {
+                "recipient": "0x4E3E5CE77B8643CcECfd12ad2DDEdd9B12C0504C",
+                "allocation": 203.8822942028985,
+                "allocation_wei": 2.0388229420289848e+20
+            },
+            {
+                "recipient": "0x326107587c4a162047c6891D933e37C6aEc0E7AE",
+                "allocation": 203.8822942028985,
+                "allocation_wei": 2.0388229420289848e+20
+            }
+        ],
+        "total_usd_value": 183.954,
+        "remaining_amount": 141.07274158305472
+    }
+]
