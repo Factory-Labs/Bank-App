@@ -77,19 +77,21 @@ contract MerkleResistor {
     }
 
     // anyone can fund any tree
-    function depositTokens(uint numTree, uint value) public {
+    function depositTokens(uint treeIndex, uint value) public {
         // storage because we edit
-        MerkleTree storage merkleTree = merkleTrees[numTree];
+        MerkleTree storage merkleTree = merkleTrees[treeIndex];
+
+        // bookkeeping to make sure trees do not share tokens
+        merkleTree.tokenBalance += value;
 
         // do the transfer from the caller
         // NOTE: it is possible for user to overfund the tree and there is no mechanism to reclaim excess tokens
         // this is because there is no way for the contract to know when a tree has had all leaves claimed
         // there is also no way for the contract to know the minimum or maximum liabilities represented by the leaves
         // in short, there is no on-chain inspection of the leaves except at initialization time
+        // NOTE: a malicious token contract could cause merkleTree.tokenBalance to be out of sync with the token contract
+        // this is an unavoidable possibility, and it could render the tree unusable, while leaving other trees unharmed
         require(IERC20(merkleTree.tokenAddress).transferFrom(msg.sender, address(this), value), "ERC20 transfer failed");
-
-        // bookkeeping to make sure trees do not share tokens
-        merkleTree.tokenBalance += value;
     }
 
     // user calls this to choose and start their vesting schedule
