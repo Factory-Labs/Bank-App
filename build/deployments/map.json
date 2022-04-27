@@ -1,10 +1,15 @@
 {
   "1": {
     "MerkleDropFactory": [
+      "0xB0E136eC95aec90055eA98383C513c5da1f17Bc5",
       "0x62CAF595Eb1AC54aAd9BbC10315536728c2Ba352"
     ],
     "MerkleLib": [
       "0x458EFD41740ffb27d86A9157050c0707b41E9520"
+    ],
+    "MerkleResistor": [
+      "0xe6B1b43A6a34b38ce0c4A3F4A2B468Eb2580CA82",
+      "0x980F46E10504FFd2FbC58b8B7D8606d36307351e"
     ]
   },
   "3": {

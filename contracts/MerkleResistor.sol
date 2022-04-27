@@ -51,6 +51,8 @@ contract MerkleResistor {
     event WithdrawalOccurred(address indexed destination, uint numTokens, uint tokensLeft, uint indexed merkleIndex);
     // every time a tree is added
     event MerkleTreeAdded(uint indexed index, address indexed tokenAddress, bytes32 newRoot, bytes32 ipfsHash);
+    // every time a tree is topped up
+    event TokensDeposited(uint indexed index, address indexed tokenAddress, uint amount);
 
     // anyone can add a tree
     function addMerkleTree(bytes32 newRoot, bytes32 ipfsHash, uint minEndTime, uint maxEndTime, uint pctUpFront, address depositToken, uint tokenBalance) public {
@@ -92,6 +94,7 @@ contract MerkleResistor {
         // NOTE: a malicious token contract could cause merkleTree.tokenBalance to be out of sync with the token contract
         // this is an unavoidable possibility, and it could render the tree unusable, while leaving other trees unharmed
         require(IERC20(merkleTree.tokenAddress).transferFrom(msg.sender, address(this), value), "ERC20 transfer failed");
+        emit TokensDeposited(treeIndex, merkleTree.tokenAddress, value);
     }
 
     // user calls this to choose and start their vesting schedule

@@ -55,28 +55,28 @@
     }
   ],
   "allSourcePaths": {
-    "4": "contracts/MerkleLib.sol"
+    "0": "contracts/MerkleLib.sol"
   },
   "ast": {
     "absolutePath": "contracts/MerkleLib.sol",
     "exportedSymbols": {
       "MerkleLib": [
-        1224
+        630
       ]
     },
-    "id": 1225,
+    "id": 631,
     "license": "GPL-3.0-only",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1147,
+        "id": 553,
         "literals": [
           "solidity",
           "0.8",
           ".9"
         ],
         "nodeType": "PragmaDirective",
-        "src": "42:22:4"
+        "src": "42:22:0"
       },
       {
         "abstract": false,
@@ -85,34 +85,34 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 1224,
+        "id": 630,
         "linearizedBaseContracts": [
-          1224
+          630
         ],
         "name": "MerkleLib",
-        "nameLocation": "184:9:4",
+        "nameLocation": "184:9:0",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1190,
+              "id": 596,
               "nodeType": "Block",
-              "src": "621:562:4",
+              "src": "621:562:0",
               "statements": [
                 {
                   "assignments": [
-                    1160
+                    566
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1160,
+                      "id": 566,
                       "mutability": "mutable",
                       "name": "currentHash",
-                      "nameLocation": "639:11:4",
+                      "nameLocation": "639:11:0",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1190,
-                      "src": "631:19:4",
+                      "scope": 596,
+                      "src": "631:19:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -120,10 +120,10 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 1159,
+                        "id": 565,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
-                        "src": "631:7:4",
+                        "src": "631:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -132,42 +132,42 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1162,
+                  "id": 568,
                   "initialValue": {
-                    "id": 1161,
+                    "id": 567,
                     "name": "leaf",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1151,
-                    "src": "653:4:4",
+                    "referencedDeclaration": 557,
+                    "src": "653:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "631:26:4"
+                  "src": "631:26:0"
                 },
                 {
                   "body": {
-                    "id": 1184,
+                    "id": 590,
                     "nodeType": "Block",
-                    "src": "901:72:4",
+                    "src": "901:72:0",
                     "statements": [
                       {
                         "expression": {
-                          "id": 1182,
+                          "id": 588,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 1175,
+                            "id": 581,
                             "name": "currentHash",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1160,
-                            "src": "915:11:4",
+                            "referencedDeclaration": 566,
+                            "src": "915:11:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -178,12 +178,12 @@
                           "rightHandSide": {
                             "arguments": [
                               {
-                                "id": 1177,
+                                "id": 583,
                                 "name": "currentHash",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1160,
-                                "src": "940:11:4",
+                                "referencedDeclaration": 566,
+                                "src": "940:11:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
@@ -191,25 +191,25 @@
                               },
                               {
                                 "baseExpression": {
-                                  "id": 1178,
+                                  "id": 584,
                                   "name": "proof",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1154,
-                                  "src": "953:5:4",
+                                  "referencedDeclaration": 560,
+                                  "src": "953:5:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
                                     "typeString": "bytes32[] memory"
                                   }
                                 },
-                                "id": 1180,
+                                "id": 586,
                                 "indexExpression": {
-                                  "id": 1179,
+                                  "id": 585,
                                   "name": "i",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1164,
-                                  "src": "959:1:4",
+                                  "referencedDeclaration": 570,
+                                  "src": "959:1:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
@@ -220,7 +220,7 @@
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "nodeType": "IndexAccess",
-                                "src": "953:8:4",
+                                "src": "953:8:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
@@ -238,18 +238,18 @@
                                   "typeString": "bytes32"
                                 }
                               ],
-                              "id": 1176,
+                              "id": 582,
                               "name": "parentHash",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1223,
-                              "src": "929:10:4",
+                              "referencedDeclaration": 629,
+                              "src": "929:10:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_bytes32_$_t_bytes32_$returns$_t_bytes32_$",
                                 "typeString": "function (bytes32,bytes32) pure returns (bytes32)"
                               }
                             },
-                            "id": 1181,
+                            "id": 587,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -257,22 +257,22 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "929:33:4",
+                            "src": "929:33:0",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
                             }
                           },
-                          "src": "915:47:4",
+                          "src": "915:47:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
                           }
                         },
-                        "id": 1183,
+                        "id": 589,
                         "nodeType": "ExpressionStatement",
-                        "src": "915:47:4"
+                        "src": "915:47:0"
                       }
                     ]
                   },
@@ -281,18 +281,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 1170,
+                    "id": 576,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 1167,
+                      "id": 573,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1164,
-                      "src": "875:1:4",
+                      "referencedDeclaration": 570,
+                      "src": "875:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -302,51 +302,51 @@
                     "operator": "<",
                     "rightExpression": {
                       "expression": {
-                        "id": 1168,
+                        "id": 574,
                         "name": "proof",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1154,
-                        "src": "879:5:4",
+                        "referencedDeclaration": 560,
+                        "src": "879:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
                           "typeString": "bytes32[] memory"
                         }
                       },
-                      "id": 1169,
+                      "id": 575,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "length",
                       "nodeType": "MemberAccess",
-                      "src": "879:12:4",
+                      "src": "879:12:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "875:16:4",
+                    "src": "875:16:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 1185,
+                  "id": 591,
                   "initializationExpression": {
                     "assignments": [
-                      1164
+                      570
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 1164,
+                        "id": 570,
                         "mutability": "mutable",
                         "name": "i",
-                        "nameLocation": "868:1:4",
+                        "nameLocation": "868:1:0",
                         "nodeType": "VariableDeclaration",
-                        "scope": 1185,
-                        "src": "863:6:4",
+                        "scope": 591,
+                        "src": "863:6:0",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -354,10 +354,10 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 1163,
+                          "id": 569,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
-                          "src": "863:4:4",
+                          "src": "863:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -366,17 +366,17 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 1166,
+                    "id": 572,
                     "initialValue": {
                       "hexValue": "30",
-                      "id": 1165,
+                      "id": 571,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "872:1:4",
+                      "src": "872:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
                         "typeString": "int_const 0"
@@ -384,22 +384,22 @@
                       "value": "0"
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "863:10:4"
+                    "src": "863:10:0"
                   },
                   "loopExpression": {
                     "expression": {
-                      "id": 1173,
+                      "id": 579,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftHandSide": {
-                        "id": 1171,
+                        "id": 577,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1164,
-                        "src": "893:1:4",
+                        "referencedDeclaration": 570,
+                        "src": "893:1:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -409,32 +409,32 @@
                       "operator": "+=",
                       "rightHandSide": {
                         "hexValue": "31",
-                        "id": 1172,
+                        "id": 578,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "898:1:4",
+                        "src": "898:1:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
                           "typeString": "int_const 1"
                         },
                         "value": "1"
                       },
-                      "src": "893:6:4",
+                      "src": "893:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 1174,
+                    "id": 580,
                     "nodeType": "ExpressionStatement",
-                    "src": "893:6:4"
+                    "src": "893:6:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "858:115:4"
+                  "src": "858:115:0"
                 },
                 {
                   "expression": {
@@ -442,18 +442,18 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 1188,
+                    "id": 594,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 1186,
+                      "id": 592,
                       "name": "currentHash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1160,
-                      "src": "1157:11:4",
+                      "referencedDeclaration": 566,
+                      "src": "1157:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -462,51 +462,51 @@
                     "nodeType": "BinaryOperation",
                     "operator": "==",
                     "rightExpression": {
-                      "id": 1187,
+                      "id": 593,
                       "name": "root",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1149,
-                      "src": "1172:4:4",
+                      "referencedDeclaration": 555,
+                      "src": "1172:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "1157:19:4",
+                    "src": "1157:19:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1158,
-                  "id": 1189,
+                  "functionReturnParameters": 564,
+                  "id": 595,
                   "nodeType": "Return",
-                  "src": "1150:26:4"
+                  "src": "1150:26:0"
                 }
               ]
             },
             "functionSelector": "9da7347c",
-            "id": 1191,
+            "id": 597,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "verifyProof",
-            "nameLocation": "530:11:4",
+            "nameLocation": "530:11:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1155,
+              "id": 561,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1149,
+                  "id": 555,
                   "mutability": "mutable",
                   "name": "root",
-                  "nameLocation": "550:4:4",
+                  "nameLocation": "550:4:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1191,
-                  "src": "542:12:4",
+                  "scope": 597,
+                  "src": "542:12:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -514,10 +514,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1148,
+                    "id": 554,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "542:7:4",
+                    "src": "542:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -527,13 +527,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1151,
+                  "id": 557,
                   "mutability": "mutable",
                   "name": "leaf",
-                  "nameLocation": "564:4:4",
+                  "nameLocation": "564:4:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1191,
-                  "src": "556:12:4",
+                  "scope": 597,
+                  "src": "556:12:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -541,10 +541,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1150,
+                    "id": 556,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "556:7:4",
+                    "src": "556:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -554,13 +554,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1154,
+                  "id": 560,
                   "mutability": "mutable",
                   "name": "proof",
-                  "nameLocation": "587:5:4",
+                  "nameLocation": "587:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1191,
-                  "src": "570:22:4",
+                  "scope": 597,
+                  "src": "570:22:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -569,18 +569,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 1152,
+                      "id": 558,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "570:7:4",
+                      "src": "570:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "id": 1153,
+                    "id": 559,
                     "nodeType": "ArrayTypeName",
-                    "src": "570:9:4",
+                    "src": "570:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -589,21 +589,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "541:52:4"
+              "src": "541:52:0"
             },
             "returnParameters": {
-              "id": 1158,
+              "id": 564,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1157,
+                  "id": 563,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1191,
-                  "src": "615:4:4",
+                  "scope": 597,
+                  "src": "615:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -611,10 +611,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1156,
+                    "id": 562,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "615:4:4",
+                    "src": "615:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -623,19 +623,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "614:6:4"
+              "src": "614:6:0"
             },
-            "scope": 1224,
-            "src": "521:662:4",
+            "scope": 630,
+            "src": "521:662:0",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1222,
+              "id": 628,
               "nodeType": "Block",
-              "src": "1261:252:4",
+              "src": "1261:252:0",
               "statements": [
                 {
                   "condition": {
@@ -643,18 +643,18 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 1202,
+                    "id": 608,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 1200,
+                      "id": 606,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1193,
-                      "src": "1376:1:4",
+                      "referencedDeclaration": 599,
+                      "src": "1376:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -663,27 +663,27 @@
                     "nodeType": "BinaryOperation",
                     "operator": "<",
                     "rightExpression": {
-                      "id": 1201,
+                      "id": 607,
                       "name": "b",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1195,
-                      "src": "1380:1:4",
+                      "referencedDeclaration": 601,
+                      "src": "1380:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "1376:5:4",
+                    "src": "1376:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 1220,
+                    "id": 626,
                     "nodeType": "Block",
-                    "src": "1448:59:4",
+                    "src": "1448:59:0",
                     "statements": [
                       {
                         "expression": {
@@ -691,24 +691,24 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 1215,
+                                  "id": 621,
                                   "name": "b",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1195,
-                                  "src": "1490:1:4",
+                                  "referencedDeclaration": 601,
+                                  "src": "1490:1:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
                                   }
                                 },
                                 {
-                                  "id": 1216,
+                                  "id": 622,
                                   "name": "a",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1193,
-                                  "src": "1493:1:4",
+                                  "referencedDeclaration": 599,
+                                  "src": "1493:1:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
@@ -727,31 +727,31 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 1213,
+                                  "id": 619,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": -1,
-                                  "src": "1479:3:4",
+                                  "src": "1479:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 1214,
+                                "id": 620,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "memberName": "encode",
                                 "nodeType": "MemberAccess",
-                                "src": "1479:10:4",
+                                "src": "1479:10:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 1217,
+                              "id": 623,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -759,7 +759,7 @@
                               "lValueRequested": false,
                               "names": [],
                               "nodeType": "FunctionCall",
-                              "src": "1479:16:4",
+                              "src": "1479:16:0",
                               "tryCall": false,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
@@ -774,18 +774,18 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 1212,
+                            "id": 618,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -8,
-                            "src": "1469:9:4",
+                            "src": "1469:9:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 1218,
+                          "id": 624,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -793,27 +793,27 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1469:27:4",
+                          "src": "1469:27:0",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
                           }
                         },
-                        "functionReturnParameters": 1199,
-                        "id": 1219,
+                        "functionReturnParameters": 605,
+                        "id": 625,
                         "nodeType": "Return",
-                        "src": "1462:34:4"
+                        "src": "1462:34:0"
                       }
                     ]
                   },
-                  "id": 1221,
+                  "id": 627,
                   "nodeType": "IfStatement",
-                  "src": "1372:135:4",
+                  "src": "1372:135:0",
                   "trueBody": {
-                    "id": 1211,
+                    "id": 617,
                     "nodeType": "Block",
-                    "src": "1383:59:4",
+                    "src": "1383:59:0",
                     "statements": [
                       {
                         "expression": {
@@ -821,24 +821,24 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 1206,
+                                  "id": 612,
                                   "name": "a",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1193,
-                                  "src": "1425:1:4",
+                                  "referencedDeclaration": 599,
+                                  "src": "1425:1:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
                                   }
                                 },
                                 {
-                                  "id": 1207,
+                                  "id": 613,
                                   "name": "b",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1195,
-                                  "src": "1428:1:4",
+                                  "referencedDeclaration": 601,
+                                  "src": "1428:1:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
@@ -857,31 +857,31 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 1204,
+                                  "id": 610,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": -1,
-                                  "src": "1414:3:4",
+                                  "src": "1414:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 1205,
+                                "id": 611,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "memberName": "encode",
                                 "nodeType": "MemberAccess",
-                                "src": "1414:10:4",
+                                "src": "1414:10:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 1208,
+                              "id": 614,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -889,7 +889,7 @@
                               "lValueRequested": false,
                               "names": [],
                               "nodeType": "FunctionCall",
-                              "src": "1414:16:4",
+                              "src": "1414:16:0",
                               "tryCall": false,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
@@ -904,18 +904,18 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 1203,
+                            "id": 609,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -8,
-                            "src": "1404:9:4",
+                            "src": "1404:9:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 1209,
+                          "id": 615,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -923,17 +923,17 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1404:27:4",
+                          "src": "1404:27:0",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
                           }
                         },
-                        "functionReturnParameters": 1199,
-                        "id": 1210,
+                        "functionReturnParameters": 605,
+                        "id": 616,
                         "nodeType": "Return",
-                        "src": "1397:34:4"
+                        "src": "1397:34:0"
                       }
                     ]
                   }
@@ -941,26 +941,26 @@
               ]
             },
             "functionSelector": "9580f1f2",
-            "id": 1223,
+            "id": 629,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "parentHash",
-            "nameLocation": "1198:10:4",
+            "nameLocation": "1198:10:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1196,
+              "id": 602,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1193,
+                  "id": 599,
                   "mutability": "mutable",
                   "name": "a",
-                  "nameLocation": "1217:1:4",
+                  "nameLocation": "1217:1:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1223,
-                  "src": "1209:9:4",
+                  "scope": 629,
+                  "src": "1209:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -968,10 +968,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1192,
+                    "id": 598,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1209:7:4",
+                    "src": "1209:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -981,13 +981,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1195,
+                  "id": 601,
                   "mutability": "mutable",
                   "name": "b",
-                  "nameLocation": "1228:1:4",
+                  "nameLocation": "1228:1:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1223,
-                  "src": "1220:9:4",
+                  "scope": 629,
+                  "src": "1220:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -995,10 +995,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1194,
+                    "id": 600,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1220:7:4",
+                    "src": "1220:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1007,21 +1007,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1208:22:4"
+              "src": "1208:22:0"
             },
             "returnParameters": {
-              "id": 1199,
+              "id": 605,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1198,
+                  "id": 604,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1223,
-                  "src": "1252:7:4",
+                  "scope": 629,
+                  "src": "1252:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1029,10 +1029,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1197,
+                    "id": 603,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1252:7:4",
+                    "src": "1252:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1041,21 +1041,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1251:9:4"
+              "src": "1251:9:0"
             },
-            "scope": 1224,
-            "src": "1189:324:4",
+            "scope": 630,
+            "src": "1189:324:0",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1225,
-        "src": "176:1340:4",
+        "scope": 631,
+        "src": "176:1340:0",
         "usedErrors": []
       }
     ],
-    "src": "42:1475:4"
+    "src": "42:1475:0"
   },
   "bytecode": "6102b661003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100405760003560e01c80639580f1f2146100455780639da7347c1461006b575b600080fd5b610058610053366004610139565b61008e565b6040519081526020015b60405180910390f35b61007e610079366004610171565b6100e9565b6040519015158152602001610062565b6000818310156100ca5760408051602081018590529081018390526060015b6040516020818303038152906040528051906020012090506100e3565b60408051602081018490529081018490526060016100ad565b92915050565b600082815b835181101561012e5761011a8285838151811061010d5761010d610244565b602002602001015161008e565b915061012760018261025a565b90506100ee565b509093149392505050565b6000806040838503121561014c57600080fd5b50508035926020909101359150565b634e487b7160e01b600052604160045260246000fd5b60008060006060848603121561018657600080fd5b833592506020808501359250604085013567ffffffffffffffff808211156101ad57600080fd5b818701915087601f8301126101c157600080fd5b8135818111156101d3576101d361015b565b8060051b604051601f19603f830116810181811085821117156101f8576101f861015b565b60405291825284820192508381018501918a83111561021657600080fd5b938501935b828510156102345784358452938501939285019261021b565b8096505050505050509250925092565b634e487b7160e01b600052603260045260246000fd5b6000821982111561027b57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212206b4853e1aa44b049313c727e05f1e7d5e7b4d9fe084df81a7b27d791bd6eefd564736f6c63430008090033",
   "bytecodeSha1": "b0fcc8318be382416cfe44051098f86acef935ac",
@@ -1070,7 +1070,7 @@
   "contractName": "MerkleLib",
   "coverageMap": {
     "branches": {
-      "4": {
+      "0": {
         "MerkleLib.parentHash": {
           "5": [
             1376,
@@ -1081,7 +1081,7 @@
       }
     },
     "statements": {
-      "4": {
+      "0": {
         "MerkleLib.parentHash": {
           "0": [
             1397,
@@ -1111,7 +1111,7 @@
   },
   "dependencies": [],
   "deployedBytecode": "73000000000000000000000000000000000000000030146080604052600436106100405760003560e01c80639580f1f2146100455780639da7347c1461006b575b600080fd5b610058610053366004610139565b61008e565b6040519081526020015b60405180910390f35b61007e610079366004610171565b6100e9565b6040519015158152602001610062565b6000818310156100ca5760408051602081018590529081018390526060015b6040516020818303038152906040528051906020012090506100e3565b60408051602081018490529081018490526060016100ad565b92915050565b600082815b835181101561012e5761011a8285838151811061010d5761010d610244565b602002602001015161008e565b915061012760018261025a565b90506100ee565b509093149392505050565b6000806040838503121561014c57600080fd5b50508035926020909101359150565b634e487b7160e01b600052604160045260246000fd5b60008060006060848603121561018657600080fd5b833592506020808501359250604085013567ffffffffffffffff808211156101ad57600080fd5b818701915087601f8301126101c157600080fd5b8135818111156101d3576101d361015b565b8060051b604051601f19603f830116810181811085821117156101f8576101f861015b565b60405291825284820192508381018501918a83111561021657600080fd5b938501935b828510156102345784358452938501939285019261021b565b8096505050505050509250925092565b634e487b7160e01b600052603260045260246000fd5b6000821982111561027b57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212206b4853e1aa44b049313c727e05f1e7d5e7b4d9fe084df81a7b27d791bd6eefd564736f6c63430008090033",
-  "deployedSourceMap": "176:1340:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1189:324;;;;;;:::i;:::-;;:::i;:::-;;;421:25:8;;;409:2;394:18;1189:324:4;;;;;;;;521:662;;;;;;:::i;:::-;;:::i;:::-;;;2018:14:8;;2011:22;1993:41;;1981:2;1966:18;521:662:4;1845:195:8;1189:324:4;1252:7;1380:1;1376;:5;1372:135;;;1414:16;;;;;;2219:25:8;;;2260:18;;;2253:34;;;2192:18;;1414:16:4;;;;;;;;;;;;;1404:27;;;;;;1397:34;;;;1372:135;1479:16;;;;;;2219:25:8;;;2260:18;;;2253:34;;;2192:18;;1479:16:4;2045:248:8;1372:135:4;1189:324;;;;:::o;521:662::-;615:4;653;615;858:115;879:5;:12;875:1;:16;858:115;;;929:33;940:11;953:5;959:1;953:8;;;;;;;;:::i;:::-;;;;;;;929:10;:33::i;:::-;915:47;-1:-1:-1;893:6:4;898:1;893:6;;:::i;:::-;;;858:115;;;-1:-1:-1;1157:19:4;;;;521:662;-1:-1:-1;;;521:662:4:o;14:248:8:-;82:6;90;143:2;131:9;122:7;118:23;114:32;111:52;;;159:1;156;149:12;111:52;-1:-1:-1;;182:23:8;;;252:2;237:18;;;224:32;;-1:-1:-1;14:248:8:o;457:127::-;518:10;513:3;509:20;506:1;499:31;549:4;546:1;539:15;573:4;570:1;563:15;589:1251;691:6;699;707;760:2;748:9;739:7;735:23;731:32;728:52;;;776:1;773;766:12;728:52;812:9;799:23;789:33;;841:2;890;879:9;875:18;862:32;852:42;;945:2;934:9;930:18;917:32;968:18;1009:2;1001:6;998:14;995:34;;;1025:1;1022;1015:12;995:34;1063:6;1052:9;1048:22;1038:32;;1108:7;1101:4;1097:2;1093:13;1089:27;1079:55;;1130:1;1127;1120:12;1079:55;1166:2;1153:16;1188:2;1184;1181:10;1178:36;;;1194:18;;:::i;:::-;1240:2;1237:1;1233:10;1272:2;1266:9;1335:2;1331:7;1326:2;1322;1318:11;1314:25;1306:6;1302:38;1390:6;1378:10;1375:22;1370:2;1358:10;1355:18;1352:46;1349:72;;;1401:18;;:::i;:::-;1437:2;1430:22;1487:18;;;1521:15;;;;-1:-1:-1;1563:11:8;;;1559:20;;;1591:19;;;1588:39;;;1623:1;1620;1613:12;1588:39;1647:11;;;;1667:142;1683:6;1678:3;1675:15;1667:142;;;1749:17;;1737:30;;1700:12;;;;1787;;;;1667:142;;;1828:6;1818:16;;;;;;;;589:1251;;;;;:::o;2298:127::-;2359:10;2354:3;2350:20;2347:1;2340:31;2390:4;2387:1;2380:15;2414:4;2411:1;2404:15;2430:225;2470:3;2501:1;2497:6;2494:1;2491:13;2488:136;;;2546:10;2541:3;2537:20;2534:1;2527:31;2581:4;2578:1;2571:15;2609:4;2606:1;2599:15;2488:136;-1:-1:-1;2640:9:8;;2430:225::o",
+  "deployedSourceMap": "176:1340:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1189:324;;;;;;:::i;:::-;;:::i;:::-;;;421:25:3;;;409:2;394:18;1189:324:0;;;;;;;;521:662;;;;;;:::i;:::-;;:::i;:::-;;;2018:14:3;;2011:22;1993:41;;1981:2;1966:18;521:662:0;1845:195:3;1189:324:0;1252:7;1380:1;1376;:5;1372:135;;;1414:16;;;;;;2219:25:3;;;2260:18;;;2253:34;;;2192:18;;1414:16:0;;;;;;;;;;;;;1404:27;;;;;;1397:34;;;;1372:135;1479:16;;;;;;2219:25:3;;;2260:18;;;2253:34;;;2192:18;;1479:16:0;2045:248:3;1372:135:0;1189:324;;;;:::o;521:662::-;615:4;653;615;858:115;879:5;:12;875:1;:16;858:115;;;929:33;940:11;953:5;959:1;953:8;;;;;;;;:::i;:::-;;;;;;;929:10;:33::i;:::-;915:47;-1:-1:-1;893:6:0;898:1;893:6;;:::i;:::-;;;858:115;;;-1:-1:-1;1157:19:0;;;;521:662;-1:-1:-1;;;521:662:0:o;14:248:3:-;82:6;90;143:2;131:9;122:7;118:23;114:32;111:52;;;159:1;156;149:12;111:52;-1:-1:-1;;182:23:3;;;252:2;237:18;;;224:32;;-1:-1:-1;14:248:3:o;457:127::-;518:10;513:3;509:20;506:1;499:31;549:4;546:1;539:15;573:4;570:1;563:15;589:1251;691:6;699;707;760:2;748:9;739:7;735:23;731:32;728:52;;;776:1;773;766:12;728:52;812:9;799:23;789:33;;841:2;890;879:9;875:18;862:32;852:42;;945:2;934:9;930:18;917:32;968:18;1009:2;1001:6;998:14;995:34;;;1025:1;1022;1015:12;995:34;1063:6;1052:9;1048:22;1038:32;;1108:7;1101:4;1097:2;1093:13;1089:27;1079:55;;1130:1;1127;1120:12;1079:55;1166:2;1153:16;1188:2;1184;1181:10;1178:36;;;1194:18;;:::i;:::-;1240:2;1237:1;1233:10;1272:2;1266:9;1335:2;1331:7;1326:2;1322;1318:11;1314:25;1306:6;1302:38;1390:6;1378:10;1375:22;1370:2;1358:10;1355:18;1352:46;1349:72;;;1401:18;;:::i;:::-;1437:2;1430:22;1487:18;;;1521:15;;;;-1:-1:-1;1563:11:3;;;1559:20;;;1591:19;;;1588:39;;;1623:1;1620;1613:12;1588:39;1647:11;;;;1667:142;1683:6;1678:3;1675:15;1667:142;;;1749:17;;1737:30;;1700:12;;;;1787;;;;1667:142;;;1828:6;1818:16;;;;;;;;589:1251;;;;;:::o;2298:127::-;2359:10;2354:3;2350:20;2347:1;2340:31;2390:4;2387:1;2380:15;2414:4;2411:1;2404:15;2430:225;2470:3;2501:1;2497:6;2494:1;2491:13;2488:136;;;2546:10;2541:3;2537:20;2534:1;2527:31;2581:4;2578:1;2571:15;2609:4;2606:1;2599:15;2488:136;-1:-1:-1;2640:9:3;;2430:225::o",
   "language": "Solidity",
   "natspec": {
     "kind": "dev",
@@ -1130,7 +1130,7 @@
         1516
       ],
       "op": "PUSH20",
-      "path": "4",
+      "path": "0",
       "value": "0x0"
     },
     "21": {
@@ -1140,7 +1140,7 @@
         1516
       ],
       "op": "ADDRESS",
-      "path": "4"
+      "path": "0"
     },
     "22": {
       "fn": null,
@@ -1149,7 +1149,7 @@
         1516
       ],
       "op": "EQ",
-      "path": "4"
+      "path": "0"
     },
     "23": {
       "fn": null,
@@ -1158,7 +1158,7 @@
         1516
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x80"
     },
     "25": {
@@ -1168,7 +1168,7 @@
         1516
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "27": {
@@ -1178,7 +1178,7 @@
         1516
       ],
       "op": "MSTORE",
-      "path": "4"
+      "path": "0"
     },
     "28": {
       "fn": null,
@@ -1187,7 +1187,7 @@
         1516
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x4"
     },
     "30": {
@@ -1197,7 +1197,7 @@
         1516
       ],
       "op": "CALLDATASIZE",
-      "path": "4"
+      "path": "0"
     },
     "31": {
       "fn": null,
@@ -1206,7 +1206,7 @@
         1516
       ],
       "op": "LT",
-      "path": "4"
+      "path": "0"
     },
     "32": {
       "fn": null,
@@ -1215,7 +1215,7 @@
         1516
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "35": {
@@ -1225,7 +1225,7 @@
         1516
       ],
       "op": "JUMPI",
-      "path": "4"
+      "path": "0"
     },
     "36": {
       "fn": null,
@@ -1234,7 +1234,7 @@
         1516
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x0"
     },
     "38": {
@@ -1244,7 +1244,7 @@
         1516
       ],
       "op": "CALLDATALOAD",
-      "path": "4"
+      "path": "0"
     },
     "39": {
       "fn": null,
@@ -1253,7 +1253,7 @@
         1516
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0xE0"
     },
     "41": {
@@ -1263,7 +1263,7 @@
         1516
       ],
       "op": "SHR",
-      "path": "4"
+      "path": "0"
     },
     "42": {
       "fn": null,
@@ -1272,7 +1272,7 @@
         1516
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "43": {
       "fn": null,
@@ -1281,7 +1281,7 @@
         1516
       ],
       "op": "PUSH4",
-      "path": "4",
+      "path": "0",
       "value": "0x9580F1F2"
     },
     "48": {
@@ -1291,7 +1291,7 @@
         1516
       ],
       "op": "EQ",
-      "path": "4"
+      "path": "0"
     },
     "49": {
       "fn": null,
@@ -1300,7 +1300,7 @@
         1516
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x45"
     },
     "52": {
@@ -1310,7 +1310,7 @@
         1516
       ],
       "op": "JUMPI",
-      "path": "4"
+      "path": "0"
     },
     "53": {
       "fn": null,
@@ -1319,7 +1319,7 @@
         1516
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "54": {
       "fn": null,
@@ -1328,7 +1328,7 @@
         1516
       ],
       "op": "PUSH4",
-      "path": "4",
+      "path": "0",
       "value": "0x9DA7347C"
     },
     "59": {
@@ -1338,7 +1338,7 @@
         1516
       ],
       "op": "EQ",
-      "path": "4"
+      "path": "0"
     },
     "60": {
       "fn": null,
@@ -1347,7 +1347,7 @@
         1516
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x6B"
     },
     "63": {
@@ -1357,7 +1357,7 @@
         1516
       ],
       "op": "JUMPI",
-      "path": "4"
+      "path": "0"
     },
     "64": {
       "fn": null,
@@ -1366,7 +1366,7 @@
         1516
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "65": {
       "fn": null,
@@ -1375,7 +1375,7 @@
         1516
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x0"
     },
     "67": {
@@ -1385,7 +1385,7 @@
         1516
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "68": {
       "first_revert": true,
@@ -1395,7 +1395,7 @@
         1516
       ],
       "op": "REVERT",
-      "path": "4"
+      "path": "0"
     },
     "69": {
       "fn": "MerkleLib.parentHash",
@@ -1404,7 +1404,7 @@
         1513
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "70": {
       "fn": "MerkleLib.parentHash",
@@ -1413,7 +1413,7 @@
         1513
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x58"
     },
     "73": {
@@ -1423,7 +1423,7 @@
         1513
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x53"
     },
     "76": {
@@ -1433,7 +1433,7 @@
         1513
       ],
       "op": "CALLDATASIZE",
-      "path": "4"
+      "path": "0"
     },
     "77": {
       "fn": "MerkleLib.parentHash",
@@ -1442,7 +1442,7 @@
         1513
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x4"
     },
     "79": {
@@ -1452,7 +1452,7 @@
         1513
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x139"
     },
     "82": {
@@ -1463,7 +1463,7 @@
         1513
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "83": {
       "fn": "MerkleLib.parentHash",
@@ -1472,7 +1472,7 @@
         1513
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "84": {
       "fn": "MerkleLib.parentHash",
@@ -1481,7 +1481,7 @@
         1513
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x8E"
     },
     "87": {
@@ -1492,7 +1492,7 @@
         1513
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "88": {
       "fn": "MerkleLib.parentHash",
@@ -1501,7 +1501,7 @@
         1513
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "89": {
       "fn": "MerkleLib.parentHash",
@@ -1510,7 +1510,7 @@
         1513
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "91": {
@@ -1520,7 +1520,7 @@
         1513
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "92": {
       "op": "SWAP1"
@@ -1545,7 +1545,7 @@
         1513
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "99": {
       "fn": "MerkleLib.parentHash",
@@ -1554,7 +1554,7 @@
         1513
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "101": {
@@ -1564,7 +1564,7 @@
         1513
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "102": {
       "fn": "MerkleLib.parentHash",
@@ -1573,7 +1573,7 @@
         1513
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "103": {
       "fn": "MerkleLib.parentHash",
@@ -1582,7 +1582,7 @@
         1513
       ],
       "op": "SWAP2",
-      "path": "4"
+      "path": "0"
     },
     "104": {
       "fn": "MerkleLib.parentHash",
@@ -1591,7 +1591,7 @@
         1513
       ],
       "op": "SUB",
-      "path": "4"
+      "path": "0"
     },
     "105": {
       "fn": "MerkleLib.parentHash",
@@ -1600,7 +1600,7 @@
         1513
       ],
       "op": "SWAP1",
-      "path": "4"
+      "path": "0"
     },
     "106": {
       "fn": "MerkleLib.parentHash",
@@ -1609,7 +1609,7 @@
         1513
       ],
       "op": "RETURN",
-      "path": "4"
+      "path": "0"
     },
     "107": {
       "fn": "MerkleLib.verifyProof",
@@ -1618,7 +1618,7 @@
         1183
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "108": {
       "fn": "MerkleLib.verifyProof",
@@ -1627,7 +1627,7 @@
         1183
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x7E"
     },
     "111": {
@@ -1637,7 +1637,7 @@
         1183
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x79"
     },
     "114": {
@@ -1647,7 +1647,7 @@
         1183
       ],
       "op": "CALLDATASIZE",
-      "path": "4"
+      "path": "0"
     },
     "115": {
       "fn": "MerkleLib.verifyProof",
@@ -1656,7 +1656,7 @@
         1183
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x4"
     },
     "117": {
@@ -1666,7 +1666,7 @@
         1183
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x171"
     },
     "120": {
@@ -1677,7 +1677,7 @@
         1183
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "121": {
       "fn": "MerkleLib.verifyProof",
@@ -1686,7 +1686,7 @@
         1183
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "122": {
       "fn": "MerkleLib.verifyProof",
@@ -1695,7 +1695,7 @@
         1183
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0xE9"
     },
     "125": {
@@ -1706,7 +1706,7 @@
         1183
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "126": {
       "fn": "MerkleLib.verifyProof",
@@ -1715,7 +1715,7 @@
         1183
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "127": {
       "fn": "MerkleLib.verifyProof",
@@ -1724,7 +1724,7 @@
         1183
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "129": {
@@ -1734,7 +1734,7 @@
         1183
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "130": {
       "op": "SWAP1"
@@ -1765,7 +1765,7 @@
         1183
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x62"
     },
     "141": {
@@ -1778,7 +1778,7 @@
         1513
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "143": {
       "fn": "MerkleLib.parentHash",
@@ -1787,7 +1787,7 @@
         1259
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x0"
     },
     "145": {
@@ -1797,7 +1797,7 @@
         1381
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "146": {
       "fn": "MerkleLib.parentHash",
@@ -1806,7 +1806,7 @@
         1377
       ],
       "op": "DUP4",
-      "path": "4"
+      "path": "0"
     },
     "147": {
       "branch": 5,
@@ -1816,7 +1816,7 @@
         1381
       ],
       "op": "LT",
-      "path": "4"
+      "path": "0"
     },
     "148": {
       "fn": "MerkleLib.parentHash",
@@ -1825,7 +1825,7 @@
         1507
       ],
       "op": "ISZERO",
-      "path": "4"
+      "path": "0"
     },
     "149": {
       "fn": "MerkleLib.parentHash",
@@ -1834,7 +1834,7 @@
         1507
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0xCA"
     },
     "152": {
@@ -1845,7 +1845,7 @@
         1507
       ],
       "op": "JUMPI",
-      "path": "4"
+      "path": "0"
     },
     "153": {
       "fn": "MerkleLib.parentHash",
@@ -1854,7 +1854,7 @@
         1430
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "statement": 0,
       "value": "0x40"
     },
@@ -1865,7 +1865,7 @@
         1430
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "156": {
       "fn": "MerkleLib.parentHash",
@@ -1874,7 +1874,7 @@
         1430
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "157": {
       "fn": "MerkleLib.parentHash",
@@ -1883,7 +1883,7 @@
         1430
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x20"
     },
     "159": {
@@ -1893,7 +1893,7 @@
         1430
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "160": {
       "fn": "MerkleLib.parentHash",
@@ -1902,7 +1902,7 @@
         1430
       ],
       "op": "ADD",
-      "path": "4"
+      "path": "0"
     },
     "161": {
       "op": "DUP6"
@@ -1945,7 +1945,7 @@
         1430
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "174": {
       "fn": "MerkleLib.parentHash",
@@ -1954,7 +1954,7 @@
         1430
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "176": {
@@ -1964,7 +1964,7 @@
         1430
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "177": {
       "fn": "MerkleLib.parentHash",
@@ -1973,7 +1973,7 @@
         1430
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x20"
     },
     "179": {
@@ -1983,7 +1983,7 @@
         1430
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "180": {
       "fn": "MerkleLib.parentHash",
@@ -1992,7 +1992,7 @@
         1430
       ],
       "op": "DUP4",
-      "path": "4"
+      "path": "0"
     },
     "181": {
       "fn": "MerkleLib.parentHash",
@@ -2001,7 +2001,7 @@
         1430
       ],
       "op": "SUB",
-      "path": "4"
+      "path": "0"
     },
     "182": {
       "fn": "MerkleLib.parentHash",
@@ -2010,7 +2010,7 @@
         1430
       ],
       "op": "SUB",
-      "path": "4"
+      "path": "0"
     },
     "183": {
       "fn": "MerkleLib.parentHash",
@@ -2019,7 +2019,7 @@
         1430
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "184": {
       "fn": "MerkleLib.parentHash",
@@ -2028,7 +2028,7 @@
         1430
       ],
       "op": "MSTORE",
-      "path": "4"
+      "path": "0"
     },
     "185": {
       "fn": "MerkleLib.parentHash",
@@ -2037,7 +2037,7 @@
         1430
       ],
       "op": "SWAP1",
-      "path": "4"
+      "path": "0"
     },
     "186": {
       "fn": "MerkleLib.parentHash",
@@ -2046,7 +2046,7 @@
         1430
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x40"
     },
     "188": {
@@ -2056,7 +2056,7 @@
         1430
       ],
       "op": "MSTORE",
-      "path": "4"
+      "path": "0"
     },
     "189": {
       "fn": "MerkleLib.parentHash",
@@ -2065,7 +2065,7 @@
         1431
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "190": {
       "fn": "MerkleLib.parentHash",
@@ -2074,7 +2074,7 @@
         1431
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "191": {
       "fn": "MerkleLib.parentHash",
@@ -2083,7 +2083,7 @@
         1431
       ],
       "op": "SWAP1",
-      "path": "4"
+      "path": "0"
     },
     "192": {
       "fn": "MerkleLib.parentHash",
@@ -2092,7 +2092,7 @@
         1431
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x20"
     },
     "194": {
@@ -2102,7 +2102,7 @@
         1431
       ],
       "op": "ADD",
-      "path": "4"
+      "path": "0"
     },
     "195": {
       "fn": "MerkleLib.parentHash",
@@ -2111,7 +2111,7 @@
         1431
       ],
       "op": "KECCAK256",
-      "path": "4"
+      "path": "0"
     },
     "196": {
       "fn": "MerkleLib.parentHash",
@@ -2120,7 +2120,7 @@
         1431
       ],
       "op": "SWAP1",
-      "path": "4"
+      "path": "0"
     },
     "197": {
       "fn": "MerkleLib.parentHash",
@@ -2129,7 +2129,7 @@
         1431
       ],
       "op": "POP",
-      "path": "4"
+      "path": "0"
     },
     "198": {
       "fn": "MerkleLib.parentHash",
@@ -2138,7 +2138,7 @@
         1431
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0xE3"
     },
     "201": {
@@ -2148,7 +2148,7 @@
         1431
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "202": {
       "fn": "MerkleLib.parentHash",
@@ -2157,7 +2157,7 @@
         1507
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "203": {
       "fn": "MerkleLib.parentHash",
@@ -2166,7 +2166,7 @@
         1495
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "statement": 1,
       "value": "0x40"
     },
@@ -2177,7 +2177,7 @@
         1495
       ],
       "op": "DUP1",
-      "path": "4"
+      "path": "0"
     },
     "206": {
       "fn": "MerkleLib.parentHash",
@@ -2186,7 +2186,7 @@
         1495
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "207": {
       "fn": "MerkleLib.parentHash",
@@ -2195,7 +2195,7 @@
         1495
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x20"
     },
     "209": {
@@ -2205,7 +2205,7 @@
         1495
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "210": {
       "fn": "MerkleLib.parentHash",
@@ -2214,7 +2214,7 @@
         1495
       ],
       "op": "ADD",
-      "path": "4"
+      "path": "0"
     },
     "211": {
       "op": "DUP5"
@@ -2257,7 +2257,7 @@
         1495
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0xAD"
     },
     "226": {
@@ -2270,7 +2270,7 @@
         1507
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "228": {
       "fn": "MerkleLib.parentHash",
@@ -2279,7 +2279,7 @@
         1513
       ],
       "op": "SWAP3",
-      "path": "4"
+      "path": "0"
     },
     "229": {
       "fn": "MerkleLib.parentHash",
@@ -2288,7 +2288,7 @@
         1513
       ],
       "op": "SWAP2",
-      "path": "4"
+      "path": "0"
     },
     "230": {
       "fn": "MerkleLib.parentHash",
@@ -2297,7 +2297,7 @@
         1513
       ],
       "op": "POP",
-      "path": "4"
+      "path": "0"
     },
     "231": {
       "fn": "MerkleLib.parentHash",
@@ -2306,7 +2306,7 @@
         1513
       ],
       "op": "POP",
-      "path": "4"
+      "path": "0"
     },
     "232": {
       "fn": "MerkleLib.parentHash",
@@ -2316,7 +2316,7 @@
         1513
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "233": {
       "fn": "MerkleLib.verifyProof",
@@ -2325,7 +2325,7 @@
         1183
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "234": {
       "fn": "MerkleLib.verifyProof",
@@ -2334,7 +2334,7 @@
         619
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x0"
     },
     "236": {
@@ -2344,7 +2344,7 @@
         657
       ],
       "op": "DUP3",
-      "path": "4"
+      "path": "0"
     },
     "237": {
       "fn": "MerkleLib.verifyProof",
@@ -2353,7 +2353,7 @@
         619
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "238": {
       "fn": "MerkleLib.verifyProof",
@@ -2362,7 +2362,7 @@
         973
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "239": {
       "fn": "MerkleLib.verifyProof",
@@ -2371,7 +2371,7 @@
         884
       ],
       "op": "DUP4",
-      "path": "4"
+      "path": "0"
     },
     "240": {
       "fn": "MerkleLib.verifyProof",
@@ -2380,7 +2380,7 @@
         891
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "241": {
       "fn": "MerkleLib.verifyProof",
@@ -2389,7 +2389,7 @@
         876
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "242": {
       "fn": "MerkleLib.verifyProof",
@@ -2398,7 +2398,7 @@
         891
       ],
       "op": "LT",
-      "path": "4"
+      "path": "0"
     },
     "243": {
       "fn": "MerkleLib.verifyProof",
@@ -2407,7 +2407,7 @@
         973
       ],
       "op": "ISZERO",
-      "path": "4"
+      "path": "0"
     },
     "244": {
       "fn": "MerkleLib.verifyProof",
@@ -2416,7 +2416,7 @@
         973
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x12E"
     },
     "247": {
@@ -2426,7 +2426,7 @@
         973
       ],
       "op": "JUMPI",
-      "path": "4"
+      "path": "0"
     },
     "248": {
       "fn": "MerkleLib.verifyProof",
@@ -2435,7 +2435,7 @@
         962
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "statement": 2,
       "value": "0x11A"
     },
@@ -2446,7 +2446,7 @@
         951
       ],
       "op": "DUP3",
-      "path": "4"
+      "path": "0"
     },
     "252": {
       "fn": "MerkleLib.verifyProof",
@@ -2455,7 +2455,7 @@
         958
       ],
       "op": "DUP6",
-      "path": "4"
+      "path": "0"
     },
     "253": {
       "fn": "MerkleLib.verifyProof",
@@ -2464,7 +2464,7 @@
         960
       ],
       "op": "DUP4",
-      "path": "4"
+      "path": "0"
     },
     "254": {
       "fn": "MerkleLib.verifyProof",
@@ -2473,7 +2473,7 @@
         961
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "255": {
       "fn": "MerkleLib.verifyProof",
@@ -2482,7 +2482,7 @@
         961
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "256": {
       "fn": "MerkleLib.verifyProof",
@@ -2491,7 +2491,7 @@
         961
       ],
       "op": "DUP2",
-      "path": "4"
+      "path": "0"
     },
     "257": {
       "fn": "MerkleLib.verifyProof",
@@ -2500,7 +2500,7 @@
         961
       ],
       "op": "LT",
-      "path": "4"
+      "path": "0"
     },
     "258": {
       "fn": "MerkleLib.verifyProof",
@@ -2509,7 +2509,7 @@
         961
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x10D"
     },
     "261": {
@@ -2519,7 +2519,7 @@
         961
       ],
       "op": "JUMPI",
-      "path": "4"
+      "path": "0"
     },
     "262": {
       "fn": "MerkleLib.verifyProof",
@@ -2528,7 +2528,7 @@
         961
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x10D"
     },
     "265": {
@@ -2538,7 +2538,7 @@
         961
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x244"
     },
     "268": {
@@ -2549,7 +2549,7 @@
         961
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "269": {
       "fn": "MerkleLib.verifyProof",
@@ -2558,7 +2558,7 @@
         961
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "270": {
       "fn": "MerkleLib.verifyProof",
@@ -2567,7 +2567,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x20"
     },
     "272": {
@@ -2577,7 +2577,7 @@
         961
       ],
       "op": "MUL",
-      "path": "4"
+      "path": "0"
     },
     "273": {
       "fn": "MerkleLib.verifyProof",
@@ -2586,7 +2586,7 @@
         961
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x20"
     },
     "275": {
@@ -2596,7 +2596,7 @@
         961
       ],
       "op": "ADD",
-      "path": "4"
+      "path": "0"
     },
     "276": {
       "fn": "MerkleLib.verifyProof",
@@ -2605,7 +2605,7 @@
         961
       ],
       "op": "ADD",
-      "path": "4"
+      "path": "0"
     },
     "277": {
       "fn": "MerkleLib.verifyProof",
@@ -2614,7 +2614,7 @@
         961
       ],
       "op": "MLOAD",
-      "path": "4"
+      "path": "0"
     },
     "278": {
       "fn": "MerkleLib.verifyProof",
@@ -2623,7 +2623,7 @@
         939
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x8E"
     },
     "281": {
@@ -2634,7 +2634,7 @@
         962
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "282": {
       "fn": "MerkleLib.verifyProof",
@@ -2643,7 +2643,7 @@
         962
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "283": {
       "fn": "MerkleLib.verifyProof",
@@ -2652,7 +2652,7 @@
         962
       ],
       "op": "SWAP2",
-      "path": "4"
+      "path": "0"
     },
     "284": {
       "op": "POP"
@@ -2664,7 +2664,7 @@
         899
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "statement": 3,
       "value": "0x127"
     },
@@ -2675,7 +2675,7 @@
         899
       ],
       "op": "PUSH1",
-      "path": "4",
+      "path": "0",
       "value": "0x1"
     },
     "290": {
@@ -2685,7 +2685,7 @@
         899
       ],
       "op": "DUP3",
-      "path": "4"
+      "path": "0"
     },
     "291": {
       "fn": "MerkleLib.verifyProof",
@@ -2694,7 +2694,7 @@
         899
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0x25A"
     },
     "294": {
@@ -2705,7 +2705,7 @@
         899
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "295": {
       "fn": "MerkleLib.verifyProof",
@@ -2714,7 +2714,7 @@
         899
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "296": {
       "fn": "MerkleLib.verifyProof",
@@ -2723,7 +2723,7 @@
         899
       ],
       "op": "SWAP1",
-      "path": "4"
+      "path": "0"
     },
     "297": {
       "fn": "MerkleLib.verifyProof",
@@ -2732,7 +2732,7 @@
         899
       ],
       "op": "POP",
-      "path": "4"
+      "path": "0"
     },
     "298": {
       "fn": "MerkleLib.verifyProof",
@@ -2741,7 +2741,7 @@
         973
       ],
       "op": "PUSH2",
-      "path": "4",
+      "path": "0",
       "value": "0xEE"
     },
     "301": {
@@ -2751,7 +2751,7 @@
         973
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "302": {
       "fn": "MerkleLib.verifyProof",
@@ -2760,7 +2760,7 @@
         973
       ],
       "op": "JUMPDEST",
-      "path": "4"
+      "path": "0"
     },
     "303": {
       "op": "POP"
@@ -2772,7 +2772,7 @@
         1176
       ],
       "op": "SWAP1",
-      "path": "4",
+      "path": "0",
       "statement": 4
     },
     "305": {
@@ -2782,7 +2782,7 @@
         1176
       ],
       "op": "SWAP4",
-      "path": "4"
+      "path": "0"
     },
     "306": {
       "fn": "MerkleLib.verifyProof",
@@ -2791,7 +2791,7 @@
         1176
       ],
       "op": "EQ",
-      "path": "4"
+      "path": "0"
     },
     "307": {
       "fn": "MerkleLib.verifyProof",
@@ -2800,7 +2800,7 @@
         1176
       ],
       "op": "SWAP4",
-      "path": "4"
+      "path": "0"
     },
     "308": {
       "fn": "MerkleLib.verifyProof",
@@ -2809,7 +2809,7 @@
         1183
       ],
       "op": "SWAP3",
-      "path": "4"
+      "path": "0"
     },
     "309": {
       "op": "POP"
@@ -2828,7 +2828,7 @@
         1183
       ],
       "op": "JUMP",
-      "path": "4"
+      "path": "0"
     },
     "313": {
       "op": "JUMPDEST"
@@ -3617,7 +3617,7 @@
   },
   "sha1": "c47fcc992df8cd9c61ad16a1bca6a26cc7675115",
   "source": "// SPDX-License-Identifier: GPL-3.0-only\n\npragma solidity 0.8.9;\n\n// This library is used to check merkle proofs very efficiently. Each additional proof element adds ~1000 gas\nlibrary MerkleLib {\n\n    // This is the main function that will be called by contracts. It assumes the leaf is already hashed, as in,\n    // it is not raw data but the hash of that. This is because the leaf data could be any combination of hashable\n    // datatypes, so we let contracts hash the data themselves to keep this function simple\n    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] memory proof) public pure returns (bool) {\n        bytes32 currentHash = leaf;\n\n        // the proof is all siblings of the ancestors of the leaf (including the sibling of the leaf itself)\n        // each iteration of this loop steps one layer higher in the merkle tree\n        for (uint i = 0; i < proof.length; i += 1) {\n            currentHash = parentHash(currentHash, proof[i]);\n        }\n\n        // does the result match the expected root? if so this leaf was committed to when the root was posted\n        // else we must assume the data was not included\n        return currentHash == root;\n    }\n\n    function parentHash(bytes32 a, bytes32 b) public pure returns (bytes32) {\n        // the convention is that the inputs are sorted, this removes ambiguity about tree structure\n        if (a < b) {\n            return keccak256(abi.encode(a, b));\n        } else {\n            return keccak256(abi.encode(b, a));\n        }\n    }\n\n}\n",
-  "sourceMap": "176:1340:4:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;176:1340:4;;;;;;;;;;;;;;;;;",
+  "sourceMap": "176:1340:0:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;176:1340:0;;;;;;;;;;;;;;;;;",
   "sourcePath": "contracts/MerkleLib.sol",
   "type": "library"
 }
