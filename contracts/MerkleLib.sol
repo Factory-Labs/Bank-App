@@ -2,12 +2,18 @@
 
 pragma solidity 0.8.9;
 
-// This library is used to check merkle proofs very efficiently. Each additional proof element adds ~1000 gas
+/// @title A library for merkle trees
+/// @author metapriest
+/// @notice This library is used to check merkle proofs very efficiently.
+/// @dev Each additional proof element adds ~1000 gas
 library MerkleLib {
 
-    // This is the main function that will be called by contracts. It assumes the leaf is already hashed, as in,
-    // it is not raw data but the hash of that. This is because the leaf data could be any combination of hashable
-    // datatypes, so we let contracts hash the data themselves to keep this function simple
+    /// @notice Check the merkle proof to determine whether leaf data was included in dataset represented by merkle root
+    /// @dev Leaf is pre-hashed to allow calling contract to implement whatever hashing scheme they want
+    /// @param root root hash of merkle tree that is the destination of the hash chain
+    /// @param leaf the pre-hashed leaf data, the starting point of the proof
+    /// @param proof the array of hashes forming a hash chain from leaf to root
+    /// @return true if proof is correct, else false
     function verifyProof(bytes32 root, bytes32 leaf, bytes32[] memory proof) public pure returns (bool) {
         bytes32 currentHash = leaf;
 
@@ -22,8 +28,12 @@ library MerkleLib {
         return currentHash == root;
     }
 
+    /// @notice Compute the hash of the parent node in the merkle tree
+    /// @dev The arguments are sorted to remove ambiguity about tree definition
+    /// @param a hash of left child node
+    /// @param b hash of right child node
+    /// @return hash of sorted arguments
     function parentHash(bytes32 a, bytes32 b) public pure returns (bytes32) {
-        // the convention is that the inputs are sorted, this removes ambiguity about tree structure
         if (a < b) {
             return keccak256(abi.encode(a, b));
         } else {

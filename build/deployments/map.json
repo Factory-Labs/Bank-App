@@ -20,6 +20,17 @@
       "0x04dDa3C6737f1c1A2ef93f746B8B663b8bC29C39"
     ]
   },
+  "4": {
+    "MerkleDropFactory": [
+      "0xC1EC61dfde2082d56E2A4D062D66aa20bfB8e2f9"
+    ],
+    "MerkleLib": [
+      "0xA63f4B42B66d838273C8Dc3b3073936aF794BAe0"
+    ],
+    "MerkleResistor": [
+      "0xb72d4A1702190D795b5c25525b0E90EE0E6E3556"
+    ]
+  },
   "43113": {
     "MerkleDropFactory": [
       "0x7Cd6AF066E32ed25eE3C971cEfBB05eD699AEa36"
