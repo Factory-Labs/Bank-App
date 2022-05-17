@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity 0.8.9;
+pragma solidity 0.8.12;
 
 import "../interfaces/IERC20.sol";
 import "./MerkleLib.sol";
@@ -21,7 +21,7 @@ contract MerkleResistor {
     using MerkleLib for bytes32;
 
     // tree (vesting schedule) counter
-    uint public numTrees = 0;
+    uint public numTrees;
 
     // this represents a user chosen vesting schedule, post initiation
     struct Tranche {
@@ -47,7 +47,7 @@ contract MerkleResistor {
     // initialized[recipient][treeIndex] = hasUserChosenVestingSchedule
     // could have reused tranches (see below) for this but loading a bool is cheaper than loading an entire struct
     // NOTE: if a user appears in the same tree multiple times, the first leaf initialized will prevent the others from initializing
-    mapping (address => mapping (uint => bool)) public initialized;
+    mapping (uint => mapping (bytes32 => bool)) public initialized;
 
     // basically an array of vesting schedules, but without annoying solidity array syntax
     mapping (uint => MerkleTree) public merkleTrees;

@@ -61,22 +61,22 @@
     "absolutePath": "contracts/MerkleLib.sol",
     "exportedSymbols": {
       "MerkleLib": [
-        1264
+        963
       ]
     },
-    "id": 1265,
+    "id": 964,
     "license": "GPL-3.0-only",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1184,
+        "id": 883,
         "literals": [
           "solidity",
           "0.8",
-          ".9"
+          ".12"
         ],
         "nodeType": "PragmaDirective",
-        "src": "42:22:1"
+        "src": "42:23:1"
       },
       {
         "abstract": false,
@@ -84,41 +84,35 @@
         "canonicalName": "MerkleLib",
         "contractDependencies": [],
         "contractKind": "library",
-        "documentation": {
-          "id": 1185,
-          "nodeType": "StructuredDocumentation",
-          "src": "66:189:1",
-          "text": "@title A library for merkle trees\n @author metapriest\n @notice This library is used to check merkle proofs very efficiently.\n @dev Each additional proof element adds ~1000 gas"
-        },
         "fullyImplemented": true,
-        "id": 1264,
+        "id": 963,
         "linearizedBaseContracts": [
-          1264
+          963
         ],
         "name": "MerkleLib",
-        "nameLocation": "263:9:1",
+        "nameLocation": "75:9:1",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1229,
+              "id": 929,
               "nodeType": "Block",
-              "src": "904:562:1",
+              "src": "194:265:1",
               "statements": [
                 {
                   "assignments": [
-                    1199
+                    896
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1199,
+                      "id": 896,
                       "mutability": "mutable",
                       "name": "currentHash",
-                      "nameLocation": "922:11:1",
+                      "nameLocation": "212:11:1",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1229,
-                      "src": "914:19:1",
+                      "scope": 929,
+                      "src": "204:19:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -126,10 +120,10 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 1198,
+                        "id": 895,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
-                        "src": "914:7:1",
+                        "src": "204:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -138,42 +132,105 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1201,
+                  "id": 898,
                   "initialValue": {
-                    "id": 1200,
+                    "id": 897,
                     "name": "leaf",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1190,
-                    "src": "936:4:1",
+                    "referencedDeclaration": 887,
+                    "src": "226:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "914:26:1"
+                  "src": "204:26:1"
+                },
+                {
+                  "assignments": [
+                    900
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 900,
+                      "mutability": "mutable",
+                      "name": "proofLength",
+                      "nameLocation": "246:11:1",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 929,
+                      "src": "241:16:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 899,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "241:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 903,
+                  "initialValue": {
+                    "expression": {
+                      "id": 901,
+                      "name": "proof",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 890,
+                      "src": "260:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                        "typeString": "bytes32[] calldata"
+                      }
+                    },
+                    "id": 902,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "src": "260:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "241:31:1"
                 },
                 {
                   "body": {
-                    "id": 1223,
+                    "id": 923,
                     "nodeType": "Block",
-                    "src": "1184:72:1",
+                    "src": "313:103:1",
                     "statements": [
                       {
                         "expression": {
-                          "id": 1221,
+                          "id": 917,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 1214,
+                            "id": 910,
                             "name": "currentHash",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1199,
-                            "src": "1198:11:1",
+                            "referencedDeclaration": 896,
+                            "src": "327:11:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -184,12 +241,12 @@
                           "rightHandSide": {
                             "arguments": [
                               {
-                                "id": 1216,
+                                "id": 912,
                                 "name": "currentHash",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1199,
-                                "src": "1223:11:1",
+                                "referencedDeclaration": 896,
+                                "src": "352:11:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
@@ -197,36 +254,36 @@
                               },
                               {
                                 "baseExpression": {
-                                  "id": 1217,
+                                  "id": 913,
                                   "name": "proof",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1193,
-                                  "src": "1236:5:1",
+                                  "referencedDeclaration": 890,
+                                  "src": "365:5:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
-                                    "typeString": "bytes32[] memory"
+                                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                                    "typeString": "bytes32[] calldata"
                                   }
                                 },
-                                "id": 1219,
+                                "id": 915,
                                 "indexExpression": {
-                                  "id": 1218,
+                                  "id": 914,
                                   "name": "i",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1203,
-                                  "src": "1242:1:1",
+                                  "referencedDeclaration": 905,
+                                  "src": "371:1:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
                                   }
                                 },
                                 "isConstant": false,
-                                "isLValue": true,
+                                "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "nodeType": "IndexAccess",
-                                "src": "1236:8:1",
+                                "src": "365:8:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_bytes32",
                                   "typeString": "bytes32"
@@ -244,18 +301,18 @@
                                   "typeString": "bytes32"
                                 }
                               ],
-                              "id": 1215,
+                              "id": 911,
                               "name": "parentHash",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1263,
-                              "src": "1212:10:1",
+                              "referencedDeclaration": 962,
+                              "src": "341:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_bytes32_$_t_bytes32_$returns$_t_bytes32_$",
                                 "typeString": "function (bytes32,bytes32) pure returns (bytes32)"
                               }
                             },
-                            "id": 1220,
+                            "id": 916,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -263,22 +320,61 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "1212:33:1",
+                            "src": "341:33:1",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
                             }
                           },
-                          "src": "1198:47:1",
+                          "src": "327:47:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
                           }
                         },
-                        "id": 1222,
+                        "id": 918,
                         "nodeType": "ExpressionStatement",
-                        "src": "1198:47:1"
+                        "src": "327:47:1"
+                      },
+                      {
+                        "id": 922,
+                        "nodeType": "UncheckedBlock",
+                        "src": "388:18:1",
+                        "statements": [
+                          {
+                            "expression": {
+                              "id": 920,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "UnaryOperation",
+                              "operator": "++",
+                              "prefix": true,
+                              "src": "400:3:1",
+                              "subExpression": {
+                                "id": 919,
+                                "name": "i",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 905,
+                                "src": "402:1:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "id": 921,
+                            "nodeType": "ExpressionStatement",
+                            "src": "400:3:1"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -287,18 +383,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 1209,
+                    "id": 909,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 1206,
+                      "id": 907,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1203,
-                      "src": "1158:1:1",
+                      "referencedDeclaration": 905,
+                      "src": "295:1:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -307,52 +403,38 @@
                     "nodeType": "BinaryOperation",
                     "operator": "<",
                     "rightExpression": {
-                      "expression": {
-                        "id": 1207,
-                        "name": "proof",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 1193,
-                        "src": "1162:5:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
-                          "typeString": "bytes32[] memory"
-                        }
-                      },
-                      "id": 1208,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "length",
-                      "nodeType": "MemberAccess",
-                      "src": "1162:12:1",
+                      "id": 908,
+                      "name": "proofLength",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 900,
+                      "src": "299:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1158:16:1",
+                    "src": "295:15:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 1224,
+                  "id": 924,
                   "initializationExpression": {
                     "assignments": [
-                      1203
+                      905
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 1203,
+                        "id": 905,
                         "mutability": "mutable",
                         "name": "i",
-                        "nameLocation": "1151:1:1",
+                        "nameLocation": "292:1:1",
                         "nodeType": "VariableDeclaration",
-                        "scope": 1224,
-                        "src": "1146:6:1",
+                        "scope": 924,
+                        "src": "287:6:1",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -360,10 +442,10 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 1202,
+                          "id": 904,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
-                          "src": "1146:4:1",
+                          "src": "287:4:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -372,75 +454,12 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 1205,
-                    "initialValue": {
-                      "hexValue": "30",
-                      "id": 1204,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "1155:1:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_rational_0_by_1",
-                        "typeString": "int_const 0"
-                      },
-                      "value": "0"
-                    },
+                    "id": 906,
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "1146:10:1"
-                  },
-                  "loopExpression": {
-                    "expression": {
-                      "id": 1212,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "leftHandSide": {
-                        "id": 1210,
-                        "name": "i",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 1203,
-                        "src": "1176:1:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "nodeType": "Assignment",
-                      "operator": "+=",
-                      "rightHandSide": {
-                        "hexValue": "31",
-                        "id": 1211,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "1181:1:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        },
-                        "value": "1"
-                      },
-                      "src": "1176:6:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "id": 1213,
-                    "nodeType": "ExpressionStatement",
-                    "src": "1176:6:1"
+                    "src": "287:6:1"
                   },
                   "nodeType": "ForStatement",
-                  "src": "1141:115:1"
+                  "src": "282:134:1"
                 },
                 {
                   "expression": {
@@ -448,18 +467,18 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 1227,
+                    "id": 927,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 1225,
+                      "id": 925,
                       "name": "currentHash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1199,
-                      "src": "1440:11:1",
+                      "referencedDeclaration": 896,
+                      "src": "433:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -468,57 +487,51 @@
                     "nodeType": "BinaryOperation",
                     "operator": "==",
                     "rightExpression": {
-                      "id": 1226,
+                      "id": 926,
                       "name": "root",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1188,
-                      "src": "1455:4:1",
+                      "referencedDeclaration": 885,
+                      "src": "448:4:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "1440:19:1",
+                    "src": "433:19:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1197,
-                  "id": 1228,
+                  "functionReturnParameters": 894,
+                  "id": 928,
                   "nodeType": "Return",
-                  "src": "1433:26:1"
+                  "src": "426:26:1"
                 }
               ]
             },
-            "documentation": {
-              "id": 1186,
-              "nodeType": "StructuredDocumentation",
-              "src": "280:519:1",
-              "text": "@notice Check the merkle proof to determine whether leaf data was included in dataset represented by merkle root\n @dev Leaf is pre-hashed to allow calling contract to implement whatever hashing scheme they want\n @param root root hash of merkle tree that is the destination of the hash chain\n @param leaf the pre-hashed leaf data, the starting point of the proof\n @param proof the array of hashes forming a hash chain from leaf to root\n @return true if proof is correct, else false"
-            },
             "functionSelector": "9da7347c",
-            "id": 1230,
+            "id": 930,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "verifyProof",
-            "nameLocation": "813:11:1",
+            "nameLocation": "101:11:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1194,
+              "id": 891,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1188,
+                  "id": 885,
                   "mutability": "mutable",
                   "name": "root",
-                  "nameLocation": "833:4:1",
+                  "nameLocation": "121:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1230,
-                  "src": "825:12:1",
+                  "scope": 930,
+                  "src": "113:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -526,10 +539,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1187,
+                    "id": 884,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "825:7:1",
+                    "src": "113:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -539,13 +552,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1190,
+                  "id": 887,
                   "mutability": "mutable",
                   "name": "leaf",
-                  "nameLocation": "847:4:1",
+                  "nameLocation": "135:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1230,
-                  "src": "839:12:1",
+                  "scope": 930,
+                  "src": "127:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -553,10 +566,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1189,
+                    "id": 886,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "839:7:1",
+                    "src": "127:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -566,33 +579,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 1193,
+                  "id": 890,
                   "mutability": "mutable",
                   "name": "proof",
-                  "nameLocation": "870:5:1",
+                  "nameLocation": "160:5:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1230,
-                  "src": "853:22:1",
+                  "scope": 930,
+                  "src": "141:24:1",
                   "stateVariable": false,
-                  "storageLocation": "memory",
+                  "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
                     "typeString": "bytes32[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 1191,
+                      "id": 888,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "853:7:1",
+                      "src": "141:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "id": 1192,
+                    "id": 889,
                     "nodeType": "ArrayTypeName",
-                    "src": "853:9:1",
+                    "src": "141:9:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -601,21 +614,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "824:52:1"
+              "src": "112:54:1"
             },
             "returnParameters": {
-              "id": 1197,
+              "id": 894,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1196,
+                  "id": 893,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1230,
-                  "src": "898:4:1",
+                  "scope": 930,
+                  "src": "188:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -623,10 +636,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1195,
+                    "id": 892,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "898:4:1",
+                    "src": "188:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -635,19 +648,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "897:6:1"
+              "src": "187:6:1"
             },
-            "scope": 1264,
-            "src": "804:662:1",
+            "scope": 963,
+            "src": "92:367:1",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1262,
+              "id": 961,
               "nodeType": "Block",
-              "src": "1819:151:1",
+              "src": "537:151:1",
               "statements": [
                 {
                   "condition": {
@@ -655,18 +668,18 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 1242,
+                    "id": 941,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 1240,
+                      "id": 939,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1233,
-                      "src": "1833:1:1",
+                      "referencedDeclaration": 932,
+                      "src": "551:1:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -675,27 +688,27 @@
                     "nodeType": "BinaryOperation",
                     "operator": "<",
                     "rightExpression": {
-                      "id": 1241,
+                      "id": 940,
                       "name": "b",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1235,
-                      "src": "1837:1:1",
+                      "referencedDeclaration": 934,
+                      "src": "555:1:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "1833:5:1",
+                    "src": "551:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 1260,
+                    "id": 959,
                     "nodeType": "Block",
-                    "src": "1905:59:1",
+                    "src": "623:59:1",
                     "statements": [
                       {
                         "expression": {
@@ -703,24 +716,24 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 1255,
+                                  "id": 954,
                                   "name": "b",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1235,
-                                  "src": "1947:1:1",
+                                  "referencedDeclaration": 934,
+                                  "src": "665:1:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
                                   }
                                 },
                                 {
-                                  "id": 1256,
+                                  "id": 955,
                                   "name": "a",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1233,
-                                  "src": "1950:1:1",
+                                  "referencedDeclaration": 932,
+                                  "src": "668:1:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
@@ -739,31 +752,31 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 1253,
+                                  "id": 952,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": -1,
-                                  "src": "1936:3:1",
+                                  "src": "654:3:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 1254,
+                                "id": 953,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "memberName": "encode",
                                 "nodeType": "MemberAccess",
-                                "src": "1936:10:1",
+                                "src": "654:10:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 1257,
+                              "id": 956,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -771,7 +784,7 @@
                               "lValueRequested": false,
                               "names": [],
                               "nodeType": "FunctionCall",
-                              "src": "1936:16:1",
+                              "src": "654:16:1",
                               "tryCall": false,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
@@ -786,18 +799,18 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 1252,
+                            "id": 951,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -8,
-                            "src": "1926:9:1",
+                            "src": "644:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 1258,
+                          "id": 957,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -805,27 +818,27 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1926:27:1",
+                          "src": "644:27:1",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
                           }
                         },
-                        "functionReturnParameters": 1239,
-                        "id": 1259,
+                        "functionReturnParameters": 938,
+                        "id": 958,
                         "nodeType": "Return",
-                        "src": "1919:34:1"
+                        "src": "637:34:1"
                       }
                     ]
                   },
-                  "id": 1261,
+                  "id": 960,
                   "nodeType": "IfStatement",
-                  "src": "1829:135:1",
+                  "src": "547:135:1",
                   "trueBody": {
-                    "id": 1251,
+                    "id": 950,
                     "nodeType": "Block",
-                    "src": "1840:59:1",
+                    "src": "558:59:1",
                     "statements": [
                       {
                         "expression": {
@@ -833,24 +846,24 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 1246,
+                                  "id": 945,
                                   "name": "a",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1233,
-                                  "src": "1882:1:1",
+                                  "referencedDeclaration": 932,
+                                  "src": "600:1:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
                                   }
                                 },
                                 {
-                                  "id": 1247,
+                                  "id": 946,
                                   "name": "b",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 1235,
-                                  "src": "1885:1:1",
+                                  "referencedDeclaration": 934,
+                                  "src": "603:1:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
@@ -869,31 +882,31 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 1244,
+                                  "id": 943,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": -1,
-                                  "src": "1871:3:1",
+                                  "src": "589:3:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 1245,
+                                "id": 944,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "memberName": "encode",
                                 "nodeType": "MemberAccess",
-                                "src": "1871:10:1",
+                                "src": "589:10:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 1248,
+                              "id": 947,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -901,7 +914,7 @@
                               "lValueRequested": false,
                               "names": [],
                               "nodeType": "FunctionCall",
-                              "src": "1871:16:1",
+                              "src": "589:16:1",
                               "tryCall": false,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
@@ -916,18 +929,18 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 1243,
+                            "id": 942,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -8,
-                            "src": "1861:9:1",
+                            "src": "579:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 1249,
+                          "id": 948,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -935,50 +948,44 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1861:27:1",
+                          "src": "579:27:1",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
                           }
                         },
-                        "functionReturnParameters": 1239,
-                        "id": 1250,
+                        "functionReturnParameters": 938,
+                        "id": 949,
                         "nodeType": "Return",
-                        "src": "1854:34:1"
+                        "src": "572:34:1"
                       }
                     ]
                   }
                 }
               ]
             },
-            "documentation": {
-              "id": 1231,
-              "nodeType": "StructuredDocumentation",
-              "src": "1472:270:1",
-              "text": "@notice Compute the hash of the parent node in the merkle tree\n @dev The arguments are sorted to remove ambiguity about tree definition\n @param a hash of left child node\n @param b hash of right child node\n @return hash of sorted arguments"
-            },
             "functionSelector": "9580f1f2",
-            "id": 1263,
+            "id": 962,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "parentHash",
-            "nameLocation": "1756:10:1",
+            "nameLocation": "474:10:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1236,
+              "id": 935,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1233,
+                  "id": 932,
                   "mutability": "mutable",
                   "name": "a",
-                  "nameLocation": "1775:1:1",
+                  "nameLocation": "493:1:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1263,
-                  "src": "1767:9:1",
+                  "scope": 962,
+                  "src": "485:9:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -986,10 +993,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1232,
+                    "id": 931,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1767:7:1",
+                    "src": "485:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -999,13 +1006,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1235,
+                  "id": 934,
                   "mutability": "mutable",
                   "name": "b",
-                  "nameLocation": "1786:1:1",
+                  "nameLocation": "504:1:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1263,
-                  "src": "1778:9:1",
+                  "scope": 962,
+                  "src": "496:9:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1013,10 +1020,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1234,
+                    "id": 933,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1778:7:1",
+                    "src": "496:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1025,21 +1032,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1766:22:1"
+              "src": "484:22:1"
             },
             "returnParameters": {
-              "id": 1239,
+              "id": 938,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1238,
+                  "id": 937,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1263,
-                  "src": "1810:7:1",
+                  "scope": 962,
+                  "src": "528:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1047,10 +1054,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1237,
+                    "id": 936,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1810:7:1",
+                    "src": "528:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1059,31 +1066,31 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1809:9:1"
+              "src": "527:9:1"
             },
-            "scope": 1264,
-            "src": "1747:223:1",
+            "scope": 963,
+            "src": "465:223:1",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1265,
-        "src": "255:1718:1",
+        "scope": 964,
+        "src": "67:624:1",
         "usedErrors": []
       }
     ],
-    "src": "42:1932:1"
+    "src": "42:650:1"
   },
-  "bytecode": "6102b661003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100405760003560e01c80639580f1f2146100455780639da7347c1461006b575b600080fd5b610058610053366004610139565b61008e565b6040519081526020015b60405180910390f35b61007e610079366004610171565b6100e9565b6040519015158152602001610062565b6000818310156100ca5760408051602081018590529081018390526060015b6040516020818303038152906040528051906020012090506100e3565b60408051602081018490529081018490526060016100ad565b92915050565b600082815b835181101561012e5761011a8285838151811061010d5761010d610244565b602002602001015161008e565b915061012760018261025a565b90506100ee565b509093149392505050565b6000806040838503121561014c57600080fd5b50508035926020909101359150565b634e487b7160e01b600052604160045260246000fd5b60008060006060848603121561018657600080fd5b833592506020808501359250604085013567ffffffffffffffff808211156101ad57600080fd5b818701915087601f8301126101c157600080fd5b8135818111156101d3576101d361015b565b8060051b604051601f19603f830116810181811085821117156101f8576101f861015b565b60405291825284820192508381018501918a83111561021657600080fd5b938501935b828510156102345784358452938501939285019261021b565b8096505050505050509250925092565b634e487b7160e01b600052603260045260246000fd5b6000821982111561027b57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212209ea161693e4a9e0c619e9952295cd8d5283c1eb07cb6ca83bce9db6c99b9da2964736f6c63430008090033",
-  "bytecodeSha1": "b0fcc8318be382416cfe44051098f86acef935ac",
+  "bytecode": "61022161003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100405760003560e01c80639580f1f2146100455780639da7347c1461006b575b600080fd5b610058610053366004610130565b61008e565b6040519081526020015b60405180910390f35b61007e610079366004610152565b6100e9565b6040519015158152602001610062565b6000818310156100ca5760408051602081018590529081018390526060015b6040516020818303038152906040528051906020012090506100e3565b60408051602081018490529081018490526060016100ad565b92915050565b60008382825b81811015610123576101198387878481811061010d5761010d6101d5565b9050602002013561008e565b92506001016100ef565b5050909414949350505050565b6000806040838503121561014357600080fd5b50508035926020909101359150565b6000806000806060858703121561016857600080fd5b8435935060208501359250604085013567ffffffffffffffff8082111561018e57600080fd5b818701915087601f8301126101a257600080fd5b8135818111156101b157600080fd5b8860208260051b85010111156101c657600080fd5b95989497505060200194505050565b634e487b7160e01b600052603260045260246000fdfea26469706673582212203d4f0cf3fd85c70016775e955e7f26347dacb92439b0913ad3414298eec6a7db64736f6c634300080c0033",
+  "bytecodeSha1": "a2c7966c65dcc8492bfd494979c0caa41df25897",
   "compiler": {
     "evm_version": "istanbul",
     "optimizer": {
       "enabled": true,
       "runs": 200
     },
-    "version": "0.8.9+commit.e5eed63a"
+    "version": "0.8.12+commit.f00d7308"
   },
   "contractName": "MerkleLib",
   "coverageMap": {
@@ -1091,8 +1098,8 @@
       "1": {
         "MerkleLib.parentHash": {
           "5": [
-            1833,
-            1838,
+            551,
+            556,
             false
           ]
         }
@@ -1102,78 +1109,50 @@
       "1": {
         "MerkleLib.parentHash": {
           "0": [
-            1854,
-            1888
+            572,
+            606
           ],
           "1": [
-            1919,
-            1953
+            637,
+            671
           ]
         },
         "MerkleLib.verifyProof": {
           "2": [
-            1198,
-            1245
+            327,
+            374
           ],
           "3": [
-            1176,
-            1182
+            400,
+            403
           ],
           "4": [
-            1433,
-            1459
+            426,
+            452
           ]
         }
       }
     }
   },
   "dependencies": [],
-  "deployedBytecode": "73000000000000000000000000000000000000000030146080604052600436106100405760003560e01c80639580f1f2146100455780639da7347c1461006b575b600080fd5b610058610053366004610139565b61008e565b6040519081526020015b60405180910390f35b61007e610079366004610171565b6100e9565b6040519015158152602001610062565b6000818310156100ca5760408051602081018590529081018390526060015b6040516020818303038152906040528051906020012090506100e3565b60408051602081018490529081018490526060016100ad565b92915050565b600082815b835181101561012e5761011a8285838151811061010d5761010d610244565b602002602001015161008e565b915061012760018261025a565b90506100ee565b509093149392505050565b6000806040838503121561014c57600080fd5b50508035926020909101359150565b634e487b7160e01b600052604160045260246000fd5b60008060006060848603121561018657600080fd5b833592506020808501359250604085013567ffffffffffffffff808211156101ad57600080fd5b818701915087601f8301126101c157600080fd5b8135818111156101d3576101d361015b565b8060051b604051601f19603f830116810181811085821117156101f8576101f861015b565b60405291825284820192508381018501918a83111561021657600080fd5b938501935b828510156102345784358452938501939285019261021b565b8096505050505050509250925092565b634e487b7160e01b600052603260045260246000fd5b6000821982111561027b57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212209ea161693e4a9e0c619e9952295cd8d5283c1eb07cb6ca83bce9db6c99b9da2964736f6c63430008090033",
-  "deployedSourceMap": "255:1718:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1747:223;;;;;;:::i;:::-;;:::i;:::-;;;421:25:5;;;409:2;394:18;1747:223:1;;;;;;;;804:662;;;;;;:::i;:::-;;:::i;:::-;;;2018:14:5;;2011:22;1993:41;;1981:2;1966:18;804:662:1;1845:195:5;1747:223:1;1810:7;1837:1;1833;:5;1829:135;;;1871:16;;;;;;2219:25:5;;;2260:18;;;2253:34;;;2192:18;;1871:16:1;;;;;;;;;;;;;1861:27;;;;;;1854:34;;;;1829:135;1936:16;;;;;;2219:25:5;;;2260:18;;;2253:34;;;2192:18;;1936:16:1;2045:248:5;1829:135:1;1747:223;;;;:::o;804:662::-;898:4;936;898;1141:115;1162:5;:12;1158:1;:16;1141:115;;;1212:33;1223:11;1236:5;1242:1;1236:8;;;;;;;;:::i;:::-;;;;;;;1212:10;:33::i;:::-;1198:47;-1:-1:-1;1176:6:1;1181:1;1176:6;;:::i;:::-;;;1141:115;;;-1:-1:-1;1440:19:1;;;;804:662;-1:-1:-1;;;804:662:1:o;14:248:5:-;82:6;90;143:2;131:9;122:7;118:23;114:32;111:52;;;159:1;156;149:12;111:52;-1:-1:-1;;182:23:5;;;252:2;237:18;;;224:32;;-1:-1:-1;14:248:5:o;457:127::-;518:10;513:3;509:20;506:1;499:31;549:4;546:1;539:15;573:4;570:1;563:15;589:1251;691:6;699;707;760:2;748:9;739:7;735:23;731:32;728:52;;;776:1;773;766:12;728:52;812:9;799:23;789:33;;841:2;890;879:9;875:18;862:32;852:42;;945:2;934:9;930:18;917:32;968:18;1009:2;1001:6;998:14;995:34;;;1025:1;1022;1015:12;995:34;1063:6;1052:9;1048:22;1038:32;;1108:7;1101:4;1097:2;1093:13;1089:27;1079:55;;1130:1;1127;1120:12;1079:55;1166:2;1153:16;1188:2;1184;1181:10;1178:36;;;1194:18;;:::i;:::-;1240:2;1237:1;1233:10;1272:2;1266:9;1335:2;1331:7;1326:2;1322;1318:11;1314:25;1306:6;1302:38;1390:6;1378:10;1375:22;1370:2;1358:10;1355:18;1352:46;1349:72;;;1401:18;;:::i;:::-;1437:2;1430:22;1487:18;;;1521:15;;;;-1:-1:-1;1563:11:5;;;1559:20;;;1591:19;;;1588:39;;;1623:1;1620;1613:12;1588:39;1647:11;;;;1667:142;1683:6;1678:3;1675:15;1667:142;;;1749:17;;1737:30;;1700:12;;;;1787;;;;1667:142;;;1828:6;1818:16;;;;;;;;589:1251;;;;;:::o;2298:127::-;2359:10;2354:3;2350:20;2347:1;2340:31;2390:4;2387:1;2380:15;2414:4;2411:1;2404:15;2430:225;2470:3;2501:1;2497:6;2494:1;2491:13;2488:136;;;2546:10;2541:3;2537:20;2534:1;2527:31;2581:4;2578:1;2571:15;2609:4;2606:1;2599:15;2488:136;-1:-1:-1;2640:9:5;;2430:225::o",
+  "deployedBytecode": "73000000000000000000000000000000000000000030146080604052600436106100405760003560e01c80639580f1f2146100455780639da7347c1461006b575b600080fd5b610058610053366004610130565b61008e565b6040519081526020015b60405180910390f35b61007e610079366004610152565b6100e9565b6040519015158152602001610062565b6000818310156100ca5760408051602081018590529081018390526060015b6040516020818303038152906040528051906020012090506100e3565b60408051602081018490529081018490526060016100ad565b92915050565b60008382825b81811015610123576101198387878481811061010d5761010d6101d5565b9050602002013561008e565b92506001016100ef565b5050909414949350505050565b6000806040838503121561014357600080fd5b50508035926020909101359150565b6000806000806060858703121561016857600080fd5b8435935060208501359250604085013567ffffffffffffffff8082111561018e57600080fd5b818701915087601f8301126101a257600080fd5b8135818111156101b157600080fd5b8860208260051b85010111156101c657600080fd5b95989497505060200194505050565b634e487b7160e01b600052603260045260246000fdfea26469706673582212203d4f0cf3fd85c70016775e955e7f26347dacb92439b0913ad3414298eec6a7db64736f6c634300080c0033",
+  "deployedSourceMap": "67:624:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;465:223;;;;;;:::i;:::-;;:::i;:::-;;;421:25:4;;;409:2;394:18;465:223:1;;;;;;;;92:367;;;;;;:::i;:::-;;:::i;:::-;;;1386:14:4;;1379:22;1361:41;;1349:2;1334:18;92:367:1;1213:195:4;465:223:1;528:7;555:1;551;:5;547:135;;;589:16;;;;;;1587:25:4;;;1628:18;;;1621:34;;;1560:18;;589:16:1;;;;;;;;;;;;;579:27;;;;;;572:34;;;;547:135;654:16;;;;;;1587:25:4;;;1628:18;;;1621:34;;;1560:18;;654:16:1;1413:248:4;547:135:1;465:223;;;;:::o;92:367::-;188:4;226;260:5;188:4;282:134;299:11;295:1;:15;282:134;;;341:33;352:11;365:5;;371:1;365:8;;;;;;;:::i;:::-;;;;;;;341:10;:33::i;:::-;327:47;-1:-1:-1;400:3:1;;282:134;;;-1:-1:-1;;433:19:1;;;;92:367;-1:-1:-1;;;;92:367:1:o;14:248:4:-;82:6;90;143:2;131:9;122:7;118:23;114:32;111:52;;;159:1;156;149:12;111:52;-1:-1:-1;;182:23:4;;;252:2;237:18;;;224:32;;-1:-1:-1;14:248:4:o;457:751::-;561:6;569;577;585;638:2;626:9;617:7;613:23;609:32;606:52;;;654:1;651;644:12;606:52;690:9;677:23;667:33;;747:2;736:9;732:18;719:32;709:42;;802:2;791:9;787:18;774:32;825:18;866:2;858:6;855:14;852:34;;;882:1;879;872:12;852:34;920:6;909:9;905:22;895:32;;965:7;958:4;954:2;950:13;946:27;936:55;;987:1;984;977:12;936:55;1027:2;1014:16;1053:2;1045:6;1042:14;1039:34;;;1069:1;1066;1059:12;1039:34;1122:7;1117:2;1107:6;1104:1;1100:14;1096:2;1092:23;1088:32;1085:45;1082:65;;;1143:1;1140;1133:12;1082:65;457:751;;;;-1:-1:-1;;1174:2:4;1166:11;;-1:-1:-1;;;457:751:4:o;1666:127::-;1727:10;1722:3;1718:20;1715:1;1708:31;1758:4;1755:1;1748:15;1782:4;1779:1;1772:15",
   "language": "Solidity",
   "natspec": {
-    "author": "metapriest",
-    "details": "Each additional proof element adds ~1000 gas",
     "kind": "dev",
-    "methods": {
-      "parentHash(bytes32,bytes32)": {
-        "details": "The arguments are sorted to remove ambiguity about tree definition",
-        "notice": "Compute the hash of the parent node in the merkle tree",
-        "params": {
-          "a": "hash of left child node",
-          "b": "hash of right child node"
-        },
-        "returns": {
-          "_0": "hash of sorted arguments"
-        }
-      },
-      "verifyProof(bytes32,bytes32,bytes32[])": {
-        "details": "Leaf is pre-hashed to allow calling contract to implement whatever hashing scheme they want",
-        "notice": "Check the merkle proof to determine whether leaf data was included in dataset represented by merkle root",
-        "params": {
-          "leaf": "the pre-hashed leaf data, the starting point of the proof",
-          "proof": "the array of hashes forming a hash chain from leaf to root",
-          "root": "root hash of merkle tree that is the destination of the hash chain"
-        },
-        "returns": {
-          "_0": "true if proof is correct, else false"
-        }
-      }
-    },
-    "notice": "This library is used to check merkle proofs very efficiently.",
-    "title": "A library for merkle trees",
+    "methods": {},
     "version": 1
   },
   "offset": [
-    255,
-    1973
+    67,
+    691
   ],
-  "opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x40 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x9580F1F2 EQ PUSH2 0x45 JUMPI DUP1 PUSH4 0x9DA7347C EQ PUSH2 0x6B JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x58 PUSH2 0x53 CALLDATASIZE PUSH1 0x4 PUSH2 0x139 JUMP JUMPDEST PUSH2 0x8E JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x7E PUSH2 0x79 CALLDATASIZE PUSH1 0x4 PUSH2 0x171 JUMP JUMPDEST PUSH2 0xE9 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD PUSH2 0x62 JUMP JUMPDEST PUSH1 0x0 DUP2 DUP4 LT ISZERO PUSH2 0xCA JUMPI PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP2 ADD DUP6 SWAP1 MSTORE SWAP1 DUP2 ADD DUP4 SWAP1 MSTORE PUSH1 0x60 ADD JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x20 DUP2 DUP4 SUB SUB DUP2 MSTORE SWAP1 PUSH1 0x40 MSTORE DUP1 MLOAD SWAP1 PUSH1 0x20 ADD KECCAK256 SWAP1 POP PUSH2 0xE3 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP2 ADD DUP5 SWAP1 MSTORE SWAP1 DUP2 ADD DUP5 SWAP1 MSTORE PUSH1 0x60 ADD PUSH2 0xAD JUMP JUMPDEST SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x0 DUP3 DUP2 JUMPDEST DUP4 MLOAD DUP2 LT ISZERO PUSH2 0x12E JUMPI PUSH2 0x11A DUP3 DUP6 DUP4 DUP2 MLOAD DUP2 LT PUSH2 0x10D JUMPI PUSH2 0x10D PUSH2 0x244 JUMP JUMPDEST PUSH1 0x20 MUL PUSH1 0x20 ADD ADD MLOAD PUSH2 0x8E JUMP JUMPDEST SWAP2 POP PUSH2 0x127 PUSH1 0x1 DUP3 PUSH2 0x25A JUMP JUMPDEST SWAP1 POP PUSH2 0xEE JUMP JUMPDEST POP SWAP1 SWAP4 EQ SWAP4 SWAP3 POP POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x40 DUP4 DUP6 SUB SLT ISZERO PUSH2 0x14C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP POP DUP1 CALLDATALOAD SWAP3 PUSH1 0x20 SWAP1 SWAP2 ADD CALLDATALOAD SWAP2 POP JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 PUSH1 0x60 DUP5 DUP7 SUB SLT ISZERO PUSH2 0x186 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP4 CALLDATALOAD SWAP3 POP PUSH1 0x20 DUP1 DUP6 ADD CALLDATALOAD SWAP3 POP PUSH1 0x40 DUP6 ADD CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP1 DUP3 GT ISZERO PUSH2 0x1AD JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 DUP8 ADD SWAP2 POP DUP8 PUSH1 0x1F DUP4 ADD SLT PUSH2 0x1C1 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD DUP2 DUP2 GT ISZERO PUSH2 0x1D3 JUMPI PUSH2 0x1D3 PUSH2 0x15B JUMP JUMPDEST DUP1 PUSH1 0x5 SHL PUSH1 0x40 MLOAD PUSH1 0x1F NOT PUSH1 0x3F DUP4 ADD AND DUP2 ADD DUP2 DUP2 LT DUP6 DUP3 GT OR ISZERO PUSH2 0x1F8 JUMPI PUSH2 0x1F8 PUSH2 0x15B JUMP JUMPDEST PUSH1 0x40 MSTORE SWAP2 DUP3 MSTORE DUP5 DUP3 ADD SWAP3 POP DUP4 DUP2 ADD DUP6 ADD SWAP2 DUP11 DUP4 GT ISZERO PUSH2 0x216 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP4 DUP6 ADD SWAP4 JUMPDEST DUP3 DUP6 LT ISZERO PUSH2 0x234 JUMPI DUP5 CALLDATALOAD DUP5 MSTORE SWAP4 DUP6 ADD SWAP4 SWAP3 DUP6 ADD SWAP3 PUSH2 0x21B JUMP JUMPDEST DUP1 SWAP7 POP POP POP POP POP POP POP SWAP3 POP SWAP3 POP SWAP3 JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x32 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x0 DUP3 NOT DUP3 GT ISZERO PUSH2 0x27B JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x11 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST POP ADD SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP15 LOG1 PUSH2 0x693E 0x4A SWAP15 0xC PUSH2 0x9E99 MSTORE 0x29 0x5C 0xD8 0xD5 0x28 EXTCODECOPY 0x1E 0xB0 PUSH29 0xB6CA83BCE9DB6C99B9DA2964736F6C6343000809003300000000000000 ",
+  "opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x40 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x9580F1F2 EQ PUSH2 0x45 JUMPI DUP1 PUSH4 0x9DA7347C EQ PUSH2 0x6B JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x58 PUSH2 0x53 CALLDATASIZE PUSH1 0x4 PUSH2 0x130 JUMP JUMPDEST PUSH2 0x8E JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x7E PUSH2 0x79 CALLDATASIZE PUSH1 0x4 PUSH2 0x152 JUMP JUMPDEST PUSH2 0xE9 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD PUSH2 0x62 JUMP JUMPDEST PUSH1 0x0 DUP2 DUP4 LT ISZERO PUSH2 0xCA JUMPI PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP2 ADD DUP6 SWAP1 MSTORE SWAP1 DUP2 ADD DUP4 SWAP1 MSTORE PUSH1 0x60 ADD JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x20 DUP2 DUP4 SUB SUB DUP2 MSTORE SWAP1 PUSH1 0x40 MSTORE DUP1 MLOAD SWAP1 PUSH1 0x20 ADD KECCAK256 SWAP1 POP PUSH2 0xE3 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP2 ADD DUP5 SWAP1 MSTORE SWAP1 DUP2 ADD DUP5 SWAP1 MSTORE PUSH1 0x60 ADD PUSH2 0xAD JUMP JUMPDEST SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x0 DUP4 DUP3 DUP3 JUMPDEST DUP2 DUP2 LT ISZERO PUSH2 0x123 JUMPI PUSH2 0x119 DUP4 DUP8 DUP8 DUP5 DUP2 DUP2 LT PUSH2 0x10D JUMPI PUSH2 0x10D PUSH2 0x1D5 JUMP JUMPDEST SWAP1 POP PUSH1 0x20 MUL ADD CALLDATALOAD PUSH2 0x8E JUMP JUMPDEST SWAP3 POP PUSH1 0x1 ADD PUSH2 0xEF JUMP JUMPDEST POP POP SWAP1 SWAP5 EQ SWAP5 SWAP4 POP POP POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x40 DUP4 DUP6 SUB SLT ISZERO PUSH2 0x143 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP POP DUP1 CALLDATALOAD SWAP3 PUSH1 0x20 SWAP1 SWAP2 ADD CALLDATALOAD SWAP2 POP JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x60 DUP6 DUP8 SUB SLT ISZERO PUSH2 0x168 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP5 CALLDATALOAD SWAP4 POP PUSH1 0x20 DUP6 ADD CALLDATALOAD SWAP3 POP PUSH1 0x40 DUP6 ADD CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP1 DUP3 GT ISZERO PUSH2 0x18E JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 DUP8 ADD SWAP2 POP DUP8 PUSH1 0x1F DUP4 ADD SLT PUSH2 0x1A2 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD DUP2 DUP2 GT ISZERO PUSH2 0x1B1 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP9 PUSH1 0x20 DUP3 PUSH1 0x5 SHL DUP6 ADD ADD GT ISZERO PUSH2 0x1C6 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP6 SWAP9 SWAP5 SWAP8 POP POP PUSH1 0x20 ADD SWAP5 POP POP POP JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x32 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 RETURNDATASIZE 0x4F 0xC RETURN REVERT DUP6 0xC7 STOP AND PUSH24 0x5E955E7F26347DACB92439B0913AD3414298EEC6A7DB6473 PUSH16 0x6C634300080C00330000000000000000 ",
   "pcMap": {
     "0": {
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH20",
       "path": "1",
@@ -1182,8 +1161,8 @@
     "21": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "ADDRESS",
       "path": "1"
@@ -1191,8 +1170,8 @@
     "22": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "EQ",
       "path": "1"
@@ -1200,8 +1179,8 @@
     "23": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1210,8 +1189,8 @@
     "25": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1220,8 +1199,8 @@
     "27": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "MSTORE",
       "path": "1"
@@ -1229,8 +1208,8 @@
     "28": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1239,8 +1218,8 @@
     "30": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "CALLDATASIZE",
       "path": "1"
@@ -1248,8 +1227,8 @@
     "31": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "LT",
       "path": "1"
@@ -1257,8 +1236,8 @@
     "32": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1267,8 +1246,8 @@
     "35": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "JUMPI",
       "path": "1"
@@ -1276,8 +1255,8 @@
     "36": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1286,8 +1265,8 @@
     "38": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "CALLDATALOAD",
       "path": "1"
@@ -1295,8 +1274,8 @@
     "39": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1305,8 +1284,8 @@
     "41": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "SHR",
       "path": "1"
@@ -1314,8 +1293,8 @@
     "42": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "DUP1",
       "path": "1"
@@ -1323,8 +1302,8 @@
     "43": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH4",
       "path": "1",
@@ -1333,8 +1312,8 @@
     "48": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "EQ",
       "path": "1"
@@ -1342,8 +1321,8 @@
     "49": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1352,8 +1331,8 @@
     "52": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "JUMPI",
       "path": "1"
@@ -1361,8 +1340,8 @@
     "53": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "DUP1",
       "path": "1"
@@ -1370,8 +1349,8 @@
     "54": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH4",
       "path": "1",
@@ -1380,8 +1359,8 @@
     "59": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "EQ",
       "path": "1"
@@ -1389,8 +1368,8 @@
     "60": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1399,8 +1378,8 @@
     "63": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "JUMPI",
       "path": "1"
@@ -1408,8 +1387,8 @@
     "64": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1417,8 +1396,8 @@
     "65": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1427,8 +1406,8 @@
     "67": {
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "DUP1",
       "path": "1"
@@ -1437,8 +1416,8 @@
       "first_revert": true,
       "fn": null,
       "offset": [
-        255,
-        1973
+        67,
+        691
       ],
       "op": "REVERT",
       "path": "1"
@@ -1446,8 +1425,8 @@
     "69": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1455,8 +1434,8 @@
     "70": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1465,8 +1444,8 @@
     "73": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1475,8 +1454,8 @@
     "76": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "CALLDATASIZE",
       "path": "1"
@@ -1484,8 +1463,8 @@
     "77": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1494,19 +1473,19 @@
     "79": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH2",
       "path": "1",
-      "value": "0x139"
+      "value": "0x130"
     },
     "82": {
       "fn": "MerkleLib.parentHash",
       "jump": "i",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMP",
       "path": "1"
@@ -1514,8 +1493,8 @@
     "83": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1523,8 +1502,8 @@
     "84": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1534,8 +1513,8 @@
       "fn": "MerkleLib.parentHash",
       "jump": "i",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMP",
       "path": "1"
@@ -1543,8 +1522,8 @@
     "88": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1552,8 +1531,8 @@
     "89": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1562,8 +1541,8 @@
     "91": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "MLOAD",
       "path": "1"
@@ -1587,8 +1566,8 @@
     "98": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1596,8 +1575,8 @@
     "99": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1606,8 +1585,8 @@
     "101": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "MLOAD",
       "path": "1"
@@ -1615,8 +1594,8 @@
     "102": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "DUP1",
       "path": "1"
@@ -1624,8 +1603,8 @@
     "103": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "SWAP2",
       "path": "1"
@@ -1633,8 +1612,8 @@
     "104": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "SUB",
       "path": "1"
@@ -1642,8 +1621,8 @@
     "105": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "SWAP1",
       "path": "1"
@@ -1651,8 +1630,8 @@
     "106": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "RETURN",
       "path": "1"
@@ -1660,8 +1639,8 @@
     "107": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1669,8 +1648,8 @@
     "108": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1679,8 +1658,8 @@
     "111": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1689,8 +1668,8 @@
     "114": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "CALLDATASIZE",
       "path": "1"
@@ -1698,8 +1677,8 @@
     "115": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1708,19 +1687,19 @@
     "117": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH2",
       "path": "1",
-      "value": "0x171"
+      "value": "0x152"
     },
     "120": {
       "fn": "MerkleLib.verifyProof",
       "jump": "i",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMP",
       "path": "1"
@@ -1728,8 +1707,8 @@
     "121": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1737,8 +1716,8 @@
     "122": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1748,8 +1727,8 @@
       "fn": "MerkleLib.verifyProof",
       "jump": "i",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMP",
       "path": "1"
@@ -1757,8 +1736,8 @@
     "126": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1766,8 +1745,8 @@
     "127": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1776,8 +1755,8 @@
     "129": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "MLOAD",
       "path": "1"
@@ -1807,8 +1786,8 @@
     "138": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1820,8 +1799,8 @@
     "142": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1829,8 +1808,8 @@
     "143": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1810,
-        1817
+        528,
+        535
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1839,8 +1818,8 @@
     "145": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1837,
-        1838
+        555,
+        556
       ],
       "op": "DUP2",
       "path": "1"
@@ -1848,8 +1827,8 @@
     "146": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1833,
-        1834
+        551,
+        552
       ],
       "op": "DUP4",
       "path": "1"
@@ -1858,8 +1837,8 @@
       "branch": 5,
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1833,
-        1838
+        551,
+        556
       ],
       "op": "LT",
       "path": "1"
@@ -1867,8 +1846,8 @@
     "148": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1829,
-        1964
+        547,
+        682
       ],
       "op": "ISZERO",
       "path": "1"
@@ -1876,8 +1855,8 @@
     "149": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1829,
-        1964
+        547,
+        682
       ],
       "op": "PUSH2",
       "path": "1",
@@ -1887,8 +1866,8 @@
       "branch": 5,
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1829,
-        1964
+        547,
+        682
       ],
       "op": "JUMPI",
       "path": "1"
@@ -1896,8 +1875,8 @@
     "153": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1907,8 +1886,8 @@
     "155": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "DUP1",
       "path": "1"
@@ -1916,8 +1895,8 @@
     "156": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "MLOAD",
       "path": "1"
@@ -1925,8 +1904,8 @@
     "157": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "PUSH1",
       "path": "1",
@@ -1935,8 +1914,8 @@
     "159": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "DUP2",
       "path": "1"
@@ -1944,8 +1923,8 @@
     "160": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "ADD",
       "path": "1"
@@ -1987,8 +1966,8 @@
     "173": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -1996,8 +1975,8 @@
     "174": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2006,8 +1985,8 @@
     "176": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "MLOAD",
       "path": "1"
@@ -2015,8 +1994,8 @@
     "177": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2025,8 +2004,8 @@
     "179": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "DUP2",
       "path": "1"
@@ -2034,8 +2013,8 @@
     "180": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "DUP4",
       "path": "1"
@@ -2043,8 +2022,8 @@
     "181": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "SUB",
       "path": "1"
@@ -2052,8 +2031,8 @@
     "182": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "SUB",
       "path": "1"
@@ -2061,8 +2040,8 @@
     "183": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "DUP2",
       "path": "1"
@@ -2070,8 +2049,8 @@
     "184": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "MSTORE",
       "path": "1"
@@ -2079,8 +2058,8 @@
     "185": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "SWAP1",
       "path": "1"
@@ -2088,8 +2067,8 @@
     "186": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2098,8 +2077,8 @@
     "188": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1871,
-        1887
+        589,
+        605
       ],
       "op": "MSTORE",
       "path": "1"
@@ -2107,8 +2086,8 @@
     "189": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1861,
-        1888
+        579,
+        606
       ],
       "op": "DUP1",
       "path": "1"
@@ -2116,8 +2095,8 @@
     "190": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1861,
-        1888
+        579,
+        606
       ],
       "op": "MLOAD",
       "path": "1"
@@ -2125,8 +2104,8 @@
     "191": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1861,
-        1888
+        579,
+        606
       ],
       "op": "SWAP1",
       "path": "1"
@@ -2134,8 +2113,8 @@
     "192": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1861,
-        1888
+        579,
+        606
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2144,8 +2123,8 @@
     "194": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1861,
-        1888
+        579,
+        606
       ],
       "op": "ADD",
       "path": "1"
@@ -2153,8 +2132,8 @@
     "195": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1861,
-        1888
+        579,
+        606
       ],
       "op": "KECCAK256",
       "path": "1"
@@ -2162,8 +2141,8 @@
     "196": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1854,
-        1888
+        572,
+        606
       ],
       "op": "SWAP1",
       "path": "1"
@@ -2171,8 +2150,8 @@
     "197": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1854,
-        1888
+        572,
+        606
       ],
       "op": "POP",
       "path": "1"
@@ -2180,8 +2159,8 @@
     "198": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1854,
-        1888
+        572,
+        606
       ],
       "op": "PUSH2",
       "path": "1",
@@ -2190,8 +2169,8 @@
     "201": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1854,
-        1888
+        572,
+        606
       ],
       "op": "JUMP",
       "path": "1"
@@ -2199,8 +2178,8 @@
     "202": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1829,
-        1964
+        547,
+        682
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -2208,8 +2187,8 @@
     "203": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2219,8 +2198,8 @@
     "205": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "DUP1",
       "path": "1"
@@ -2228,8 +2207,8 @@
     "206": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "MLOAD",
       "path": "1"
@@ -2237,8 +2216,8 @@
     "207": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2247,8 +2226,8 @@
     "209": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "DUP2",
       "path": "1"
@@ -2256,8 +2235,8 @@
     "210": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "ADD",
       "path": "1"
@@ -2299,8 +2278,8 @@
     "223": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1936,
-        1952
+        654,
+        670
       ],
       "op": "PUSH2",
       "path": "1",
@@ -2312,8 +2291,8 @@
     "227": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1829,
-        1964
+        547,
+        682
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -2321,8 +2300,8 @@
     "228": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "SWAP3",
       "path": "1"
@@ -2330,8 +2309,8 @@
     "229": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "SWAP2",
       "path": "1"
@@ -2339,8 +2318,8 @@
     "230": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "POP",
       "path": "1"
@@ -2348,8 +2327,8 @@
     "231": {
       "fn": "MerkleLib.parentHash",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "POP",
       "path": "1"
@@ -2358,8 +2337,8 @@
       "fn": "MerkleLib.parentHash",
       "jump": "o",
       "offset": [
-        1747,
-        1970
+        465,
+        688
       ],
       "op": "JUMP",
       "path": "1"
@@ -2367,8 +2346,8 @@
     "233": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -2376,8 +2355,8 @@
     "234": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        898,
-        902
+        188,
+        192
       ],
       "op": "PUSH1",
       "path": "1",
@@ -2386,53 +2365,53 @@
     "236": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        936,
-        940
+        226,
+        230
       ],
-      "op": "DUP3",
+      "op": "DUP4",
       "path": "1"
     },
     "237": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        898,
-        902
+        260,
+        265
       ],
-      "op": "DUP2",
+      "op": "DUP3",
       "path": "1"
     },
     "238": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1141,
-        1256
+        188,
+        192
       ],
-      "op": "JUMPDEST",
+      "op": "DUP3",
       "path": "1"
     },
     "239": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1162,
-        1167
+        282,
+        416
       ],
-      "op": "DUP4",
+      "op": "JUMPDEST",
       "path": "1"
     },
     "240": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1162,
-        1174
+        299,
+        310
       ],
-      "op": "MLOAD",
+      "op": "DUP2",
       "path": "1"
     },
     "241": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1158,
-        1159
+        295,
+        296
       ],
       "op": "DUP2",
       "path": "1"
@@ -2440,8 +2419,8 @@
     "242": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1158,
-        1174
+        295,
+        310
       ],
       "op": "LT",
       "path": "1"
@@ -2449,8 +2428,8 @@
     "243": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1141,
-        1256
+        282,
+        416
       ],
       "op": "ISZERO",
       "path": "1"
@@ -2458,18 +2437,18 @@
     "244": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1141,
-        1256
+        282,
+        416
       ],
       "op": "PUSH2",
       "path": "1",
-      "value": "0x12E"
+      "value": "0x123"
     },
     "247": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1141,
-        1256
+        282,
+        416
       ],
       "op": "JUMPI",
       "path": "1"
@@ -2477,64 +2456,64 @@
     "248": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1212,
-        1245
+        341,
+        374
       ],
       "op": "PUSH2",
       "path": "1",
       "statement": 2,
-      "value": "0x11A"
+      "value": "0x119"
     },
     "251": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1223,
-        1234
+        352,
+        363
       ],
-      "op": "DUP3",
+      "op": "DUP4",
       "path": "1"
     },
     "252": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1241
+        365,
+        370
       ],
-      "op": "DUP6",
+      "op": "DUP8",
       "path": "1"
     },
     "253": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1242,
-        1243
+        365,
+        370
       ],
-      "op": "DUP4",
+      "op": "DUP8",
       "path": "1"
     },
     "254": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        371,
+        372
       ],
-      "op": "DUP2",
+      "op": "DUP5",
       "path": "1"
     },
     "255": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
-      "op": "MLOAD",
+      "op": "DUP2",
       "path": "1"
     },
     "256": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "DUP2",
       "path": "1"
@@ -2542,8 +2521,8 @@
     "257": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "LT",
       "path": "1"
@@ -2551,8 +2530,8 @@
     "258": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "PUSH2",
       "path": "1",
@@ -2561,8 +2540,8 @@
     "261": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "JUMPI",
       "path": "1"
@@ -2570,8 +2549,8 @@
     "262": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "PUSH2",
       "path": "1",
@@ -2580,19 +2559,19 @@
     "265": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "PUSH2",
       "path": "1",
-      "value": "0x244"
+      "value": "0x1D5"
     },
     "268": {
       "fn": "MerkleLib.verifyProof",
       "jump": "i",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "JUMP",
       "path": "1"
@@ -2600,8 +2579,8 @@
     "269": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "JUMPDEST",
       "path": "1"
@@ -2609,37 +2588,45 @@
     "270": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
-      "op": "PUSH1",
-      "path": "1",
-      "value": "0x20"
+      "op": "SWAP1",
+      "path": "1"
+    },
+    "271": {
+      "fn": "MerkleLib.verifyProof",
+      "offset": [
+        365,
+        373
+      ],
+      "op": "POP",
+      "path": "1"
     },
     "272": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
-      ],
-      "op": "MUL",
-      "path": "1"
-    },
-    "273": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "PUSH1",
       "path": "1",
       "value": "0x20"
     },
+    "274": {
+      "fn": "MerkleLib.verifyProof",
+      "offset": [
+        365,
+        373
+      ],
+      "op": "MUL",
+      "path": "1"
+    },
     "275": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
       "op": "ADD",
       "path": "1"
@@ -2647,1023 +2634,630 @@
     "276": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
+        365,
+        373
       ],
-      "op": "ADD",
+      "op": "CALLDATALOAD",
       "path": "1"
     },
     "277": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1236,
-        1244
-      ],
-      "op": "MLOAD",
-      "path": "1"
-    },
-    "278": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1212,
-        1222
+        341,
+        351
       ],
       "op": "PUSH2",
       "path": "1",
       "value": "0x8E"
     },
-    "281": {
+    "280": {
       "fn": "MerkleLib.verifyProof",
       "jump": "i",
       "offset": [
-        1212,
-        1245
+        341,
+        374
       ],
       "op": "JUMP",
+      "path": "1"
+    },
+    "281": {
+      "fn": "MerkleLib.verifyProof",
+      "offset": [
+        341,
+        374
+      ],
+      "op": "JUMPDEST",
       "path": "1"
     },
     "282": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1212,
-        1245
+        327,
+        374
       ],
-      "op": "JUMPDEST",
+      "op": "SWAP3",
       "path": "1"
     },
     "283": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1198,
-        1245
-      ],
-      "op": "SWAP2",
-      "path": "1"
-    },
-    "284": {
       "op": "POP"
     },
-    "285": {
+    "284": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1176,
-        1182
-      ],
-      "op": "PUSH2",
-      "path": "1",
-      "statement": 3,
-      "value": "0x127"
-    },
-    "288": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1181,
-        1182
+        400,
+        403
       ],
       "op": "PUSH1",
       "path": "1",
+      "statement": 3,
       "value": "0x1"
+    },
+    "286": {
+      "fn": "MerkleLib.verifyProof",
+      "offset": [
+        400,
+        403
+      ],
+      "op": "ADD",
+      "path": "1"
+    },
+    "287": {
+      "fn": "MerkleLib.verifyProof",
+      "offset": [
+        282,
+        416
+      ],
+      "op": "PUSH2",
+      "path": "1",
+      "value": "0xEF"
     },
     "290": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1176,
-        1182
+        282,
+        416
       ],
-      "op": "DUP3",
+      "op": "JUMP",
       "path": "1"
     },
     "291": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1176,
-        1182
+        282,
+        416
       ],
-      "op": "PUSH2",
-      "path": "1",
-      "value": "0x25A"
+      "op": "JUMPDEST",
+      "path": "1"
+    },
+    "292": {
+      "op": "POP"
+    },
+    "293": {
+      "op": "POP"
     },
     "294": {
       "fn": "MerkleLib.verifyProof",
-      "jump": "i",
       "offset": [
-        1176,
-        1182
-      ],
-      "op": "JUMP",
-      "path": "1"
-    },
-    "295": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1176,
-        1182
-      ],
-      "op": "JUMPDEST",
-      "path": "1"
-    },
-    "296": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1176,
-        1182
-      ],
-      "op": "SWAP1",
-      "path": "1"
-    },
-    "297": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1176,
-        1182
-      ],
-      "op": "POP",
-      "path": "1"
-    },
-    "298": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1141,
-        1256
-      ],
-      "op": "PUSH2",
-      "path": "1",
-      "value": "0xEE"
-    },
-    "301": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1141,
-        1256
-      ],
-      "op": "JUMP",
-      "path": "1"
-    },
-    "302": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1141,
-        1256
-      ],
-      "op": "JUMPDEST",
-      "path": "1"
-    },
-    "303": {
-      "op": "POP"
-    },
-    "304": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        1440,
-        1459
+        433,
+        452
       ],
       "op": "SWAP1",
       "path": "1",
       "statement": 4
     },
-    "305": {
+    "295": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1440,
-        1459
+        433,
+        452
       ],
-      "op": "SWAP4",
+      "op": "SWAP5",
       "path": "1"
     },
-    "306": {
+    "296": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1440,
-        1459
+        433,
+        452
       ],
       "op": "EQ",
       "path": "1"
     },
-    "307": {
+    "297": {
       "fn": "MerkleLib.verifyProof",
       "offset": [
-        1440,
-        1459
+        433,
+        452
+      ],
+      "op": "SWAP5",
+      "path": "1"
+    },
+    "298": {
+      "fn": "MerkleLib.verifyProof",
+      "offset": [
+        92,
+        459
       ],
       "op": "SWAP4",
       "path": "1"
     },
-    "308": {
-      "fn": "MerkleLib.verifyProof",
-      "offset": [
-        804,
-        1466
-      ],
-      "op": "SWAP3",
-      "path": "1"
-    },
-    "309": {
+    "299": {
       "op": "POP"
     },
-    "310": {
+    "300": {
       "op": "POP"
     },
-    "311": {
+    "301": {
       "op": "POP"
     },
-    "312": {
+    "302": {
+      "op": "POP"
+    },
+    "303": {
       "fn": "MerkleLib.verifyProof",
       "jump": "o",
       "offset": [
-        804,
-        1466
+        92,
+        459
       ],
       "op": "JUMP",
       "path": "1"
     },
-    "313": {
+    "304": {
       "op": "JUMPDEST"
     },
-    "314": {
+    "305": {
       "op": "PUSH1",
       "value": "0x0"
     },
-    "316": {
+    "307": {
       "op": "DUP1"
     },
-    "317": {
+    "308": {
       "op": "PUSH1",
       "value": "0x40"
     },
-    "319": {
+    "310": {
       "op": "DUP4"
     },
-    "320": {
+    "311": {
       "op": "DUP6"
     },
-    "321": {
+    "312": {
       "op": "SUB"
     },
-    "322": {
+    "313": {
       "op": "SLT"
     },
-    "323": {
+    "314": {
       "op": "ISZERO"
     },
-    "324": {
+    "315": {
       "op": "PUSH2",
-      "value": "0x14C"
+      "value": "0x143"
     },
-    "327": {
+    "318": {
       "op": "JUMPI"
     },
-    "328": {
+    "319": {
       "op": "PUSH1",
       "value": "0x0"
     },
-    "330": {
+    "321": {
       "op": "DUP1"
     },
-    "331": {
+    "322": {
       "op": "REVERT"
     },
-    "332": {
+    "323": {
       "op": "JUMPDEST"
     },
-    "333": {
+    "324": {
       "op": "POP"
     },
-    "334": {
+    "325": {
       "op": "POP"
     },
-    "335": {
+    "326": {
       "op": "DUP1"
     },
-    "336": {
+    "327": {
       "op": "CALLDATALOAD"
     },
-    "337": {
+    "328": {
       "op": "SWAP3"
     },
-    "338": {
+    "329": {
       "op": "PUSH1",
       "value": "0x20"
     },
-    "340": {
+    "331": {
       "op": "SWAP1"
     },
-    "341": {
+    "332": {
       "op": "SWAP2"
     },
-    "342": {
+    "333": {
       "op": "ADD"
     },
-    "343": {
+    "334": {
       "op": "CALLDATALOAD"
     },
-    "344": {
+    "335": {
       "op": "SWAP2"
     },
-    "345": {
+    "336": {
       "op": "POP"
     },
-    "346": {
+    "337": {
       "jump": "o",
       "op": "JUMP"
     },
-    "347": {
+    "338": {
       "op": "JUMPDEST"
     },
-    "348": {
-      "op": "PUSH4",
-      "value": "0x4E487B71"
-    },
-    "353": {
+    "339": {
       "op": "PUSH1",
-      "value": "0xE0"
+      "value": "0x0"
+    },
+    "341": {
+      "op": "DUP1"
+    },
+    "342": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "344": {
+      "op": "DUP1"
+    },
+    "345": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "347": {
+      "op": "DUP6"
+    },
+    "348": {
+      "op": "DUP8"
+    },
+    "349": {
+      "op": "SUB"
+    },
+    "350": {
+      "op": "SLT"
+    },
+    "351": {
+      "op": "ISZERO"
+    },
+    "352": {
+      "op": "PUSH2",
+      "value": "0x168"
     },
     "355": {
-      "op": "SHL"
+      "op": "JUMPI"
     },
     "356": {
       "op": "PUSH1",
       "value": "0x0"
     },
     "358": {
-      "op": "MSTORE"
+      "op": "DUP1"
     },
     "359": {
-      "op": "PUSH1",
-      "value": "0x41"
+      "op": "REVERT"
+    },
+    "360": {
+      "op": "JUMPDEST"
     },
     "361": {
-      "op": "PUSH1",
-      "value": "0x4"
-    },
-    "363": {
-      "op": "MSTORE"
-    },
-    "364": {
-      "op": "PUSH1",
-      "value": "0x24"
-    },
-    "366": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "368": {
-      "op": "REVERT"
-    },
-    "369": {
-      "op": "JUMPDEST"
-    },
-    "370": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "372": {
-      "op": "DUP1"
-    },
-    "373": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "375": {
-      "op": "PUSH1",
-      "value": "0x60"
-    },
-    "377": {
       "op": "DUP5"
     },
-    "378": {
-      "op": "DUP7"
-    },
-    "379": {
-      "op": "SUB"
-    },
-    "380": {
-      "op": "SLT"
-    },
-    "381": {
-      "op": "ISZERO"
-    },
-    "382": {
-      "op": "PUSH2",
-      "value": "0x186"
-    },
-    "385": {
-      "op": "JUMPI"
-    },
-    "386": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "388": {
-      "op": "DUP1"
-    },
-    "389": {
-      "op": "REVERT"
-    },
-    "390": {
-      "op": "JUMPDEST"
-    },
-    "391": {
-      "op": "DUP4"
-    },
-    "392": {
+    "362": {
       "op": "CALLDATALOAD"
     },
-    "393": {
-      "op": "SWAP3"
+    "363": {
+      "op": "SWAP4"
     },
-    "394": {
+    "364": {
       "op": "POP"
     },
-    "395": {
+    "365": {
       "op": "PUSH1",
       "value": "0x20"
     },
-    "397": {
-      "op": "DUP1"
-    },
-    "398": {
+    "367": {
       "op": "DUP6"
     },
-    "399": {
+    "368": {
       "op": "ADD"
     },
-    "400": {
+    "369": {
       "op": "CALLDATALOAD"
     },
-    "401": {
+    "370": {
       "op": "SWAP3"
     },
-    "402": {
+    "371": {
       "op": "POP"
     },
-    "403": {
+    "372": {
       "op": "PUSH1",
       "value": "0x40"
     },
-    "405": {
+    "374": {
       "op": "DUP6"
     },
-    "406": {
+    "375": {
       "op": "ADD"
     },
-    "407": {
+    "376": {
       "op": "CALLDATALOAD"
     },
-    "408": {
+    "377": {
       "op": "PUSH8",
       "value": "0xFFFFFFFFFFFFFFFF"
     },
-    "417": {
+    "386": {
       "op": "DUP1"
     },
-    "418": {
+    "387": {
       "op": "DUP3"
     },
-    "419": {
+    "388": {
       "op": "GT"
     },
-    "420": {
+    "389": {
       "op": "ISZERO"
     },
-    "421": {
+    "390": {
       "op": "PUSH2",
-      "value": "0x1AD"
+      "value": "0x18E"
     },
-    "424": {
+    "393": {
       "op": "JUMPI"
     },
-    "425": {
+    "394": {
       "op": "PUSH1",
       "value": "0x0"
     },
-    "427": {
+    "396": {
       "op": "DUP1"
     },
-    "428": {
+    "397": {
       "op": "REVERT"
     },
-    "429": {
+    "398": {
       "op": "JUMPDEST"
     },
-    "430": {
+    "399": {
       "op": "DUP2"
     },
-    "431": {
+    "400": {
       "op": "DUP8"
     },
-    "432": {
+    "401": {
       "op": "ADD"
     },
-    "433": {
+    "402": {
       "op": "SWAP2"
     },
-    "434": {
+    "403": {
       "op": "POP"
     },
-    "435": {
+    "404": {
       "op": "DUP8"
     },
-    "436": {
+    "405": {
       "op": "PUSH1",
       "value": "0x1F"
     },
-    "438": {
+    "407": {
       "op": "DUP4"
     },
-    "439": {
+    "408": {
       "op": "ADD"
     },
-    "440": {
+    "409": {
       "op": "SLT"
     },
-    "441": {
+    "410": {
       "op": "PUSH2",
-      "value": "0x1C1"
+      "value": "0x1A2"
     },
-    "444": {
+    "413": {
       "op": "JUMPI"
     },
-    "445": {
+    "414": {
       "op": "PUSH1",
       "value": "0x0"
     },
-    "447": {
+    "416": {
       "op": "DUP1"
     },
-    "448": {
+    "417": {
       "op": "REVERT"
     },
-    "449": {
+    "418": {
       "op": "JUMPDEST"
     },
-    "450": {
+    "419": {
       "op": "DUP2"
     },
-    "451": {
+    "420": {
       "op": "CALLDATALOAD"
     },
-    "452": {
+    "421": {
       "op": "DUP2"
     },
-    "453": {
+    "422": {
       "op": "DUP2"
     },
-    "454": {
+    "423": {
       "op": "GT"
     },
-    "455": {
+    "424": {
       "op": "ISZERO"
     },
-    "456": {
+    "425": {
       "op": "PUSH2",
-      "value": "0x1D3"
+      "value": "0x1B1"
     },
-    "459": {
+    "428": {
       "op": "JUMPI"
     },
-    "460": {
-      "op": "PUSH2",
-      "value": "0x1D3"
+    "429": {
+      "op": "PUSH1",
+      "value": "0x0"
     },
-    "463": {
-      "op": "PUSH2",
-      "value": "0x15B"
-    },
-    "466": {
-      "jump": "i",
-      "op": "JUMP"
-    },
-    "467": {
-      "op": "JUMPDEST"
-    },
-    "468": {
+    "431": {
       "op": "DUP1"
     },
-    "469": {
+    "432": {
+      "op": "REVERT"
+    },
+    "433": {
+      "op": "JUMPDEST"
+    },
+    "434": {
+      "op": "DUP9"
+    },
+    "435": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "437": {
+      "op": "DUP3"
+    },
+    "438": {
       "op": "PUSH1",
       "value": "0x5"
     },
-    "471": {
+    "440": {
       "op": "SHL"
     },
-    "472": {
-      "op": "PUSH1",
-      "value": "0x40"
+    "441": {
+      "op": "DUP6"
     },
-    "474": {
-      "op": "MLOAD"
+    "442": {
+      "op": "ADD"
+    },
+    "443": {
+      "op": "ADD"
+    },
+    "444": {
+      "op": "GT"
+    },
+    "445": {
+      "op": "ISZERO"
+    },
+    "446": {
+      "op": "PUSH2",
+      "value": "0x1C6"
+    },
+    "449": {
+      "op": "JUMPI"
+    },
+    "450": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "452": {
+      "op": "DUP1"
+    },
+    "453": {
+      "op": "REVERT"
+    },
+    "454": {
+      "op": "JUMPDEST"
+    },
+    "455": {
+      "op": "SWAP6"
+    },
+    "456": {
+      "op": "SWAP9"
+    },
+    "457": {
+      "op": "SWAP5"
+    },
+    "458": {
+      "op": "SWAP8"
+    },
+    "459": {
+      "op": "POP"
+    },
+    "460": {
+      "op": "POP"
+    },
+    "461": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "463": {
+      "op": "ADD"
+    },
+    "464": {
+      "op": "SWAP5"
+    },
+    "465": {
+      "op": "POP"
+    },
+    "466": {
+      "op": "POP"
+    },
+    "467": {
+      "op": "POP"
+    },
+    "468": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "469": {
+      "op": "JUMPDEST"
+    },
+    "470": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
     },
     "475": {
       "op": "PUSH1",
-      "value": "0x1F"
+      "value": "0xE0"
     },
     "477": {
-      "op": "NOT"
+      "op": "SHL"
     },
     "478": {
       "op": "PUSH1",
-      "value": "0x3F"
+      "value": "0x0"
     },
     "480": {
-      "op": "DUP4"
+      "op": "MSTORE"
     },
     "481": {
-      "op": "ADD"
-    },
-    "482": {
-      "op": "AND"
-    },
-    "483": {
-      "op": "DUP2"
-    },
-    "484": {
-      "op": "ADD"
-    },
-    "485": {
-      "op": "DUP2"
-    },
-    "486": {
-      "op": "DUP2"
-    },
-    "487": {
-      "op": "LT"
-    },
-    "488": {
-      "op": "DUP6"
-    },
-    "489": {
-      "op": "DUP3"
-    },
-    "490": {
-      "op": "GT"
-    },
-    "491": {
-      "op": "OR"
-    },
-    "492": {
-      "op": "ISZERO"
-    },
-    "493": {
-      "op": "PUSH2",
-      "value": "0x1F8"
-    },
-    "496": {
-      "op": "JUMPI"
-    },
-    "497": {
-      "op": "PUSH2",
-      "value": "0x1F8"
-    },
-    "500": {
-      "op": "PUSH2",
-      "value": "0x15B"
-    },
-    "503": {
-      "jump": "i",
-      "op": "JUMP"
-    },
-    "504": {
-      "op": "JUMPDEST"
-    },
-    "505": {
-      "op": "PUSH1",
-      "value": "0x40"
-    },
-    "507": {
-      "op": "MSTORE"
-    },
-    "508": {
-      "op": "SWAP2"
-    },
-    "509": {
-      "op": "DUP3"
-    },
-    "510": {
-      "op": "MSTORE"
-    },
-    "511": {
-      "op": "DUP5"
-    },
-    "512": {
-      "op": "DUP3"
-    },
-    "513": {
-      "op": "ADD"
-    },
-    "514": {
-      "op": "SWAP3"
-    },
-    "515": {
-      "op": "POP"
-    },
-    "516": {
-      "op": "DUP4"
-    },
-    "517": {
-      "op": "DUP2"
-    },
-    "518": {
-      "op": "ADD"
-    },
-    "519": {
-      "op": "DUP6"
-    },
-    "520": {
-      "op": "ADD"
-    },
-    "521": {
-      "op": "SWAP2"
-    },
-    "522": {
-      "op": "DUP11"
-    },
-    "523": {
-      "op": "DUP4"
-    },
-    "524": {
-      "op": "GT"
-    },
-    "525": {
-      "op": "ISZERO"
-    },
-    "526": {
-      "op": "PUSH2",
-      "value": "0x216"
-    },
-    "529": {
-      "op": "JUMPI"
-    },
-    "530": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "532": {
-      "op": "DUP1"
-    },
-    "533": {
-      "op": "REVERT"
-    },
-    "534": {
-      "op": "JUMPDEST"
-    },
-    "535": {
-      "op": "SWAP4"
-    },
-    "536": {
-      "op": "DUP6"
-    },
-    "537": {
-      "op": "ADD"
-    },
-    "538": {
-      "op": "SWAP4"
-    },
-    "539": {
-      "op": "JUMPDEST"
-    },
-    "540": {
-      "op": "DUP3"
-    },
-    "541": {
-      "op": "DUP6"
-    },
-    "542": {
-      "op": "LT"
-    },
-    "543": {
-      "op": "ISZERO"
-    },
-    "544": {
-      "op": "PUSH2",
-      "value": "0x234"
-    },
-    "547": {
-      "op": "JUMPI"
-    },
-    "548": {
-      "op": "DUP5"
-    },
-    "549": {
-      "op": "CALLDATALOAD"
-    },
-    "550": {
-      "op": "DUP5"
-    },
-    "551": {
-      "op": "MSTORE"
-    },
-    "552": {
-      "op": "SWAP4"
-    },
-    "553": {
-      "op": "DUP6"
-    },
-    "554": {
-      "op": "ADD"
-    },
-    "555": {
-      "op": "SWAP4"
-    },
-    "556": {
-      "op": "SWAP3"
-    },
-    "557": {
-      "op": "DUP6"
-    },
-    "558": {
-      "op": "ADD"
-    },
-    "559": {
-      "op": "SWAP3"
-    },
-    "560": {
-      "op": "PUSH2",
-      "value": "0x21B"
-    },
-    "563": {
-      "op": "JUMP"
-    },
-    "564": {
-      "op": "JUMPDEST"
-    },
-    "565": {
-      "op": "DUP1"
-    },
-    "566": {
-      "op": "SWAP7"
-    },
-    "567": {
-      "op": "POP"
-    },
-    "568": {
-      "op": "POP"
-    },
-    "569": {
-      "op": "POP"
-    },
-    "570": {
-      "op": "POP"
-    },
-    "571": {
-      "op": "POP"
-    },
-    "572": {
-      "op": "POP"
-    },
-    "573": {
-      "op": "POP"
-    },
-    "574": {
-      "op": "SWAP3"
-    },
-    "575": {
-      "op": "POP"
-    },
-    "576": {
-      "op": "SWAP3"
-    },
-    "577": {
-      "op": "POP"
-    },
-    "578": {
-      "op": "SWAP3"
-    },
-    "579": {
-      "jump": "o",
-      "op": "JUMP"
-    },
-    "580": {
-      "op": "JUMPDEST"
-    },
-    "581": {
-      "op": "PUSH4",
-      "value": "0x4E487B71"
-    },
-    "586": {
-      "op": "PUSH1",
-      "value": "0xE0"
-    },
-    "588": {
-      "op": "SHL"
-    },
-    "589": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "591": {
-      "op": "MSTORE"
-    },
-    "592": {
       "op": "PUSH1",
       "value": "0x32"
     },
-    "594": {
+    "483": {
       "op": "PUSH1",
       "value": "0x4"
     },
-    "596": {
+    "485": {
       "op": "MSTORE"
     },
-    "597": {
+    "486": {
       "op": "PUSH1",
       "value": "0x24"
     },
-    "599": {
+    "488": {
       "op": "PUSH1",
       "value": "0x0"
     },
-    "601": {
+    "490": {
       "op": "REVERT"
-    },
-    "602": {
-      "op": "JUMPDEST"
-    },
-    "603": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "605": {
-      "op": "DUP3"
-    },
-    "606": {
-      "op": "NOT"
-    },
-    "607": {
-      "op": "DUP3"
-    },
-    "608": {
-      "op": "GT"
-    },
-    "609": {
-      "op": "ISZERO"
-    },
-    "610": {
-      "op": "PUSH2",
-      "value": "0x27B"
-    },
-    "613": {
-      "op": "JUMPI"
-    },
-    "614": {
-      "op": "PUSH4",
-      "value": "0x4E487B71"
-    },
-    "619": {
-      "op": "PUSH1",
-      "value": "0xE0"
-    },
-    "621": {
-      "op": "SHL"
-    },
-    "622": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "624": {
-      "op": "MSTORE"
-    },
-    "625": {
-      "op": "PUSH1",
-      "value": "0x11"
-    },
-    "627": {
-      "op": "PUSH1",
-      "value": "0x4"
-    },
-    "629": {
-      "op": "MSTORE"
-    },
-    "630": {
-      "op": "PUSH1",
-      "value": "0x24"
-    },
-    "632": {
-      "op": "PUSH1",
-      "value": "0x0"
-    },
-    "634": {
-      "op": "REVERT"
-    },
-    "635": {
-      "op": "JUMPDEST"
-    },
-    "636": {
-      "op": "POP"
-    },
-    "637": {
-      "op": "ADD"
-    },
-    "638": {
-      "op": "SWAP1"
-    },
-    "639": {
-      "jump": "o",
-      "op": "JUMP"
     }
   },
-  "sha1": "6f7b4df35119ca5c9181206cb4ec690df2c5e5b2",
-  "source": "// SPDX-License-Identifier: GPL-3.0-only\n\npragma solidity 0.8.9;\n\n/// @title A library for merkle trees\n/// @author metapriest\n/// @notice This library is used to check merkle proofs very efficiently.\n/// @dev Each additional proof element adds ~1000 gas\nlibrary MerkleLib {\n\n    /// @notice Check the merkle proof to determine whether leaf data was included in dataset represented by merkle root\n    /// @dev Leaf is pre-hashed to allow calling contract to implement whatever hashing scheme they want\n    /// @param root root hash of merkle tree that is the destination of the hash chain\n    /// @param leaf the pre-hashed leaf data, the starting point of the proof\n    /// @param proof the array of hashes forming a hash chain from leaf to root\n    /// @return true if proof is correct, else false\n    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] memory proof) public pure returns (bool) {\n        bytes32 currentHash = leaf;\n\n        // the proof is all siblings of the ancestors of the leaf (including the sibling of the leaf itself)\n        // each iteration of this loop steps one layer higher in the merkle tree\n        for (uint i = 0; i < proof.length; i += 1) {\n            currentHash = parentHash(currentHash, proof[i]);\n        }\n\n        // does the result match the expected root? if so this leaf was committed to when the root was posted\n        // else we must assume the data was not included\n        return currentHash == root;\n    }\n\n    /// @notice Compute the hash of the parent node in the merkle tree\n    /// @dev The arguments are sorted to remove ambiguity about tree definition\n    /// @param a hash of left child node\n    /// @param b hash of right child node\n    /// @return hash of sorted arguments\n    function parentHash(bytes32 a, bytes32 b) public pure returns (bytes32) {\n        if (a < b) {\n            return keccak256(abi.encode(a, b));\n        } else {\n            return keccak256(abi.encode(b, a));\n        }\n    }\n\n}\n",
-  "sourceMap": "255:1718:1:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;255:1718:1;;;;;;;;;;;;;;;;;",
+  "sha1": "bd65ea9581571db582d8f757e8c3a1d1487644d7",
+  "source": "// SPDX-License-Identifier: GPL-3.0-only\n\npragma solidity 0.8.12;\n\nlibrary MerkleLib {\n\n    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] calldata proof) public pure returns (bool) {\n        bytes32 currentHash = leaf;\n\n        uint proofLength = proof.length;\n        for (uint i; i < proofLength;) {\n            currentHash = parentHash(currentHash, proof[i]);\n            unchecked { ++i; }\n        }\n\n        return currentHash == root;\n    }\n\n    function parentHash(bytes32 a, bytes32 b) public pure returns (bytes32) {\n        if (a < b) {\n            return keccak256(abi.encode(a, b));\n        } else {\n            return keccak256(abi.encode(b, a));\n        }\n    }\n\n}\n",
+  "sourceMap": "67:624:1:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;67:624:1;;;;;;;;;;;;;;;;;",
   "sourcePath": "contracts/MerkleLib.sol",
   "type": "library"
 }
