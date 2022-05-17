@@ -23,12 +23,8 @@ contract MerkleDropFactory {
         address tokenAddress; // address of token that is being airdropped
         uint tokenBalance; // amount of tokens allocated for this tree
         uint spentTokens; // amount of tokens dispensed from this tree
+        mapping (bytes32 => bool) withdrawn;
     }
-
-    // withdrawn[recipient][treeIndex] = hasUserWithdrawnAirdrop
-//    mapping (address => mapping (uint => bool)) public withdrawn;
-    // withdrawn[treeIndex][leafHash] = hasUserWithdrawnAirdrop
-    mapping (uint => mapping (bytes32 => bool)) public withdrawn;
 
     // array-like map for all ze merkle trees (airdrops)
     mapping (uint => MerkleTree) public merkleTrees;
@@ -55,13 +51,11 @@ contract MerkleDropFactory {
     /// @param tokenBalance the amount of tokens user wishes to use to fund the airdrop, note trees can be under/overfunded
     function addMerkleTree(bytes32 newRoot, bytes32 ipfsHash, address tokenAddress, uint tokenBalance) public {
         // prefix operator ++ increments then evaluates
-        merkleTrees[++numTrees] = MerkleTree(
-            newRoot,
-            ipfsHash,
-            tokenAddress,
-            0,  // ain't no tokens in here yet
-            0   // ain't nobody claimed no tokens yet either
-        );
+        MerkleTree storage tree = merkleTrees[++numTrees];
+        tree.merkleRoot = newRoot;
+        tree.ipfsHash = ipfsHash;
+        tree.tokenAddress = tokenAddress;
+
         // you don't get to add a tree without funding it
         depositTokens(numTrees, tokenBalance);
         // I guess we should tell people (interfaces) what happened
@@ -112,16 +106,16 @@ contract MerkleDropFactory {
             revert BadTreeIndex(treeIndex);
         }
 
+        // storage because we edit
+        MerkleTree storage tree = merkleTrees[treeIndex];
+
         // compute merkle leaf, this is first element of proof
         bytes32 leaf = keccak256(abi.encode(destination, value));
 
         // no withdrawing same airdrop twice
-        if (withdrawn[treeIndex][leaf]) {
+        if (tree.withdrawn[leaf]) {
             revert LeafAlreadyClaimed(treeIndex, leaf);
         }
-
-        // storage because we edit
-        MerkleTree storage tree = merkleTrees[treeIndex];
 
         // this calls to MerkleLib, will return false if recursive hashes do not end in merkle root
         if (tree.merkleRoot.verifyProof(leaf, proof) == false) {
@@ -129,7 +123,7 @@ contract MerkleDropFactory {
         }
 
         // close re-entrance gate, prevent double claims
-        withdrawn[treeIndex][leaf] = true;
+        tree.withdrawn[leaf] = true;
 
         IERC20 token = IERC20(tree.tokenAddress);
         uint balanceBefore = token.balanceOf(address(this));
