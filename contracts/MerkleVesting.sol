@@ -51,7 +51,7 @@ contract MerkleVesting {
     // every time a tree is topped up
     event TokensDeposited(uint indexed treeIndex, address indexed tokenAddress, uint amount);
 
-    event TrancheInitialized(uint indexed treeIndex, uint indexed trancheId, address indexed recipient);
+    event TrancheInitialized(uint indexed treeIndex, uint indexed trancheIndex, address indexed recipient);
 
     error BadTreeIndex(uint treeIndex);
     error AlreadyInitialized(uint treeIndex, bytes32 leaf);
@@ -237,6 +237,11 @@ contract MerkleVesting {
         tree.tokenBalance -= diff;
 
         emit WithdrawalOccurred(treeIndex, tranche.recipient, diff, tranche.currentCoins);
+    }
+
+    function getTranche(uint treeIndex, uint trancheIndex) view external returns (address, uint, uint, uint, uint, uint, uint) {
+        Tranche storage tranche = merkleTrees[treeIndex].tranches[trancheIndex];
+        return (tranche.recipient, tranche.totalCoins, tranche.currentCoins, tranche.startTime, tranche.endTime, tranche.coinsPerSecond, tranche.lastWithdrawalTime);
     }
 
 }
