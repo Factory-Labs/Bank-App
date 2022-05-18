@@ -4,7 +4,7 @@ pragma solidity 0.8.12;
 
 library MerkleLib {
 
-    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] calldata proof) private pure returns (bool) {
+    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] calldata proof) public pure returns (bool) {
         bytes32 currentHash = leaf;
 
         uint proofLength = proof.length;
