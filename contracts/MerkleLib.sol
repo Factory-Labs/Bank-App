@@ -4,7 +4,7 @@ pragma solidity 0.8.12;
 
 library MerkleLib {
 
-    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] calldata proof) public pure returns (bool) {
+    function verifyProof(bytes32 root, bytes32 leaf, bytes32[] calldata proof) private pure returns (bool) {
         bytes32 currentHash = leaf;
 
         uint proofLength = proof.length;
@@ -16,12 +16,8 @@ library MerkleLib {
         return currentHash == root;
     }
 
-    function parentHash(bytes32 a, bytes32 b) public pure returns (bytes32) {
-        if (a < b) {
-            return keccak256(abi.encode(a, b));
-        } else {
-            return keccak256(abi.encode(b, a));
-        }
+    function parentHash(bytes32 a, bytes32 b) private pure returns (bytes32) {
+        return keccak256(a < b ? abi.encode(a, b) : abi.encode(b, a));
     }
 
 }
