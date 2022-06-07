@@ -51,7 +51,7 @@ contract MerkleVesting {
     // every time a tree is topped up
     event TokensDeposited(uint indexed treeIndex, address indexed tokenAddress, uint amount);
 
-    event TrancheInitialized(uint indexed treeIndex, uint indexed trancheIndex, address indexed recipient);
+    event TrancheInitialized(uint indexed treeIndex, uint indexed trancheIndex, address indexed recipient, bytes32 indexed leaf);
 
     error BadTreeIndex(uint treeIndex);
     error AlreadyInitialized(uint treeIndex, bytes32 leaf);
@@ -169,7 +169,7 @@ contract MerkleVesting {
             lockPeriodEndTime
         );
 
-        emit TrancheInitialized(treeIndex, tree.numTranchesInitialized, destination);
+        emit TrancheInitialized(treeIndex, tree.numTranchesInitialized, destination, leaf);
 
         // if we've passed the lock time go ahead and perform a withdrawal now
         if (lockPeriodEndTime < block.timestamp) {
