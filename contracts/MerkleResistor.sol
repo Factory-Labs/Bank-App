@@ -62,7 +62,7 @@ contract MerkleResistor {
 
     // every time a tree is topped up
     event TokensDeposited(uint indexed treeIndex, address indexed tokenAddress, uint amount);
-    event TrancheInitialized(uint indexed treeIndex, uint indexed trancheIndex, address indexed recipient, bytes32 indexed leaf);
+    event TrancheInitialized(uint indexed treeIndex, uint indexed trancheIndex, address indexed recipient, bytes32 leaf);
 
     error InvalidPct(uint pct);
     error IncoherentTimes(uint min, uint max);
