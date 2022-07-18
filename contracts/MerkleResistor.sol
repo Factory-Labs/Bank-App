@@ -316,4 +316,8 @@ contract MerkleResistor {
         return (tranche.recipient, tranche.totalCoins, tranche.currentCoins, tranche.startTime, tranche.endTime, tranche.coinsPerSecond, tranche.lastWithdrawalTime);
     }
 
+    function getInitialized(uint treeIndex, bytes32 leaf) external view returns (bool) {
+        return merkleTrees[treeIndex].initialized[leaf];
+    }
+
 }

@@ -148,4 +148,8 @@ contract MerkleDropFactory {
         emit WithdrawalOccurred(treeIndex, destination, value);
     }
 
+    function getWithdrawn(uint treeIndex, bytes32 leaf) external view returns (bool) {
+        return merkleTrees[treeIndex].withdrawn[leaf];
+    }
+
 }
