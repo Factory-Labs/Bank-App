@@ -14,6 +14,20 @@
       "0x980F46E10504FFd2FbC58b8B7D8606d36307351e"
     ]
   },
+  "137": {
+    "MerkleDropFactory": [
+      "0xDb012c51D3451bda3502f75D80540C615D71dE70"
+    ],
+    "MerkleLib": [
+      "0x6f67bfC4413Fd89db01580DCAaDDc4Afa4AEBBcC"
+    ],
+    "MerkleResistor": [
+      "0xf3156a058dAfc1c5e94805986ffd38745071598A"
+    ],
+    "MerkleVesting": [
+      "0xEedDDCda44c8808260588B311Ff6521D631F3565"
+    ]
+  },
   "3": {
     "MerkleDropFactory": [
       "0x7586C0F3DB25A93B6635a132beBcD8Cbd90652e8"
