@@ -1,6 +1,8 @@
 {
   "1": {
     "MerkleDropFactory": [
+      "0xabb8CA4F42A68A13484524812A0B141db315E671",
+      "0x88f361DC82918B39564ac913FC3908315aFBCb14",
       "0xB0E136eC95aec90055eA98383C513c5da1f17Bc5",
       "0x62CAF595Eb1AC54aAd9BbC10315536728c2Ba352"
     ],
@@ -25,6 +27,7 @@
       "0xC1EC61dfde2082d56E2A4D062D66aa20bfB8e2f9"
     ],
     "MerkleLib": [
+      "0x3afCd3938C022D7E404E3d2F3475551DCCB32cbE",
       "0xA63f4B42B66d838273C8Dc3b3073936aF794BAe0"
     ],
     "MerkleResistor": [
