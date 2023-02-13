@@ -43,7 +43,7 @@ def read_address_file(filepath):
 
     total_cost = amount * len(good_addrs)
     print("Total cost to send {} ether to each: {} ether".format(amount, total_cost))
-    balance = web3.eth.getBalance(accounts[0])
+    balance = web3.eth.getBalance(str(accounts[0]))
     print("Your wallet balance: {}".format(balance))
     if balance < total_cost * 1.001:
         print("Aborting, not enough funds")
@@ -73,7 +73,7 @@ def send_funds(addresses):
 def main():
     print(network)
     #     accounts.load()
-    accounts.load("airdrop")
+    accounts.load("palm")
     print('Sending funds from {}'.format(accounts[0]))
     addrs = read_address_file('./data/airdrop.csv')
 
