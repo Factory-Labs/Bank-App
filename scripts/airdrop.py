@@ -73,7 +73,7 @@ def send_funds(addresses):
 def main():
     print(network)
     #     accounts.load()
-    accounts.load("palm")
+    accounts.load("airdrop")
     print('Sending funds from {}'.format(accounts[0]))
     addrs = read_address_file('./data/airdrop.csv')
 
