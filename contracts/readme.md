@@ -1,38 +1,81 @@
-# Merkle-based Token Distribution Contracts
+# Merkle-Based Token Distribution System
 
-A collection of Solidity smart contracts implementing scalable token distribution mechanisms using Merkle proofs. These contracts enable efficient airdrops and vesting schedules for ERC20 tokens.
+A collection of smart contracts implementing scalable token distribution and vesting mechanisms using Merkle proofs.
 
-## Overview
+## Repository Structure
 
-The repository contains four main contracts:
+```
+└── ./
+    ├── contracts/
+    │   ├── MerkleDropFactory.sol
+    │   ├── MerkleLib.sol
+    │   ├── MerkleResistor.sol
+    │   ├── MerkleVesting.sol
+    │   └── readme.md
+    ├── Bank Prelimanary Audit by Consensus Due Dilligence 05_2023.pdf
+    └── LICENSE.md
+```
 
-1. **MerkleDropFactory**: Implements airdrops using Merkle proofs
-2. **MerkleVesting**: Implements fixed vesting schedules using Merkle proofs
-3. **MerkleResistor**: Implements user-configurable vesting schedules with trade-offs
-4. **MerkleLib**: Common library for Merkle proof verification
+## Core Contracts
 
-## Core Features
+1. **MerkleDropFactory.sol** - Implements permissionless token airdrops using Merkle proofs
+2. **MerkleVesting.sol** - Provides fixed vesting schedules with linear token release
+3. **MerkleResistor.sol** - Enables user-configurable vesting schedules with customizable parameters
+4. **MerkleLib.sol** - Common library for Merkle proof verification
 
-### MerkleDropFactory
-- Permissionless token airdrop system
-- Multiple independent airdrops in one contract
-- Recipients claim tokens by providing Merkle proofs
-- Prevents double-claiming through withdrawal tracking
-- IPFS hash storage for data redundancy
+## Contract Mechanics
 
-### MerkleVesting
-- Time-locked token distribution with vesting periods
-- Fixed vesting schedules defined at creation
-- Parameters: recipient, total amount, start time, end time, lock period
-- Linear release rate (coins per second)
-- Protection against double-withdrawals
+### Airdrop (MerkleDropFactory)
+- **Purpose**: Enable efficient distribution of tokens to large numbers of recipients
+- **Process**:
+  1. Deployer creates Merkle tree from `(address, amount)` pairs
+  2. Tree root is stored on-chain with total token amount
+  3. Recipients claim by providing Merkle proof
+  4. Contract verifies proof and transfers tokens
+- **Features**:
+  - Multiple airdrops can run simultaneously
+  - Anyone can pay gas for claims
+  - Double-claim prevention
+  - Tree data stored on IPFS for redundancy
 
-### MerkleResistor
-- User-configurable vesting schedules
-- Trade-off system between vesting duration and token amounts
-- Percentage of tokens available upfront
-- Min/max vesting time constraints
-- Linear vesting with configurable parameters
+### Simple Vesting (MerkleVesting)
+- **Purpose**: Time-locked token distribution with linear release
+- **Parameters**:
+  - `startTime`: When vesting begins
+  - `endTime`: When tokens are fully vested
+  - `lockPeriodEndTime`: When withdrawals can start
+  - `totalCoins`: Total tokens to be vested
+- **Mechanics**:
+  - Linear release rate: `coinsPerSecond = totalCoins / (endTime - startTime)`
+  - Withdrawals blocked until `lockPeriodEndTime`
+  - Full withdrawal available after `endTime`
+  - Partial withdrawals based on elapsed time
+
+### Commitment Vesting (MerkleResistor)
+- **Purpose**: Incentivize longer lock-up periods with variable rewards
+- **Key Concepts**:
+  - Longer vesting = More tokens
+  - Trade-off between instant and vested amounts
+  - User chooses their own schedule within constraints
+
+#### Parameters
+- `minEndTime`: Minimum vesting duration
+- `maxEndTime`: Maximum vesting duration
+- `pctUpFront`: Percentage available immediately
+- `minTotalPayments`: Minimum possible token amount
+- `maxTotalPayments`: Maximum possible token amount
+
+#### Schedule Calculation
+1. User selects `vestingTime` between `minEndTime` and `maxEndTime`
+2. Total tokens calculated linearly:
+   ```
+   slope = (maxPayments - minPayments) / (maxEndTime - minEndTime)
+   totalCoins = slope * (vestingTime - minEndTime) + minPayments
+   ```
+3. Release rate:
+   ```
+   coinsPerSecond = (totalCoins * (100 - pctUpFront)) / (vestingTime * 100)
+   ```
 
 ## Security Features
 
@@ -40,8 +83,17 @@ All contracts implement:
 - Re-entrancy protection
 - Balance tracking per Merkle tree
 - Fee-on-transfer token support
-- Malicious token isolation (problems with one tree don't affect others)
+- Malicious token isolation
 - Safe arithmetic operations (Solidity 0.8.12)
+- Double-claim prevention
+- Event emission for all state changes
+
+## Security Audits
+
+The contracts have undergone multiple security reviews:
+
+1. Consensus Due Diligence (May 2023) - Available in repo
+2. [Code4rena Factory DAO Audit](https://code4rena.com/reports/2022-05-factorydao) - Additional review of Bank-related contracts
 
 ## Contract Interactions
 
@@ -63,21 +115,6 @@ All contracts implement:
 - Over-funding trees is possible but funds cannot be recovered
 - Token contract malice can only affect its own tree
 
-## Technical Details
-
-### MerkleLib
-```solidity
-function verifyProof(bytes32 root, bytes32 leaf, bytes32[] proof) public pure returns (bool)
-```
-- Verifies Merkle proofs using ordered hash pair concatenation
-- Used by all main contracts for proof validation
-
-### Common Storage Patterns
-All contracts use:
-- Sequential tree indexing
-- Mapping-based storage for scalability
-- Separate balance tracking per tree
-- Event emission for important state changes
-
 ## License
+
 GPL-3.0-only
