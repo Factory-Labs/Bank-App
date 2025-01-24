@@ -12,7 +12,7 @@ A collection of smart contracts implementing scalable token distribution and ves
     │   ├── MerkleResistor.sol
     │   ├── MerkleVesting.sol
     │   └── readme.md
-    ├── Bank Prelimanary Audit by Consensus Due Dilligence 05_2023.pdf
+    ├── Bank Report by Consensys Due Dilligence 05_2023.pdf
     └── LICENSE.md
 ```
 
