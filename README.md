@@ -27,7 +27,7 @@ A collection of smart contracts implementing scalable token distribution and ves
 
 The contracts have undergone multiple security reviews:
 
-1. [Bank Prelimanary Audit by Consensus Due Dilligence 05_2023.pdf] - Available in repo
+1. [Bank Prelimanary Audit by Consensus Due Dilligence 05_2023.pdf] - Available in repo. This report was produced with regards to a package of work carried out by Factory Labs. 
 2. [Code4rena Factory DAO Audit](https://code4rena.com/reports/2022-05-factorydao) - Additional review of Bank-related contracts
 
 ## Features
