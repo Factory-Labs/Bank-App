@@ -27,7 +27,7 @@ A collection of smart contracts implementing scalable token distribution and ves
 
 The contracts have undergone multiple security reviews:
 
-1. Consensus Due Diligence (May 2023) - Available in repo
+1. Consensus Due Diligence (May 2023) - Available in repo [https://github.com/Factory-Labs/Bank-App/blob/main/Bank%20Prelimanary%20Audit%20by%20Consensus%20Due%20Dilligence%2005_2023.pdf]
 2. [Code4rena Factory DAO Audit](https://code4rena.com/reports/2022-05-factorydao) - Additional review of Bank-related contracts
 
 ## Features
